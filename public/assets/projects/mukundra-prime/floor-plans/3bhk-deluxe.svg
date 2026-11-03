@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 720" width="100%" height="100%">
+  <defs>
+    <pattern id="grid4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#EAECEF" stroke-width="0.75" />
+    </pattern>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#10243A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="1020" height="720" fill="#FAF9F6" />
+  <rect x="25" y="25" width="970" height="670" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow4)" />
+  <rect x="30" y="30" width="960" height="660" fill="url(#grid4)" opacity="0.6" />
+
+  <!-- Header -->
+  <rect x="50" y="45" width="920" height="70" rx="8" fill="#10243A" />
+  <text x="75" y="80" font-family="'Cinzel', Georgia, serif" font-size="20" font-weight="700" fill="#FAF9F6" letter-spacing="2">MUKUNDRA PRIME</text>
+  <text x="75" y="100" font-family="'Manrope', sans-serif" font-size="12" font-weight="600" fill="#C5A46D" letter-spacing="1.5">RESIDENTIAL APARTMENTS • RAIPURA, KOTA</text>
+  <rect x="740" y="57" width="210" height="46" rx="6" fill="#172E46" stroke="#C5A46D" stroke-width="1.5" />
+  <text x="845" y="78" font-family="'Cinzel', serif" font-size="15" font-weight="700" fill="#FAF9F6" text-anchor="middle">3 BHK DELUXE</text>
+  <text x="845" y="94" font-family="'Manrope', sans-serif" font-size="10" font-weight="600" fill="#C5A46D" text-anchor="middle">CORNER LUXURY SUITE</text>
+
+  <!-- North Arrow -->
+  <g transform="translate(910, 160)">
+    <circle cx="0" cy="0" r="22" fill="#FAF9F6" stroke="#10243A" stroke-width="1.5"/>
+    <polygon points="0,-18 5,0 0,-4 -5,0" fill="#C5A46D" />
+    <polygon points="0,18 5,0 0,4 -5,0" fill="#10243A" />
+    <text x="0" y="-23" font-family="'Cinzel', serif" font-size="12" font-weight="800" fill="#10243A" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Walls -->
+  <g stroke="#10243A" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter" fill="none">
+    <rect x="100" y="145" width="780" height="480" />
+    <!-- Divisions -->
+    <line x1="420" y1="145" x2="420" y2="450" />
+    <line x1="650" y1="145" x2="650" y2="450" />
+    <line x1="100" y1="410" x2="420" y2="410" />
+    <line x1="420" y1="450" x2="880" y2="450" />
+    <line x1="560" y1="450" x2="560" y2="625" />
+    <line x1="690" y1="450" x2="690" y2="625" />
+    <line x1="790" y1="450" x2="790" y2="625" />
+  </g>
+
+  <!-- Balconies -->
+  <g stroke="#C5A46D" stroke-width="3" stroke-dasharray="6,4" fill="rgba(197, 164, 109, 0.08)">
+    <rect x="100" y="625" width="320" height="45" />
+    <rect x="880" y="145" width="60" height="305" />
+    <rect x="100" y="95" width="320" height="50" />
+  </g>
+
+  <!-- Grand Living & Dining -->
+  <rect x="104" y="149" width="312" height="257" fill="rgba(16, 36, 58, 0.03)" />
+  <g font-family="'Manrope', sans-serif">
+    <text x="260" y="245" font-size="18" font-weight="700" fill="#10243A" text-anchor="middle">GRAND LIVING &amp; DINING</text>
+    <text x="260" y="270" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">CORNER CROSS-VENTILATED SALON</text>
+    <rect x="195" y="285" width="130" height="24" rx="4" fill="#FDF8F0" stroke="#C5A46D" stroke-width="0.5" />
+    <text x="260" y="301" font-size="11" font-weight="700" fill="#8C6D3B" text-anchor="middle">PANORAMIC BALCONY</text>
+  </g>
+
+  <!-- Modular Kitchen -->
+  <rect x="104" y="414" width="312" height="207" fill="rgba(16, 36, 58, 0.03)" />
+  <g font-family="'Manrope', sans-serif">
+    <rect x="104" y="414" width="60" height="207" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="260" y="510" font-size="16" font-weight="700" fill="#10243A" text-anchor="middle">LUXURY CHEF'S KITCHEN</text>
+    <text x="260" y="530" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">UTILITY STORE &amp; WASH</text>
+  </g>
+
+  <!-- Master Suite with Walk-in Closet -->
+  <rect x="424" y="149" width="222" height="297" fill="rgba(197, 164, 109, 0.06)" />
+  <g font-family="'Manrope', sans-serif">
+    <text x="535" y="260" font-size="17" font-weight="700" fill="#10243A" text-anchor="middle">ROYAL MASTER SUITE</text>
+    <text x="535" y="285" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">DRESSING WARDROBE AREA</text>
+    <rect x="470" y="300" width="130" height="24" rx="4" fill="#FDF8F0" stroke="#C5A46D" stroke-width="0.5" />
+    <text x="535" y="316" font-size="11" font-weight="700" fill="#8C6D3B" text-anchor="middle">EN-SUITE LUXURY BATH</text>
+  </g>
+
+  <!-- Bedroom 2 Suite -->
+  <rect x="654" y="149" width="222" height="297" fill="rgba(16, 36, 58, 0.03)" />
+  <g font-family="'Manrope', sans-serif">
+    <text x="765" y="260" font-size="17" font-weight="700" fill="#10243A" text-anchor="middle">BEDROOM 2 SUITE</text>
+    <text x="765" y="285" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">ATTACHED PRIVATE BALCONY</text>
+  </g>
+
+  <!-- Lower Section: Bedroom 3, Baths & Foyer -->
+  <rect x="424" y="454" width="132" height="167" fill="rgba(16, 36, 58, 0.03)" />
+  <text x="490" y="530" font-family="'Manrope', sans-serif" font-size="14" font-weight="700" fill="#10243A" text-anchor="middle">BEDROOM 3</text>
+  <text x="490" y="550" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#64748B" text-anchor="middle">KIDS / GUEST</text>
+
+  <rect x="564" y="454" width="122" height="167" fill="#F8FAFC" />
+  <text x="625" y="530" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#10243A" text-anchor="middle">MASTER</text>
+  <text x="625" y="548" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#8C6D3B" text-anchor="middle">EN-SUITE</text>
+
+  <rect x="694" y="454" width="92" height="167" fill="#F8FAFC" />
+  <text x="740" y="530" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#10243A" text-anchor="middle">COMMON</text>
+  <text x="740" y="548" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#64748B" text-anchor="middle">BATH</text>
+
+  <rect x="794" y="454" width="82" height="167" fill="#FDF8F0" />
+  <text x="835" y="530" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#10243A" text-anchor="middle">ROYAL</text>
+  <text x="835" y="548" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" fill="#8C6D3B" text-anchor="middle">FOYER</text>
+
+  <!-- Door Swings -->
+  <g stroke="#C5A46D" stroke-width="1.5" fill="none">
+    <path d="M 830,625 A 45 45 0 0 1 875,580" stroke-dasharray="3,3" />
+    <line x1="830" y1="625" x2="830" y2="580" stroke="#10243A" stroke-width="3" />
+    <text x="850" y="650" font-family="'Manrope', sans-serif" font-size="11" font-weight="700" fill="#10243A" text-anchor="middle">MAIN ENTRY</text>
+  </g>
+
+  <!-- Balcony Labels -->
+  <text x="260" y="650" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#C5A46D" text-anchor="middle">EXTENDED TERRACE DECK</text>
+  <text x="910" y="300" font-family="'Manrope', sans-serif" font-size="11" font-weight="700" fill="#C5A46D" text-anchor="middle" transform="rotate(90, 910, 300)">BEDROOM 2 SUN BALCONY</text>
+  <text x="260" y="125" font-family="'Manrope', sans-serif" font-size="12" font-weight="700" fill="#C5A46D" text-anchor="middle">KITCHEN SERVICE BALCONY</text>
+
+  <!-- Footer Disclaimer -->
+  <rect x="50" y="660" width="920" height="30" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+  <text x="70" y="680" font-family="'Manrope', sans-serif" font-size="10" font-weight="600" fill="#64748B">
+    CONFIRMED ARCHITECTURAL PLAN • 3 BEDROOMS, 3 BATHROOMS, MULTI-EXPOSURE CORNER UNIT • DEEPPURA GROUP
+  </text>
+</svg>
+

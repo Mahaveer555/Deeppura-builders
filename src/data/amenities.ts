@@ -1,0 +1,138 @@
+export interface Amenity {
+  id: string;
+  nameEn: string;
+  category: 'lifestyle' | 'convenience' | 'safety' | 'infrastructure';
+  icon: string;
+  descriptionEn: string;
+  image?: string;
+  featured?: boolean;
+}
+
+export const amenitiesList: Amenity[] = [
+  {
+    id: 'temple',
+    nameEn: 'Temple',
+    category: 'lifestyle',
+    icon: 'Church',
+    descriptionEn: 'A sanctified traditional stone temple located within the residential township for daily prayers, serenity, and community festivals.',
+    image: '/assets/projects/mukundra-prime/amenities/temple.jpg',
+    featured: true,
+  },
+  {
+    id: 'kids-play',
+    nameEn: 'Kids Play Area',
+    category: 'lifestyle',
+    icon: 'Smile',
+    descriptionEn: 'Dedicated safe outdoor play park equipped with modern multi-play slides, swings, and rubberized protective footing for children.',
+    image: '/assets/projects/mukundra-prime/amenities/kids-park.jpg',
+    featured: true,
+  },
+  {
+    id: 'open-gym',
+    nameEn: 'Open Gym',
+    category: 'lifestyle',
+    icon: 'Dumbbell',
+    descriptionEn: 'Equipped fitness gymnasium with cardio treadmills and outdoor calisthenics workout stations amid landscaped greenery.',
+    image: '/assets/projects/mukundra-prime/amenities/open-gym.jpg',
+    featured: true,
+  },
+  {
+    id: 'swimming-pool',
+    nameEn: 'Swimming Pool / Splash Pool',
+    category: 'lifestyle',
+    icon: 'Waves',
+    descriptionEn: 'Recreational fresh-water swimming pool with dedicated shallow splash zone for children and family leisure.',
+    image: '/assets/projects/mukundra-prime/amenities/swimming-pool.jpg',
+    featured: true,
+  },
+  {
+    id: 'supermarket',
+    nameEn: 'Supermarket',
+    category: 'convenience',
+    icon: 'ShoppingBag',
+    descriptionEn: 'On-premises daily provisions and grocery supermarket providing immediate access to household essentials without leaving the gates.',
+    image: '/assets/projects/mukundra-prime/amenities/supermarket.jpg',
+    featured: true,
+  },
+  {
+    id: 'community-hall',
+    nameEn: 'Community Hall',
+    category: 'convenience',
+    icon: 'Users',
+    descriptionEn: 'Spacious indoor celebration hall designed for family gatherings, social festivals, birthday events, and society meetings.',
+    image: '/assets/projects/mukundra-prime/amenities/community-hall.jpg',
+    featured: true,
+  },
+  {
+    id: 'lift-facility',
+    nameEn: '24×7 Lift Facility',
+    category: 'infrastructure',
+    icon: 'ArrowUpDown',
+    descriptionEn: 'High-speed automatic passenger elevators with power-backup Automatic Rescue Device (ARD) operating 24 hours across all towers.',
+    image: '/assets/projects/mukundra-prime/amenities/lift-facility.jpg',
+    featured: true,
+  },
+  {
+    id: 'water-supply',
+    nameEn: '24×7 Water Supply',
+    category: 'infrastructure',
+    icon: 'Droplets',
+    descriptionEn: 'Uninterrupted dual-overhead and underground water reservoirs engineered for reliable high-pressure water distribution round the clock.',
+    image: '/assets/projects/mukundra-prime/amenities/water-supply.jpg',
+    featured: true,
+  },
+  {
+    id: 'parking',
+    nameEn: 'Parking',
+    category: 'infrastructure',
+    icon: 'Car',
+    descriptionEn: 'Demarcated covered stilt and open parking bays with wide maneuvering driveways for vehicles and visiting guests.',
+    image: '/assets/projects/mukundra-prime/amenities/parking.jpg',
+    featured: true,
+  },
+  {
+    id: 'green-area',
+    nameEn: 'Green Area',
+    category: 'lifestyle',
+    icon: 'Trees',
+    descriptionEn: 'Abundant open space with landscaped floral borders, tree-lined walking avenues, and pollution-free natural ambience.',
+    image: '/assets/projects/mukundra-prime/amenities/green-area.jpg',
+    featured: true,
+  },
+  {
+    id: 'security-cctv',
+    nameEn: 'Security Guards & CCTV',
+    category: 'safety',
+    icon: 'ShieldCheck',
+    descriptionEn: 'Gated society perimeter with full boundary wall, 24×7 manned security checkpoints, and continuous CCTV surveillance cameras.',
+    image: '/assets/projects/mukundra-prime/amenities/security-cctv.jpg',
+    featured: true,
+  },
+  {
+    id: 'wide-road',
+    nameEn: '100 Ft Wide Road',
+    category: 'infrastructure',
+    icon: 'Compass',
+    descriptionEn: 'Grand direct connection via a 100-foot wide arterial masterplan road ensuring effortless transit across Kota.',
+    image: '/assets/projects/mukundra-prime/amenities/wide-road.jpg',
+    featured: true,
+  },
+  {
+    id: 'green-park',
+    nameEn: 'Green Park',
+    category: 'lifestyle',
+    icon: 'Flower2',
+    descriptionEn: 'Lush green recreational lawn adjacent to Rajasthan’s largest 200-Bigha Herbal Park for morning walks and open-air yoga.',
+    image: '/assets/projects/mukundra-prime/amenities/green-park.jpg',
+    featured: true,
+  },
+  {
+    id: 'hospital-school',
+    nameEn: 'Nearby Hospital & School',
+    category: 'convenience',
+    icon: 'GraduationCap',
+    descriptionEn: 'Immediate proximity to Kota’s renowned educational institutions like Decent School and Allen Career Institute, plus emergency healthcare hospitals.',
+    image: '/assets/projects/mukundra-prime/amenities/hospital-school.jpg',
+    featured: true,
+  },
+];

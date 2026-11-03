@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="towerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9AA6B2" />
+      <stop offset="50%" stop-color="#BDC7D0" />
+      <stop offset="100%" stop-color="#7B8794" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E57218" />
+      <stop offset="100%" stop-color="#D9530F" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- TOWERS SYMBOL -->
+  <g transform="translate(270, 50)" filter="url(#cardShadow)">
+    <!-- Left Tower -->
+    <path d="M-38 38 L-38 -18 L-8 -40 L-8 38 Z" fill="none" stroke="url(#towerGrad)" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Left Tower Windows (4 rows x 2 cols) -->
+    <rect x="-30" y="-8" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-19" y="-16" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-30" y="4" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-19" y="-4" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-30" y="16" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-19" y="8" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-30" y="28" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="-19" y="20" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+
+    <!-- Right Tower -->
+    <path d="M38 38 L38 -18 L8 -40 L8 38 Z" fill="none" stroke="url(#towerGrad)" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Right Tower Windows (4 rows x 2 cols) -->
+    <rect x="13" y="-16" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="24" y="-8" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="13" y="-4" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="24" y="4" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="13" y="8" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="24" y="16" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="13" y="20" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+    <rect x="24" y="28" width="6.5" height="6.5" rx="1" fill="url(#towerGrad)" />
+
+    <!-- Foundation Line -->
+    <line x1="-58" y1="40" x2="58" y2="40" stroke="url(#towerGrad)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- BRAND NAME: DEEPPURA BUILDERS -->
+  <g transform="translate(270, 136)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="1.2">
+      <tspan fill="#1B365D" x="-72">DEEPPURA</tspan>
+      <tspan fill="#E57218" x="98">BUILDERS</tspan>
+    </text>
+  </g>
+
+  <!-- GREEN TAGLINE BAR WITH CHEVRONS -->
+  <g transform="translate(270, 178)">
+    <!-- Green Accent Bar -->
+    <rect x="-245" y="-15" width="490" height="30" rx="3" fill="#4CAF50" />
+    
+    <!-- Left Chevrons <<< -->
+    <path d="M-215 -5 L-222 0 L-215 5 M-206 -5 L-213 0 L-206 5 M-197 -5 L-204 0 L-197 5" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Center Tagline -->
+    <text x="0" y="4.5" text-anchor="middle" fill="#FFFFFF" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" letter-spacing="0.5">
+      Crafting Dreams, Creating Landmarks.
+    </text>
+
+    <!-- Right Chevrons >>> -->
+    <path d="M197 -5 L204 0 L197 5 M206 -5 L213 0 L206 5 M215 -5 L222 0 L215 5" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
