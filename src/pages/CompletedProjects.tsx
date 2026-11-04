@@ -30,7 +30,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-emerald-400 transition-all"
+      className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-amber-400 transition-all"
     >
       {/* Image Container & Switcher */}
       <div className={`lg:col-span-6 space-y-3 ${idx % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -53,14 +53,14 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
 
           {/* Hover Zoom Pill */}
           <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
-            <Maximize2 className="w-3.5 h-3.5 text-emerald-600" />
+            <Maximize2 className="w-3.5 h-3.5 text-amber-600" />
             <span>Click to Enlarge</span>
           </div>
 
           {/* Multiple views indicator badge */}
           {images.length > 1 && (
-            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200 text-emerald-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-              <Camera className="w-3 h-3 text-emerald-600" />
+            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200 text-amber-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+              <Camera className="w-3 h-3 text-amber-600" />
               <span>{images.length} Architectural Views</span>
             </div>
           )}
@@ -75,7 +75,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
                 onClick={() => setSelectedImageIndex(i)}
                 className={`relative rounded-lg overflow-hidden w-20 h-14 shrink-0 border-2 transition-all cursor-pointer ${
                   selectedImageIndex === i 
-                    ? 'border-emerald-500 shadow-md scale-105' 
+                    ? 'border-amber-500 shadow-md scale-105' 
                     : 'border-slate-200 opacity-60 hover:opacity-100'
                 }`}
               >
@@ -91,8 +91,8 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
 
       {/* Content Details */}
       <div className={`lg:col-span-6 space-y-4 ${idx % 2 === 1 ? 'lg:order-1' : ''}`}>
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
-          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+        <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 text-xs font-bold uppercase tracking-wider border border-amber-200">
+          <CheckCircle2 className="w-3.5 h-3.5 text-amber-600" />
           <span>Completed &amp; Handed Over</span>
         </div>
 
@@ -101,7 +101,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
         </h3>
 
         <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
-          <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+          <MapPin className="w-4 h-4 text-amber-600 shrink-0" />
           <span>{project.locationEn}</span>
         </div>
 
@@ -110,13 +110,13 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
         </p>
 
         <div className="pt-2">
-          <span className="text-xs uppercase font-bold tracking-wider text-emerald-700 block mb-2">
+          <span className="text-xs uppercase font-bold tracking-wider text-amber-700 block mb-2">
             Key Highlights:
           </span>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
             {project.featuresEn.map((f, i) => (
               <li key={i} className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
                 <span>{f}</span>
               </li>
             ))}
@@ -128,9 +128,9 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
             href={`https://maps.google.com/?q=${encodeURIComponent(project.googleMapQuery)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white hover:bg-amber-50 text-slate-800 hover:text-amber-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
           >
-            <MapPin className="w-3.5 h-3.5 text-emerald-600" />
+            <MapPin className="w-3.5 h-3.5 text-amber-600" />
             <span>View Location on Google Maps</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
@@ -227,29 +227,29 @@ export const CompletedProjects: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
+              <CheckCircle2 className="w-4 h-4 text-amber-400" />
               <span>Delivered Track Record</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight drop-shadow-lg">
-              Delivered Kota <span className="text-emerald-400">Landmarks</span>
+              Delivered Kota <span className="text-amber-400">Landmarks</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-100 leading-relaxed max-w-3xl font-medium drop-shadow-md">
               A curated portfolio of delivered residential and farmhouse developments across Kota, Rajasthan, demonstrating DEEPPURA GROUP's standard of construction quality, structural integrity, and punctual handover.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-200 drop-shadow">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-amber-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">COMPLETED PROJECTS</span>
+                <span className="text-amber-400">COMPLETED PROJECTS</span>
               </nav>
 
               {/* Active Slide Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/70 backdrop-blur-md text-white text-xs font-semibold border border-white/20 shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Showing: <strong className="text-emerald-300">{headerSlides[currentHeaderSlide].title}</strong></span>
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <span>Showing: <strong className="text-amber-300">{headerSlides[currentHeaderSlide].title}</strong></span>
               </div>
             </div>
 
@@ -261,7 +261,7 @@ export const CompletedProjects: React.FC = () => {
                   type="button"
                   onClick={() => setCurrentHeaderSlide(idx)}
                   className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                    currentHeaderSlide === idx ? 'w-8 bg-emerald-400' : 'w-2.5 bg-white/60 hover:bg-white'
+                    currentHeaderSlide === idx ? 'w-8 bg-amber-400' : 'w-2.5 bg-white/60 hover:bg-white'
                   }`}
                   aria-label={`Slide to ${slide.title}`}
                 />
@@ -282,7 +282,7 @@ export const CompletedProjects: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 block mb-1">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-700 block mb-1">
               PORTFOLIO SHOWCASE
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900">

@@ -24,7 +24,7 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
     champagne: 'bg-[#F8FAFC] text-slate-800 border-y border-slate-200',
   }[variant];
 
-  const bulletColor = variant === 'dark' ? 'text-emerald-400' : 'text-emerald-600';
+  const bulletColor = variant === 'dark' ? 'text-amber-400' : 'text-amber-600';
   const fadeBg = variant === 'dark' ? 'from-[#0F172A]' : 'from-white';
 
   // Double items for a continuous, seamless loop
@@ -53,7 +53,7 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
               key={idx}
               className="flex items-center gap-3.5 mx-6 sm:mx-8 shrink-0 text-xs sm:text-[13px] font-heading font-bold tracking-wider uppercase whitespace-nowrap"
             >
-              <span className="p-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600">
+              <span className="p-1 rounded-full bg-amber-50 border border-amber-100 text-amber-600">
                 <Icon className={`w-3.5 h-3.5 ${bulletColor}`} />
               </span>
               <span className="text-slate-800 font-bold">{item.text}</span>

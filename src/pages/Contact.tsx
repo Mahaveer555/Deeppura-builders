@@ -36,23 +36,23 @@ export const Contact: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Phone className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Phone className="w-4 h-4 text-amber-400" />
               <span>Direct Communication</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              Connect with <span className="text-emerald-400">DEEPPURA GROUP</span>
+              Connect with <span className="text-amber-400">DEEPPURA GROUP</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Connect directly with our corporate headquarters in Talwandi, our project site sales office in Raipura, or speak directly with Director Animesh Jain.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-amber-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">CONTACT</span>
+                <span className="text-amber-400">CONTACT</span>
               </nav>
             </div>
           </motion.div>
@@ -73,13 +73,13 @@ export const Contact: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider">
                 <span>Official Booking Desk</span>
               </div>
 
               {/* Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Find Your Ideal Space at <span className="text-emerald-600">Mukundra Prime</span>
+                Find Your Ideal Space at <span className="text-amber-600">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -88,21 +88,21 @@ export const Contact: React.FC = () => {
 
               {/* Direct Booking Desk Contacts */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 space-y-4 shadow-xl">
-                <div className="text-xs uppercase font-bold tracking-wider text-emerald-700 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-emerald-600" />
+                <div className="text-xs uppercase font-bold tracking-wider text-amber-700 flex items-center gap-2">
+                  <PhoneCall className="w-4 h-4 text-amber-600" />
                   <span>Direct Booking Lines</span>
                 </div>
 
                 <div className="space-y-2.5">
                   <a
                     href="tel:8875000404"
-                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
+                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors flex items-center justify-between"
                   >
                     <div>
                       <div className="text-[10px] text-slate-500 font-medium uppercase">Director Desk</div>
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
-                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full">
+                    <span className="text-[10px] font-bold text-amber-800 bg-amber-100 border border-amber-200 px-3 py-1 rounded-full">
                       Animesh Jain
                     </span>
                   </a>
@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     <a
                       href="tel:7357690111"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 1</div>
                       <div className="font-bold text-xs text-slate-900">7357690111</div>
@@ -118,7 +118,7 @@ export const Contact: React.FC = () => {
 
                     <a
                       href="tel:8239999520"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 2</div>
                       <div className="font-bold text-xs text-slate-900">8239999520</div>
@@ -160,7 +160,7 @@ export const Contact: React.FC = () => {
             className="mt-16 pt-12 border-t border-slate-200"
           >
             <div className="mb-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">
                 PROJECT LOCATION MAP
               </span>
               <h2 className="text-2xl font-black text-slate-900">

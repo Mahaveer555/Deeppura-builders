@@ -199,12 +199,12 @@ export const FloorPlans: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-2.5"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/20 backdrop-blur-md text-emerald-300 text-xs font-bold uppercase tracking-wider border border-emerald-500/30">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 backdrop-blur-md text-amber-300 text-xs font-bold uppercase tracking-wider border border-amber-500/30">
             <BookOpen className="w-3.5 h-3.5" />
             <span>Official Brochure &amp; Unit Plans</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-widest uppercase">
-            UNIT <span className="text-emerald-400">PLAN</span>
+            UNIT <span className="text-amber-400">PLAN</span>
           </h1>
           <h2 className="text-xs sm:text-sm md:text-base font-semibold tracking-wider text-slate-200">
             RERA No.-RAJ/P/2025/3532 • UIT Kota Masterplan Approved
@@ -224,11 +224,11 @@ export const FloorPlans: React.FC = () => {
 
           <div className="pt-2">
             <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-              <Link to="/" className="hover:text-emerald-400 transition-colors">
+              <Link to="/" className="hover:text-amber-400 transition-colors">
                 HOME
               </Link>
               <span>/</span>
-              <span className="text-emerald-400">UNIT PLAN</span>
+              <span className="text-amber-400">UNIT PLAN</span>
             </nav>
           </div>
         </motion.div>
@@ -238,11 +238,11 @@ export const FloorPlans: React.FC = () => {
       <section className="bg-slate-900 border-b border-slate-800 text-white py-6">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0">
-              <FileText className="w-6 h-6 text-emerald-400" />
+            <div className="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center shrink-0">
+              <FileText className="w-6 h-6 text-amber-400" />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-black tracking-widest text-emerald-400 block">
+              <span className="text-[10px] uppercase font-black tracking-widest text-amber-400 block">
                 AUTHENTIC 8-PAGE PUBLICATION
               </span>
               <h3 className="text-base sm:text-lg font-black text-white">
@@ -257,16 +257,16 @@ export const FloorPlans: React.FC = () => {
           <div className="flex items-center gap-2.5 shrink-0 w-full sm:w-auto justify-end">
             <button
               onClick={() => openBrochureAt(0)}
-              className="px-4 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-500/40 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer"
+              className="px-4 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer"
             >
-              <BookOpen className="w-4 h-4 text-emerald-400" />
+              <BookOpen className="w-4 h-4 text-amber-400" />
               <span>Flip Through Spreads</span>
             </button>
 
             <a
               href={pdfUrl}
               download="Mukundra-Prime-Official-Brochure.pdf"
-              className="px-5 py-2.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 text-xs font-black uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
+              className="px-5 py-2.5 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-black uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
             >
               <Download className="w-4 h-4 text-slate-950" />
               <span>Download PDF (8.5 MB)</span>
@@ -280,7 +280,7 @@ export const FloorPlans: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block">
                 Official Document Spreads
               </span>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -289,7 +289,7 @@ export const FloorPlans: React.FC = () => {
             </div>
             <button
               onClick={() => openBrochureAt(0)}
-              className="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1 cursor-pointer transition-colors"
+              className="text-xs font-bold text-amber-700 hover:text-amber-900 flex items-center gap-1 cursor-pointer transition-colors"
             >
               <span>Open in Fullscreen Interactive Reader</span>
               <span>&rarr;</span>
@@ -301,7 +301,7 @@ export const FloorPlans: React.FC = () => {
               <div
                 key={spread.id}
                 onClick={() => openBrochureAt(idx)}
-                className="group relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-emerald-500 shadow-xs hover:shadow-md transition-all cursor-pointer"
+                className="group relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-amber-500 shadow-xs hover:shadow-md transition-all cursor-pointer"
               >
                 <div className="aspect-[16/7] overflow-hidden bg-slate-100">
                   <img
@@ -312,7 +312,7 @@ export const FloorPlans: React.FC = () => {
                   />
                 </div>
                 <div className="p-2 text-center bg-white border-t border-slate-100">
-                  <span className="text-[10px] font-black text-emerald-700 block">
+                  <span className="text-[10px] font-black text-amber-700 block">
                     Spread {spread.id}
                   </span>
                   <span className="text-[10px] text-slate-600 font-medium truncate block">
@@ -329,7 +329,7 @@ export const FloorPlans: React.FC = () => {
       <section className="py-14 sm:py-20 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-300 mb-2">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider border border-amber-300 mb-2">
               <Layers className="w-3.5 h-3.5" />
               <span>Brochure Verified Unit Plans</span>
             </span>
@@ -351,13 +351,13 @@ export const FloorPlans: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
-                  className="rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200 hover:border-emerald-500/80 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 p-5 sm:p-7 md:p-8"
+                  className="rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200 hover:border-amber-500/80 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 p-5 sm:p-7 md:p-8"
                 >
                   {/* Plan Header */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 border-b border-slate-200">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-black uppercase tracking-wider">
+                        <span className="px-3 py-1 rounded-full bg-amber-600 text-white text-xs font-black uppercase tracking-wider">
                           {plan.category}
                         </span>
                         <span className="px-3 py-1 rounded-full bg-slate-200 text-slate-800 text-xs font-bold">
@@ -375,7 +375,7 @@ export const FloorPlans: React.FC = () => {
                     <div className="flex items-center gap-2 shrink-0">
                       <button
                         onClick={() => openBrochureAt(spreadIndex)}
-                        className="px-4 py-2 rounded-xl bg-white hover:bg-emerald-50 text-emerald-700 border border-emerald-300 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
+                        className="px-4 py-2 rounded-xl bg-white hover:bg-amber-50 text-amber-700 border border-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
                       >
                         <BookOpen className="w-3.5 h-3.5" />
                         <span>View Brochure Spread {spreadIndex + 1}</span>
@@ -388,13 +388,13 @@ export const FloorPlans: React.FC = () => {
                     {/* Left: 3D Isometric Cutaway */}
                     <div className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs group">
                       <div className="p-3 bg-slate-100/70 border-b border-slate-200 flex items-center justify-between">
-                        <span className="text-[11px] font-black uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
-                          <Layers className="w-3.5 h-3.5 text-emerald-600" />
+                        <span className="text-[11px] font-black uppercase tracking-wider text-amber-800 flex items-center gap-1.5">
+                          <Layers className="w-3.5 h-3.5 text-amber-600" />
                           <span>3D Furnished Isometric View</span>
                         </span>
                         <button
                           onClick={() => openLightbox(8 + idx)}
-                          className="text-[11px] font-bold text-slate-500 hover:text-emerald-700 flex items-center gap-1 cursor-pointer"
+                          className="text-[11px] font-bold text-slate-500 hover:text-amber-700 flex items-center gap-1 cursor-pointer"
                         >
                           <Maximize2 className="w-3 h-3" />
                           <span>Expand</span>
@@ -417,12 +417,12 @@ export const FloorPlans: React.FC = () => {
                     <div className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs group flex flex-col justify-between">
                       <div className="p-3 bg-slate-100/70 border-b border-slate-200 flex items-center justify-between">
                         <span className="text-[11px] font-black uppercase tracking-wider text-slate-800 flex items-center gap-1.5">
-                          <FileText className="w-3.5 h-3.5 text-emerald-600" />
+                          <FileText className="w-3.5 h-3.5 text-amber-600" />
                           <span>2D Architectural Layout &amp; Measurements</span>
                         </span>
                         <button
                           onClick={() => openLightbox(8 + officialBrochurePlans.length + idx)}
-                          className="text-[11px] font-bold text-slate-500 hover:text-emerald-700 flex items-center gap-1 cursor-pointer"
+                          className="text-[11px] font-bold text-slate-500 hover:text-amber-700 flex items-center gap-1 cursor-pointer"
                         >
                           <Maximize2 className="w-3 h-3" />
                           <span>Expand</span>
@@ -448,7 +448,7 @@ export const FloorPlans: React.FC = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                           {plan.specs.map((spec, sIdx) => (
                             <div key={sIdx} className="text-xs text-slate-700 flex items-center gap-1.5">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                              <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                               <span>{spec}</span>
                             </div>
                           ))}
@@ -462,15 +462,15 @@ export const FloorPlans: React.FC = () => {
           </div>
 
           {/* Full Brochure CTA */}
-          <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-900 via-emerald-800 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+          <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-900 via-amber-800 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-300 block">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-300 block">
                 Official Deeppura Builders Publication
               </span>
               <h4 className="text-xl sm:text-2xl font-black mt-1 text-white">
                 Download the Complete 8-Page Mukundra Prime Brochure
               </h4>
-              <p className="text-xs sm:text-sm text-emerald-100/80 mt-1 max-w-xl">
+              <p className="text-xs sm:text-sm text-amber-100/80 mt-1 max-w-xl">
                 High-definition plans, verified amenities, company profile since 2011, and site connectivity on 100 Ft. Road, Raipura, Kota.
               </p>
             </div>
@@ -485,7 +485,7 @@ export const FloorPlans: React.FC = () => {
               <a
                 href={pdfUrl}
                 download="Mukundra-Prime-Official-Brochure.pdf"
-                className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-all cursor-pointer"
+                className="px-6 py-3 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-all cursor-pointer"
               >
                 Download PDF (8.5 MB)
               </a>
@@ -517,7 +517,7 @@ export const FloorPlans: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
-                className="rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer p-4 flex flex-col justify-between"
+                className="rounded-2xl bg-white border border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer p-4 flex flex-col justify-between"
                 onClick={() => openLightbox(8 + officialBrochurePlans.length * 2 + index)}
               >
                 <div className="aspect-[4/3] bg-slate-50 rounded-xl overflow-hidden flex items-center justify-center p-2 mb-3">
@@ -530,7 +530,7 @@ export const FloorPlans: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
                   <span className="font-bold text-slate-800">Unit Blueprint #{item.id}</span>
-                  <span className="text-emerald-700 font-bold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                  <span className="text-amber-700 font-bold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
                     <span>View</span>
                     <Maximize2 className="w-3 h-3" />
                   </span>

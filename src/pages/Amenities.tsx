@@ -179,29 +179,29 @@ export const Amenities: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
-              <Building2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
+              <Building2 className="w-4 h-4 text-amber-400" />
               <span>Lifestyle &amp; Facilities</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight drop-shadow-lg">
-              14 Verified <span className="text-emerald-400">Resort Amenities</span>
+              14 Verified <span className="text-amber-400">Resort Amenities</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-100 leading-relaxed max-w-3xl font-medium drop-shadow-md">
               Experience thoughtfully designed community living at Mukundra Prime, featuring every confirmed amenity from our brochure to enrich family life in Raipura, Kota.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-200 drop-shadow">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-amber-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">AMENITIES</span>
+                <span className="text-amber-400">AMENITIES</span>
               </nav>
 
               {/* Active Slide Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/70 backdrop-blur-md text-white text-xs font-semibold border border-white/20 shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Showing: <strong className="text-emerald-300">{amenityHeaderSlides[currentHeaderSlide].title}</strong></span>
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <span>Showing: <strong className="text-amber-300">{amenityHeaderSlides[currentHeaderSlide].title}</strong></span>
               </div>
             </div>
 
@@ -213,7 +213,7 @@ export const Amenities: React.FC = () => {
                   type="button"
                   onClick={() => setCurrentHeaderSlide(idx)}
                   className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                    currentHeaderSlide === idx ? 'w-8 bg-emerald-400' : 'w-2.5 bg-white/60 hover:bg-white'
+                    currentHeaderSlide === idx ? 'w-8 bg-amber-400' : 'w-2.5 bg-white/60 hover:bg-white'
                   }`}
                   aria-label={`Slide to ${slide.title}`}
                 />
@@ -240,7 +240,7 @@ export const Amenities: React.FC = () => {
                 onClick={() => setActiveFilter(tab.id as any)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeFilter === tab.id
-                    ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
+                    ? 'bg-amber-400 text-slate-950 font-black shadow-md'
                     : 'bg-slate-100 border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200'
                 }`}
               >
@@ -283,11 +283,11 @@ export const Amenities: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3.5 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 px-3.5 py-1 rounded-full">
               Construction Standards
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Architectural <span className="text-emerald-600">Specifications</span>
+              Architectural <span className="text-amber-600">Specifications</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Detailed construction materials and fitment specifications engineered for lasting durability.
@@ -302,10 +302,10 @@ export const Amenities: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: (idx % 3) * 0.1 }}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4 hover:border-emerald-400 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4 hover:border-amber-400 hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="flex items-center justify-between pb-3 border-b border-slate-200">
-                  <span className="text-3xl font-black text-emerald-600">
+                  <span className="text-3xl font-black text-amber-600">
                     {item.num}
                   </span>
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-900">

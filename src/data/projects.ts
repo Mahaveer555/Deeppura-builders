@@ -198,7 +198,7 @@ export const mukundraPrimeProject: Project = {
   taglineHi: 'Thoughtfully Planned Modern Residences in Kota',
   descriptionEn: 'Mukundra Prime is an ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Kota, Rajasthan. Located on a 100 ft. wide road near Decent School and in close proximity to Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, on-premises temple, swimming pool, gym, supermarket, and kids play park.',
   descriptionHi: 'Mukundra Prime is an ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Kota, Rajasthan. Located on a 100 ft. wide road near Decent School and in close proximity to Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, on-premises temple, swimming pool, gym, supermarket, and kids play park.',
-  heroImage: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
+  heroImage: '/assets/projects/mukundra-prime/mukundra-prime-elevation-golden.jpg',
   address: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
   googleMapQuery: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
   configurations: ['1 BHK Deluxe', '2 BHK (700.15 sq. ft.)', '3 BHK (755 sq. ft.)', '3 BHK Deluxe'],
@@ -229,6 +229,12 @@ export const mukundraPrimeProject: Project = {
     'Swimming pool, kids play area, open gym & supermarket'
   ],
   images: [
+    {
+      url: '/assets/projects/mukundra-prime/mukundra-prime-elevation-golden.jpg',
+      captionEn: 'Mukundra Prime Royal Architectural Gold Elevation on 100 Ft. Road (Daylight View)',
+      captionHi: 'Mukundra Prime Royal Architectural Gold Elevation on 100 Ft. Road (Daylight View)',
+      category: 'exterior'
+    },
     {
       url: '/assets/projects/mukundra-prime/gate-daylight-closeup.jpg',
       captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Golden Signage (Daylight View)',

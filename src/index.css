@@ -29,24 +29,24 @@
   }
 
   ::selection {
-    background-color: #10B981;
-    color: #FFFFFF;
+    background-color: #D4AF37;
+    color: #0F172A;
   }
 
-  /* Custom Clean Scrollbar */
+  /* Custom Clean Architectural Gold Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #F1F5F9;
+    background: #F8F6F0;
   }
   ::-webkit-scrollbar-thumb {
-    background: #10B981;
+    background: #D4AF37;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #059669;
+    background: #B8860B;
   }
 }
 
@@ -55,6 +55,13 @@
   font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-weight: 500;
+}
+
+/* Metallic Gold Text Shimmer */
+.gold-text-shimmer {
+  background: linear-gradient(135deg, #FFF0B8 0%, #D4AF37 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Image Shimmer sweep effect */

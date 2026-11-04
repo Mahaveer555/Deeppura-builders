@@ -79,7 +79,7 @@ export const FloatingContact: React.FC = () => {
             className="mb-1 w-64 rounded-2xl bg-white border border-slate-200 shadow-2xl p-3.5 space-y-2 text-slate-900 backdrop-blur-xl"
           >
             <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700 flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5" />
                 Direct Call Lines
               </span>
@@ -96,13 +96,13 @@ export const FloatingContact: React.FC = () => {
                 <a
                   key={p.number}
                   href={`tel:${p.number.replace(/\s+/g, '')}`}
-                  className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 hover:bg-emerald-50 text-xs font-semibold text-slate-800 border border-slate-100 hover:border-emerald-200 transition-all group"
+                  className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 text-xs font-semibold text-slate-800 border border-slate-100 hover:border-amber-200 transition-all group"
                 >
                   <div>
                     <div className="text-[10px] text-slate-500 font-medium">{p.label}</div>
-                    <div className="text-xs font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">{p.number}</div>
+                    <div className="text-xs font-bold text-slate-900 group-hover:text-amber-700 transition-colors">{p.number}</div>
                   </div>
-                  <Phone className="w-3.5 h-3.5 text-emerald-600" />
+                  <Phone className="w-3.5 h-3.5 text-amber-600" />
                 </a>
               ))}
             </div>
@@ -121,7 +121,7 @@ export const FloatingContact: React.FC = () => {
             className="mb-1 w-64 rounded-2xl bg-white border border-slate-200 shadow-2xl p-3.5 space-y-2 text-slate-900 backdrop-blur-xl"
           >
             <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1.5">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-600 flex items-center gap-1.5">
                 <RealWhatsAppLogo className="w-4 h-4" />
                 WhatsApp Booking
               </span>
@@ -139,13 +139,13 @@ export const FloatingContact: React.FC = () => {
                   key={p.number}
                   type="button"
                   onClick={() => openWhatsApp(p.clean)}
-                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-xs font-semibold text-slate-900 border border-emerald-200 transition-all group text-left cursor-pointer"
+                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-xs font-semibold text-slate-900 border border-amber-200 transition-all group text-left cursor-pointer"
                 >
                   <div>
-                    <div className="text-[10px] text-emerald-700 font-medium">{p.label}</div>
-                    <div className="text-xs font-bold text-slate-900 group-hover:text-emerald-700">{p.number}</div>
+                    <div className="text-[10px] text-amber-700 font-medium">{p.label}</div>
+                    <div className="text-xs font-bold text-slate-900 group-hover:text-amber-700">{p.number}</div>
                   </div>
-                  <ChevronRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-4 h-4 text-amber-600 group-hover:translate-x-0.5 transition-transform" />
                 </button>
               ))}
             </div>
@@ -160,7 +160,7 @@ export const FloatingContact: React.FC = () => {
         className="relative group"
       >
         {/* Glowing Radar Pulse Ring */}
-        <span className="absolute -inset-1 rounded-full bg-emerald-400/40 animate-ping -z-10 pointer-events-none" />
+        <span className="absolute -inset-1 rounded-full bg-amber-400/40 animate-ping -z-10 pointer-events-none" />
         
         <button
           type="button"
@@ -169,7 +169,7 @@ export const FloatingContact: React.FC = () => {
             setWaMenuOpen(false);
           }}
           aria-label="Call DEEPPURA GROUP Booking Desk"
-          className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-emerald-700 via-emerald-600 to-emerald-500 text-white shadow-[0_4px_20px_rgba(16,185,129,0.5)] hover:shadow-[0_6px_25px_rgba(16,185,129,0.8)] flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 cursor-pointer border-2 border-white"
+          className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-400 text-white shadow-[0_4px_20px_rgba(212,175,55,0.5)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.8)] flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 cursor-pointer border-2 border-white"
         >
           <Phone className="w-6 h-6 sm:w-6.5 sm:h-6.5 text-white filter drop-shadow stroke-[2.5]" />
         </button>

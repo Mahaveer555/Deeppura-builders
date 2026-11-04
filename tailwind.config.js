@@ -7,23 +7,50 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Custom Architectural Royal Gold palette (tuned to Mukundra Prime building elevation)
+        amber: {
+          50: '#FFFDF7',
+          100: '#FEF7DA',
+          200: '#FDE89A',
+          300: '#FBD55B',
+          400: '#F5BF26',
+          500: '#D4AF37', // True Royal Gold (Hex #D4AF37)
+          600: '#B8860B', // Rich Architectural Gold
+          700: '#966B08', // Deep Bronze Gold
+          800: '#785307', // Burnished Antique Gold
+          900: '#4D3404',
+          950: '#261902',
+        },
+        gold: {
+          50: '#FFFDF7',
+          100: '#FEF7DA',
+          200: '#FDE89A',
+          300: '#FBD55B',
+          400: '#F5BF26',
+          500: '#D4AF37',
+          600: '#B8860B',
+          700: '#966B08',
+          800: '#785307',
+          900: '#4D3404',
+          950: '#261902',
+        },
         brand: {
-          dark: '#07111F',
-          darker: '#00111D',
-          navy: '#0B1728',
-          card: '#0D1B2A',
-          green: '#059669',
-          greenDark: '#065F46',
-          greenLight: '#34D399',
-          greenIce: '#D1FAE5',
-          cyan: '#059669',
-          cyanLight: '#34D399',
-          cyanIce: '#D1FAE5',
+          dark: '#070D18',
+          darker: '#040810',
+          navy: '#0B1322',
+          card: '#0D1726',
+          gold: '#D4AF37',
+          goldDark: '#B8860B',
+          goldLight: '#F5BF26',
+          goldIce: '#FEF7DA',
+          amber: '#D4AF37',
+          amberDark: '#B8860B',
+          amberLight: '#F5BF26',
           white: '#FFFFFF',
           slate: '#94A3B8',
           border: 'rgba(255, 255, 255, 0.1)',
-          borderGreen: 'rgba(5, 150, 105, 0.3)',
-          borderCyan: 'rgba(5, 150, 105, 0.3)',
+          borderGold: 'rgba(212, 175, 55, 0.35)',
+          borderAmber: 'rgba(212, 175, 55, 0.35)',
         },
       },
       fontFamily: {
@@ -37,12 +64,12 @@ export default {
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.3)',
         'card': '0 10px 30px -10px rgba(0, 0, 0, 0.5)',
-        'luxury': '0 20px 40px -15px rgba(5, 150, 105, 0.25)',
-        'floating': '0 10px 25px -3px rgba(5, 150, 105, 0.4)',
-        'emerald': '0 0 25px rgba(16, 185, 129, 0.4)',
-        'emerald-lg': '0 0 40px rgba(16, 185, 129, 0.65)',
-        'cyan': '0 0 25px rgba(16, 185, 129, 0.4)',
-        'cyan-lg': '0 0 40px rgba(16, 185, 129, 0.65)',
+        'luxury': '0 20px 40px -15px rgba(212, 175, 55, 0.3)',
+        'floating': '0 10px 25px -3px rgba(212, 175, 55, 0.45)',
+        'gold': '0 0 25px rgba(212, 175, 55, 0.45)',
+        'gold-lg': '0 0 40px rgba(212, 175, 55, 0.7)',
+        'amber': '0 0 25px rgba(212, 175, 55, 0.45)',
+        'amber-lg': '0 0 40px rgba(212, 175, 55, 0.7)',
       },
       animation: {
         'marquee': 'marquee 30s linear infinite',

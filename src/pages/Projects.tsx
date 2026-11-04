@@ -32,23 +32,23 @@ export const Projects: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Building2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Building2 className="w-4 h-4 text-amber-400" />
               <span>Current Developments</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              Ongoing Residential <span className="text-emerald-400">Developments in Kota</span>
+              Ongoing Residential <span className="text-amber-400">Developments in Kota</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Explore ongoing residential landmarks by DEEPPURA GROUP, crafted with architectural excellence, wide arterial road connectivity, and community-centric living in Kota, Rajasthan.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-amber-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">PROJECTS</span>
+                <span className="text-amber-400">PROJECTS</span>
               </nav>
             </div>
           </motion.div>
@@ -67,7 +67,7 @@ export const Projects: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-700 block mb-1">
                 FLAGSHIP ONGOING RESIDENTIAL DEVELOPMENT
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900">
@@ -75,8 +75,8 @@ export const Projects: React.FC = () => {
               </h2>
             </div>
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
-                <BadgeCheck className="w-4 h-4 text-emerald-600" />
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-800 text-xs font-bold border border-amber-200">
+                <BadgeCheck className="w-4 h-4 text-amber-600" />
                 <span>RERA &amp; UIT Approved</span>
               </span>
             </div>
@@ -88,7 +88,7 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
+            className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xl hover:border-amber-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
           >
             {/* Visual */}
             <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-slate-200 group">
@@ -97,26 +97,26 @@ export const Projects: React.FC = () => {
                 alt="Mukundra Prime"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-slate-200">
+              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-amber-800 text-xs font-bold uppercase tracking-wider shadow-md border border-slate-200">
                 Ongoing Development
               </span>
               <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 text-xs text-white font-medium flex items-center justify-between">
                 <span>Developer: Mukundra Infra Project Pvt. Ltd.</span>
-                <span className="text-emerald-400 font-bold">1, 2 &amp; 3 BHK</span>
+                <span className="text-amber-400 font-bold">1, 2 &amp; 3 BHK</span>
               </div>
             </div>
 
             {/* Info */}
             <div className="lg:col-span-5 space-y-5">
               <div>
-                <span className="text-xs uppercase font-bold text-emerald-700 tracking-wider block">
+                <span className="text-xs uppercase font-bold text-amber-700 tracking-wider block">
                   DEEPPURA GROUP RESIDENTIAL
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mt-1">
                   Mukundra Prime
                 </h3>
                 <div className="flex items-start gap-1.5 text-xs text-slate-500 mt-2">
-                  <MapPin className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                   <span>{mukundraPrimeProject.address}</span>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export const Projects: React.FC = () => {
                 </div>
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
                   <span className="text-[11px] text-slate-500 block">Home Loan</span>
-                  <strong className="text-xs sm:text-sm text-emerald-700 font-bold">Up to 90% Loanable</strong>
+                  <strong className="text-xs sm:text-sm text-amber-700 font-bold">Up to 90% Loanable</strong>
                 </div>
               </div>
 
@@ -144,19 +144,19 @@ export const Projects: React.FC = () => {
                 </strong>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-amber-600" />
                     <span>100 Feet Wide Road</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-amber-600" />
                     <span>Temple &amp; Splash Pool</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-amber-600" />
                     <span>Kids Play Park &amp; Gym</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-amber-600" />
                     <span>24×7 Security &amp; CCTV</span>
                   </li>
                 </ul>
@@ -166,7 +166,7 @@ export const Projects: React.FC = () => {
               <div className="pt-3 flex flex-wrap items-center gap-3">
                 <Link
                   to="/projects/mukundra-prime"
-                  className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(5,150,105,0.35)] hover:-translate-y-0.5"
+                  className="px-6 py-3 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(212,175,55,0.35)] hover:-translate-y-0.5"
                 >
                   <span>Explore Full Project</span>
                   <ArrowRight className="w-4 h-4 text-slate-950" />
@@ -174,7 +174,7 @@ export const Projects: React.FC = () => {
 
                 <Link
                   to="/unit-plan"
-                  className="px-6 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-emerald-700 font-bold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5 shadow-sm"
+                  className="px-6 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-amber-700 font-bold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5 shadow-sm"
                 >
                   <span>View Floor Plans</span>
                 </Link>
@@ -183,9 +183,9 @@ export const Projects: React.FC = () => {
                   href="https://wa.me/917357690111?text=Hello%20DEEPPURA%20GROUP,%20I%20would%20like%20more%20details%20about%20Mukundra%20Prime%20residences."
                   target="_blank"
                   rel="noreferrer"
-                  className="px-4 py-3 rounded-full text-slate-600 hover:text-emerald-700 text-xs font-bold flex items-center gap-1.5 transition-colors"
+                  className="px-4 py-3 rounded-full text-slate-600 hover:text-amber-700 text-xs font-bold flex items-center gap-1.5 transition-colors"
                 >
-                  <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                  <MessageSquare className="w-3.5 h-3.5 text-amber-600" />
                   <span>WhatsApp Desk</span>
                 </a>
               </div>
