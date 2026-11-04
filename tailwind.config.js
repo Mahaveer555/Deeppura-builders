@@ -7,45 +7,93 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Halka Green (Soft Light Green Background Palette)
+        // Swatch 1: Warm Ivory / Alabaster Background
+        ivory: {
+          50: '#FAF9F6',
+          100: '#F8F7F2', // Exact Swatch 1 Hex
+          200: '#EFECE4', // Soft alternating sand ivory
+          300: '#E2DCBE', // Subtle warm border
+          400: '#D5CDB0',
+          500: '#B8AD8B',
+        },
+        // Swatch 2: Deep Regal Forest Pine Green
+        forest: {
+          50: '#EDF3F1',
+          100: '#D8E5E1',
+          200: '#B2CCC3',
+          300: '#81AFA0',
+          400: '#4B8574',
+          500: '#2B6356',
+          600: '#1F4E44',
+          700: '#173D35', // Exact Swatch 2 Hex
+          800: '#112E28',
+          900: '#0B1E1A',
+          950: '#061210',
+        },
+        // Swatch 3: Warm Royal Camel Gold
+        camelGold: {
+          50: '#FAF6EE',
+          100: '#F4ECDA',
+          200: '#E8D8B3',
+          300: '#DCBF89',
+          400: '#D1AC69',
+          500: '#C5A46D', // Exact Swatch 3 Hex
+          600: '#A88246',
+          700: '#8A6632', // Deep high-contrast readable gold
+          800: '#6E4F23',
+          900: '#4C3414',
+          950: '#2A1702',
+        },
+        // Backward-compatible mappings:
         halkaGreen: {
-          50: '#F5FAF6',
-          100: '#EAF3EC', // Primary soft halka green background
-          200: '#DFECE2', // Slightly deeper alternating halka green
-          300: '#CCE2D2', // Subtle sage border
-          400: '#A3CEAD',
-          500: '#75AD8D',
-          600: '#52796F',
+          50: '#FAF9F6',
+          100: '#F8F7F2', // Mapped to Swatch 1
+          200: '#EFECE4',
+          300: '#E2DCBE',
+          400: '#D5CDB0',
+          500: '#173D35', // Mapped to Swatch 2
+          600: '#112E28',
         },
-        // Royal Architectural Gold Palette
         gold: {
-          50: '#FFFDF7',
-          100: '#FEF7DA',
-          200: '#FDE89A',
-          300: '#FBD55B',
-          400: '#F5BF26', // Radiant gold
-          500: '#D4AF37', // True Royal Gold
-          600: '#B8860B', // Rich Architectural Gold
-          700: '#996515', // Deep Burnished Gold (Super readable on light green)
-          800: '#7A500A',
-          900: '#4D3204',
+          50: '#FAF6EE',
+          100: '#F4ECDA',
+          200: '#E8D8B3',
+          300: '#DCBF89',
+          400: '#D1AC69',
+          500: '#C5A46D', // Mapped to Swatch 3
+          600: '#A88246',
+          700: '#8A6632',
+          800: '#6E4F23',
+          900: '#4C3414',
           950: '#2A1702',
         },
-        // Amber alias mapped to Gold for complete compatibility
         amber: {
-          50: '#FFFDF7',
-          100: '#FEF7DA',
-          200: '#FDE89A',
-          300: '#FBD55B',
-          400: '#F5BF26',
-          500: '#D4AF37',
-          600: '#B8860B',
-          700: '#996515',
-          800: '#7A500A',
-          900: '#4D3204',
+          50: '#FAF6EE',
+          100: '#F4ECDA',
+          200: '#E8D8B3',
+          300: '#DCBF89',
+          400: '#D1AC69',
+          500: '#C5A46D', // Mapped to Swatch 3
+          600: '#A88246',
+          700: '#8A6632',
+          800: '#6E4F23',
+          900: '#4C3414',
           950: '#2A1702',
         },
-        // Deeppura Corporate Blue Palette (Matches official logo)
+        emerald: {
+          50: '#EDF3F1',
+          100: '#D8E5E1',
+          200: '#B2CCC3',
+          300: '#81AFA0',
+          400: '#4B8574',
+          500: '#2B6356',
+          600: '#1F4E44',
+          700: '#173D35', // Mapped to Swatch 2
+          800: '#112E28',
+          900: '#0B1E1A',
+          950: '#061210',
+        },
+        // Deeppura Corporate Sky Blue (Logo Cyan)
         sky: {
           50: '#F0F9FF',
           100: '#E0F2FE',
@@ -53,43 +101,32 @@ export default {
           300: '#7DD3FC',
           400: '#38BDF8',
           500: '#0EA5E9',
-          600: '#0284C7', // Official Deeppura logo cyan-blue
+          600: '#0284C7',
           700: '#0369A1',
           800: '#075985',
           900: '#0C4A6E',
           950: '#082F49',
         },
-        emerald: {
-          50: '#F0FDF4',
-          100: '#DCFCE7',
-          200: '#BBF7D0',
-          300: '#86EFAC',
-          400: '#34D399',
-          500: '#10B981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065F46',
-          900: '#064E3B',
-          950: '#022C22',
-        },
         brand: {
-          dark: '#051912',
-          darker: '#03100B',
-          navy: '#08231A',
-          card: '#0C2D22',
-          gold: '#D4AF37',
-          goldDark: '#B8860B',
-          goldLight: '#F5BF26',
-          goldIce: '#FEF7DA',
+          dark: '#0B1E1A',
+          darker: '#061210',
+          navy: '#173D35',
+          card: '#1F4E44',
+          forest: '#173D35',
+          ivory: '#F8F7F2',
+          gold: '#C5A46D',
+          goldDark: '#8A6632',
+          goldLight: '#DCBF89',
+          goldIce: '#FAF6EE',
           blue: '#0284C7',
           blueDark: '#0369A1',
-          halkaGreen: '#EAF3EC',
-          halkaGreenAlt: '#DFECE2',
-          borderHalkaGreen: '#CCE2D2',
+          halkaGreen: '#F8F7F2',
+          halkaGreenAlt: '#EFECE4',
+          borderHalkaGreen: '#E2DCBE',
           white: '#FFFFFF',
           slate: '#94A3B8',
-          border: 'rgba(255, 255, 255, 0.1)',
-          borderGold: 'rgba(212, 175, 55, 0.35)',
+          border: 'rgba(23, 61, 53, 0.12)',
+          borderGold: 'rgba(197, 164, 109, 0.35)',
         },
       },
       fontFamily: {

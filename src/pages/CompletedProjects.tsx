@@ -30,13 +30,13 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="rounded-2xl border border-[#CCE2D2] overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-emerald-400 transition-all"
+      className="rounded-2xl border border-[#E2DCBE] overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-emerald-400 transition-all"
     >
       {/* Image Container & Switcher */}
       <div className={`lg:col-span-6 space-y-3 ${idx % 2 === 1 ? 'lg:order-2' : ''}`}>
         <div 
           onClick={() => onOpenLightbox(currentImg.url, currentImg.captionEn)}
-          className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 border border-[#CCE2D2] cursor-pointer group"
+          className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 border border-[#E2DCBE] cursor-pointer group"
         >
           <AnimatePresence mode="wait">
             <motion.img
@@ -52,14 +52,14 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
           </AnimatePresence>
 
           {/* Hover Zoom Pill */}
-          <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#CCE2D2] text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+          <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#E2DCBE] text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
             <Maximize2 className="w-3.5 h-3.5 text-sky-600" />
             <span>Click to Enlarge</span>
           </div>
 
           {/* Multiple views indicator badge */}
           {images.length > 1 && (
-            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-[#CCE2D2] text-emerald-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-[#E2DCBE] text-emerald-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
               <Camera className="w-3 h-3 text-sky-600" />
               <span>{images.length} Architectural Views</span>
             </div>
@@ -76,7 +76,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
                 className={`relative rounded-lg overflow-hidden w-20 h-14 shrink-0 border-2 transition-all cursor-pointer ${
                   selectedImageIndex === i 
                     ? 'border-emerald-500 shadow-md scale-105' 
-                    : 'border-[#CCE2D2] opacity-60 hover:opacity-100'
+                    : 'border-[#E2DCBE] opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img.url} alt={img.captionEn} className="w-full h-full object-cover" />
@@ -96,7 +96,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
           <span>Completed &amp; Handed Over</span>
         </div>
 
-        <h3 className="text-2xl sm:text-3xl font-black text-[#8C6514]">
+        <h3 className="text-2xl sm:text-3xl font-black text-[#8A6632]">
           {project.nameEn}
         </h3>
 
@@ -199,10 +199,10 @@ export const CompletedProjects: React.FC = () => {
   }, [headerSlides.length]);
 
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       
       {/* Header with Auto-Sliding Completed Projects Carousel (Soft Shadow, Bright & Clear) */}
-      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#CCE2D2]">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E2DCBE]">
         <AnimatePresence mode="wait">
           <motion.div 
             key={currentHeaderSlide}
@@ -272,7 +272,7 @@ export const CompletedProjects: React.FC = () => {
       </section>
 
       {/* Grid of 4 Completed Projects */}
-      <section className="py-16 sm:py-24 bg-[#DFECE2]">
+      <section className="py-16 sm:py-24 bg-[#EFECE4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -285,7 +285,7 @@ export const CompletedProjects: React.FC = () => {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-800 block mb-1">
               PORTFOLIO SHOWCASE
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#8C6514]">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#8A6632]">
               Delivered Residential &amp; Farmhouse Communities
             </h2>
           </motion.div>

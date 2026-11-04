@@ -13,7 +13,7 @@ import { mukundraPrimeProject } from '../data/projects';
 
 export const Projects: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       
       {/* Page Header with High-Resolution Towers Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -56,7 +56,7 @@ export const Projects: React.FC = () => {
       </section>
 
       {/* Flagship Featured Project Showcase */}
-      <section className="py-16 sm:py-24 bg-[#DFECE2]">
+      <section className="py-16 sm:py-24 bg-[#EFECE4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -70,7 +70,7 @@ export const Projects: React.FC = () => {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-800 block mb-1">
                 FLAGSHIP ONGOING RESIDENTIAL DEVELOPMENT
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#8C6514]">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#8A6632]">
                 Mukundra Prime – Raipura, Kota
               </h2>
             </div>
@@ -88,16 +88,16 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-2xl bg-white border border-[#CCE2D2] overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
+            className="rounded-2xl bg-white border border-[#E2DCBE] overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
           >
             {/* Visual */}
-            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-[#CCE2D2] group">
+            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-[#E2DCBE] group">
               <img
                 src={mukundraPrimeProject.heroImage}
                 alt="Mukundra Prime"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-[#CCE2D2]">
+              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-[#E2DCBE]">
                 Ongoing Development
               </span>
               <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 text-xs text-white font-medium flex items-center justify-between">
@@ -112,7 +112,7 @@ export const Projects: React.FC = () => {
                 <span className="text-xs uppercase font-bold text-amber-800 tracking-wider block">
                   DEEPPURA GROUP RESIDENTIAL
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#8C6514] mt-1">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#8A6632] mt-1">
                   Mukundra Prime
                 </h3>
                 <div className="flex items-start gap-1.5 text-xs text-slate-500 mt-2">
@@ -126,20 +126,20 @@ export const Projects: React.FC = () => {
               </p>
 
               {/* Key Value Points */}
-              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-[#CCE2D2]">
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2]">
+              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-[#E2DCBE]">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE]">
                   <span className="text-[11px] text-slate-500 block">Pricing &amp; Allotment</span>
-                  <strong className="text-xs sm:text-sm text-[#8C6514] font-bold">Enquire for Details</strong>
+                  <strong className="text-xs sm:text-sm text-[#8A6632] font-bold">Enquire for Details</strong>
                 </div>
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2]">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE]">
                   <span className="text-[11px] text-slate-500 block">Home Loan</span>
                   <strong className="text-xs sm:text-sm text-amber-800 font-bold">Up to 90% Loanable</strong>
                 </div>
               </div>
 
               {/* Confirmed Amenities Checklist */}
-              <div className="space-y-2 pt-2 border-t border-[#CCE2D2]">
-                <strong className="text-xs text-[#8C6514] uppercase font-bold block">
+              <div className="space-y-2 pt-2 border-t border-[#E2DCBE]">
+                <strong className="text-xs text-[#8A6632] uppercase font-bold block">
                   Project Highlights:
                 </strong>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">

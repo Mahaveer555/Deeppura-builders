@@ -248,7 +248,7 @@ export const FloorPlans: React.FC = () => {
   const pdfUrl = '/assets/projects/mukundra-prime/mukundra-prime-brochure.pdf';
 
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       {/* Top Banner */}
       <section className="relative h-72 sm:h-80 md:h-96 flex items-center justify-center overflow-hidden border-b border-slate-800">
         <div
@@ -342,7 +342,7 @@ export const FloorPlans: React.FC = () => {
       </section>
 
       {/* Official Brochure 3D FlipBook Stage & Quick Spreads Strip */}
-      <section className="py-12 bg-gradient-to-b from-[#EAF3EC] via-[#DFECE2] to-[#EAF3EC] border-b border-[#CCE2D2]">
+      <section className="py-12 bg-gradient-to-b from-[#F8F7F2] via-[#EFECE4] to-[#F8F7F2] border-b border-[#E2DCBE]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -352,7 +352,7 @@ export const FloorPlans: React.FC = () => {
                 <BookOpen className="w-4 h-4 text-amber-600" />
                 <span>Realistic 3D FlipBook Experience</span>
               </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-[#8C6514] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#8A6632] tracking-tight">
                 Browse Official Brochure Pages (1 to 8)
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
@@ -364,7 +364,7 @@ export const FloorPlans: React.FC = () => {
               {/* Sound Toggle */}
               <button
                 onClick={() => setIsSoundEnabled(!isSoundEnabled)}
-                className="px-3.5 py-1.5 rounded-full bg-white border border-[#CCE2D2] hover:border-amber-500 text-slate-700 text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
+                className="px-3.5 py-1.5 rounded-full bg-white border border-[#E2DCBE] hover:border-amber-500 text-slate-700 text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
                 title={isSoundEnabled ? 'Mute Page Flip Sound' : 'Enable Page Flip Sound'}
                 aria-label="Toggle paper sound"
               >
@@ -556,8 +556,8 @@ export const FloorPlans: React.FC = () => {
                     onClick={() => flipToSpread(idx)}
                     className={`group relative rounded-xl overflow-hidden transition-all duration-300 text-left cursor-pointer ${
                       isActive
-                        ? 'ring-3 ring-[#D4AF37] ring-offset-2 ring-offset-[#DFECE2] border-2 border-amber-500 shadow-xl scale-[1.04] bg-white z-10'
-                        : 'bg-white border border-[#CCE2D2] hover:border-amber-500 hover:shadow-md hover:scale-[1.02]'
+                        ? 'ring-3 ring-[#C5A46D] ring-offset-2 ring-offset-[#EFECE4] border-2 border-amber-500 shadow-xl scale-[1.04] bg-white z-10'
+                        : 'bg-white border border-[#E2DCBE] hover:border-amber-500 hover:shadow-md hover:scale-[1.02]'
                     }`}
                     title={`Click to flip 3D book to Spread ${spread.id}: ${spread.title}`}
                   >
@@ -604,14 +604,14 @@ export const FloorPlans: React.FC = () => {
       </section>
 
       {/* Detailed Unit Plans: 3D Isometric + 2D Floor Plans from Brochure */}
-      <section className="py-10 sm:py-14 bg-white border-b border-[#CCE2D2]">
+      <section className="py-10 sm:py-14 bg-white border-b border-[#E2DCBE]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold uppercase tracking-wider border border-emerald-300 mb-2">
               <Layers className="w-3.5 h-3.5" />
               <span>Brochure Verified Unit Plans</span>
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#8C6514] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#8A6632] tracking-tight">
               1, 2 &amp; 3 BHK Architectural Layouts
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm mt-1.5">
@@ -629,10 +629,10 @@ export const FloorPlans: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4 }}
-                  className="rounded-2xl bg-white border border-[#CCE2D2] hover:border-emerald-500/80 shadow-xs hover:shadow-md transition-all duration-300 p-4 sm:p-5 md:p-6"
+                  className="rounded-2xl bg-white border border-[#E2DCBE] hover:border-emerald-500/80 shadow-xs hover:shadow-md transition-all duration-300 p-4 sm:p-5 md:p-6"
                 >
                   {/* Plan Header */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 sm:pb-4 border-b border-[#CCE2D2]">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 sm:pb-4 border-b border-[#E2DCBE]">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
                         <span className="px-2.5 py-0.5 rounded-full bg-emerald-700 text-white text-[11px] font-black uppercase tracking-wider">
@@ -642,7 +642,7 @@ export const FloorPlans: React.FC = () => {
                           {plan.area}
                         </span>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-black text-[#8C6514]">
+                      <h3 className="text-lg sm:text-xl font-black text-[#8A6632]">
                         {plan.name}
                       </h3>
                       <p className="text-xs text-slate-600 mt-0.5 max-w-2xl">
@@ -664,8 +664,8 @@ export const FloorPlans: React.FC = () => {
                   {/* Dual Grid: Normal Balanced 3D Isometric View + 2D Blueprint */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                     {/* Left: 3D Isometric View */}
-                    <div className="rounded-xl bg-slate-50/60 border border-[#CCE2D2] overflow-hidden group">
-                      <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#CCE2D2] flex items-center justify-between">
+                    <div className="rounded-xl bg-slate-50/60 border border-[#E2DCBE] overflow-hidden group">
+                      <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#E2DCBE] flex items-center justify-between">
                         <span className="text-[11px] font-black uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
                           <Layers className="w-3.5 h-3.5 text-sky-600" />
                           <span>3D Furnished Isometric View</span>
@@ -692,8 +692,8 @@ export const FloorPlans: React.FC = () => {
                     </div>
 
                     {/* Right: 2D Blueprint Layout */}
-                    <div className="rounded-xl bg-slate-50/60 border border-[#CCE2D2] overflow-hidden group">
-                      <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#CCE2D2] flex items-center justify-between">
+                    <div className="rounded-xl bg-slate-50/60 border border-[#E2DCBE] overflow-hidden group">
+                      <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#E2DCBE] flex items-center justify-between">
                         <span className="text-[11px] font-black uppercase tracking-wider text-slate-800 flex items-center gap-1.5">
                           <FileText className="w-3.5 h-3.5 text-sky-600" />
                           <span>2D Architectural Layout &amp; Measurements</span>
@@ -721,7 +721,7 @@ export const FloorPlans: React.FC = () => {
                   </div>
 
                   {/* Clean Dimension Specifications Footer Across Both Images */}
-                  <div className="mt-3.5 p-3 rounded-xl bg-slate-50 border border-[#CCE2D2] flex flex-col md:flex-row md:items-center justify-between gap-2">
+                  <div className="mt-3.5 p-3 rounded-xl bg-slate-50 border border-[#E2DCBE] flex flex-col md:flex-row md:items-center justify-between gap-2">
                     <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 shrink-0">
                       Key Dimension Specifications:
                     </span>
@@ -773,13 +773,13 @@ export const FloorPlans: React.FC = () => {
       </section>
 
       {/* Additional 2D Unit Plan Blueprints */}
-      <section className="py-12 sm:py-16 bg-slate-50 border-b border-[#CCE2D2]">
+      <section className="py-12 sm:py-16 bg-slate-50 border-b border-[#E2DCBE]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
               Master Blueprints
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-[#8C6514] mt-1">
+            <h3 className="text-xl sm:text-2xl font-black text-[#8A6632] mt-1">
               Detailed Structural Unit Plan Blueprints
             </h3>
             <p className="text-slate-600 text-xs sm:text-sm mt-1">
@@ -795,7 +795,7 @@ export const FloorPlans: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
-                className="rounded-2xl bg-white border border-[#CCE2D2] hover:border-emerald-400 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer p-4 flex flex-col justify-between"
+                className="rounded-2xl bg-white border border-[#E2DCBE] hover:border-emerald-400 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer p-4 flex flex-col justify-between"
                 onClick={() => openLightbox(8 + officialBrochurePlans.length * 2 + index)}
               >
                 <div className="aspect-[4/3] bg-slate-50 rounded-xl overflow-hidden flex items-center justify-center p-2 mb-3">

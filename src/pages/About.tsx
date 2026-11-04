@@ -15,7 +15,7 @@ import { MarqueeBanner } from '../components/MarqueeBanner';
 
 export const About: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       
       {/* Hero Header with High-Resolution Aerial Masterplan Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -60,7 +60,7 @@ export const About: React.FC = () => {
       <MarqueeBanner variant="light" />
 
       {/* Main Narrative & Director Profile */}
-      <section className="py-20 lg:py-28 bg-white border-b border-[#CCE2D2]">
+      <section className="py-20 lg:py-28 bg-white border-b border-[#E2DCBE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -72,7 +72,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="rounded-2xl overflow-hidden shadow-xl border border-[#CCE2D2] bg-white group">
+              <div className="rounded-2xl overflow-hidden shadow-xl border border-[#E2DCBE] bg-white group">
                 <img
                   src="/assets/projects/mukundra-prime/interiors/living-room.jpg"
                   alt="DEEPPURA GROUP Architectural Living Space"
@@ -81,12 +81,12 @@ export const About: React.FC = () => {
               </div>
 
               {/* Leadership Spotlight Card */}
-              <div className="p-6 rounded-2xl bg-slate-50 border border-[#CCE2D2] shadow-md space-y-3">
+              <div className="p-6 rounded-2xl bg-slate-50 border border-[#E2DCBE] shadow-md space-y-3">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800">
                   <ShieldCheck className="w-4 h-4 text-sky-600" />
                   <span>Founder &amp; Director</span>
                 </div>
-                <h3 className="text-2xl font-black text-[#8C6514]">
+                <h3 className="text-2xl font-black text-[#8A6632]">
                   Prakash Jain (Deeppura)
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed italic border-l-2 border-emerald-500 pl-3">
@@ -116,7 +116,7 @@ export const About: React.FC = () => {
                 Company Overview
               </span>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
                 Crafting Dreams, Creating <span className="text-sky-600">Landmarks in Kota</span>
               </h2>
 
@@ -125,7 +125,7 @@ export const About: React.FC = () => {
                   DEEPPURA GROUP is an established real estate developer headquartered in Talwandi, Kota, Rajasthan. Under the leadership of Founder &amp; Director Prakash Jain (Deeppura), the group is committed to developing thoughtfully planned residential spaces that combine modern living comfort, high-grade structural engineering, and verified legal approvals.
                 </p>
                 <p>
-                  Our flagship ongoing development, <strong className="text-[#8C6514]">Mukundra Prime</strong>, developed by Mukundra Infra Project Private Limited, represents the pinnacle of modern multi-storey living in the rapidly flourishing Raipura corridor. Situated directly on a 100-foot wide masterplan road near Decent School and Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, an on-premises temple, swimming pool, gymnasium, supermarket, and landscaped green parks.
+                  Our flagship ongoing development, <strong className="text-[#8A6632]">Mukundra Prime</strong>, developed by Mukundra Infra Project Private Limited, represents the pinnacle of modern multi-storey living in the rapidly flourishing Raipura corridor. Situated directly on a 100-foot wide masterplan road near Decent School and Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, an on-premises temple, swimming pool, gymnasium, supermarket, and landscaped green parks.
                 </p>
                 <p>
                   Our completed portfolio includes distinguished residential landmarks such as Mukundra Heights in R.K. Puram, Ashiyana Homes in Thekra, Mahalaxmi Apartment in Chawani, and the expansive Royal Heritage Farm House in Alaniya, Kota.
@@ -133,8 +133,8 @@ export const About: React.FC = () => {
               </div>
 
               {/* 3 Core Values */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 border-t border-[#CCE2D2]">
-                <div className="p-4 rounded-xl bg-slate-50 border border-[#CCE2D2]">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 border-t border-[#E2DCBE]">
+                <div className="p-4 rounded-xl bg-slate-50 border border-[#E2DCBE]">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Quality &amp; Safety
                   </h4>
@@ -143,7 +143,7 @@ export const About: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-[#CCE2D2]">
+                <div className="p-4 rounded-xl bg-slate-50 border border-[#E2DCBE]">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Prime Road Frontage
                   </h4>
@@ -152,7 +152,7 @@ export const About: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-[#CCE2D2]">
+                <div className="p-4 rounded-xl bg-slate-50 border border-[#E2DCBE]">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Transparent Conduct
                   </h4>
@@ -186,7 +186,7 @@ export const About: React.FC = () => {
       </section>
 
       {/* Offices & Operations */}
-      <section className="py-20 lg:py-28 bg-[#DFECE2]">
+      <section className="py-20 lg:py-28 bg-[#EFECE4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 25 }}
@@ -198,7 +198,7 @@ export const About: React.FC = () => {
             <span className="text-[10px] font-bold uppercase tracking-wider text-amber-950 bg-amber-100/90 border border-amber-300 px-3 py-1 rounded-full">
               Operations &amp; Governance
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#8C6514]">
+            <h2 className="text-3xl sm:text-4xl font-black text-[#8A6632]">
               Our Kota <span className="text-sky-600">Headquarters</span>
             </h2>
           </motion.div>
@@ -209,15 +209,15 @@ export const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="p-8 rounded-2xl bg-white border border-[#CCE2D2] shadow-md space-y-3"
+              className="p-8 rounded-2xl bg-white border border-[#E2DCBE] shadow-md space-y-3"
             >
               <span className="text-xs font-bold uppercase tracking-wider text-amber-800">Corporate Headquarters</span>
-              <h3 className="text-xl font-black text-[#8C6514]">Corporate Office</h3>
+              <h3 className="text-xl font-black text-[#8A6632]">Corporate Office</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan
               </p>
               <div className="pt-2 text-xs text-slate-500">
-                <strong className="text-[#8C6514]">Email:</strong> deeppura9@gmail.com
+                <strong className="text-[#8A6632]">Email:</strong> deeppura9@gmail.com
               </div>
             </motion.div>
 
@@ -226,15 +226,15 @@ export const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="p-8 rounded-2xl bg-white border border-[#CCE2D2] shadow-md space-y-3"
+              className="p-8 rounded-2xl bg-white border border-[#E2DCBE] shadow-md space-y-3"
             >
               <span className="text-xs font-bold uppercase tracking-wider text-amber-800">Project Site Office</span>
-              <h3 className="text-xl font-black text-[#8C6514]">Mukundra Prime Site Office</h3>
+              <h3 className="text-xl font-black text-[#8A6632]">Mukundra Prime Site Office</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan
               </p>
               <div className="pt-2 text-xs text-slate-500">
-                <strong className="text-[#8C6514]">Booking Desk:</strong> 7357690111 / 8239999520
+                <strong className="text-[#8A6632]">Booking Desk:</strong> 7357690111 / 8239999520
               </div>
             </motion.div>
           </div>

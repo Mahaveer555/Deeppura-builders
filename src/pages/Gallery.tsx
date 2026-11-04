@@ -253,7 +253,7 @@ export const Gallery: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       
       {/* Header with High-Resolution Architectural Elevation Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -296,7 +296,7 @@ export const Gallery: React.FC = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#CCE2D2] sticky top-16 z-30 shadow-xs">
+      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E2DCBE] sticky top-16 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2.5">
             {categories.map((cat) => (
@@ -307,7 +307,7 @@ export const Gallery: React.FC = () => {
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeCategory === cat
                     ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
-                    : 'bg-slate-100 border border-[#CCE2D2] text-slate-700 hover:text-[#8C6514] hover:bg-slate-200'
+                    : 'bg-slate-100 border border-[#E2DCBE] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
                 }`}
               >
                 {cat}
@@ -318,7 +318,7 @@ export const Gallery: React.FC = () => {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16 sm:py-24 bg-[#DFECE2]">
+      <section className="py-16 sm:py-24 bg-[#EFECE4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredImages.map((img, idx) => (
@@ -330,7 +330,7 @@ export const Gallery: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
                 onClick={() => openLightbox(allImages.findIndex(i => i.url === img.url))}
-                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-[#CCE2D2] hover:border-emerald-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
+                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-[#E2DCBE] hover:border-emerald-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
               >
                 <img
                   src={img.url}
@@ -342,7 +342,7 @@ export const Gallery: React.FC = () => {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-between">
                   <div className="self-end">
-                    <span className="p-2.5 rounded-full bg-white/90 text-emerald-800 inline-block shadow-md border border-[#CCE2D2]">
+                    <span className="p-2.5 rounded-full bg-white/90 text-emerald-800 inline-block shadow-md border border-[#E2DCBE]">
                       <Maximize2 className="w-4 h-4 text-amber-800" />
                     </span>
                   </div>
@@ -357,7 +357,7 @@ export const Gallery: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-[#CCE2D2] text-[10px] font-bold uppercase tracking-wider text-emerald-800 shadow-sm group-hover:opacity-0 transition-opacity">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-[#E2DCBE] text-[10px] font-bold uppercase tracking-wider text-emerald-800 shadow-sm group-hover:opacity-0 transition-opacity">
                   {img.category}
                 </div>
               </motion.div>

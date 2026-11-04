@@ -6,48 +6,48 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #1A2E22;
-    background-color: #EAF3EC; /* Halka Green Background */
+    color: #173D35; /* Swatch 2: Deep Regal Forest Pine Green */
+    background-color: #F8F7F2; /* Swatch 1: Warm Ivory / Alabaster Background */
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    background-color: #EAF3EC; /* Halka Green Background */
+    background-color: #F8F7F2; /* Swatch 1: Warm Ivory Background */
     color: #1E293B;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     line-height: 1.65;
   }
 
-  /* Headings in prestigious Gold by default */
+  /* Headings in Deep Camel Gold / Forest Green */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
-    color: #8C6514; /* Deep Architectural Gold */
+    color: #8A6632; /* Deep Camel Gold (High Contrast Readable) */
     letter-spacing: -0.03em;
     font-weight: 900;
   }
 
   ::selection {
-    background-color: #D4AF37;
-    color: #051912;
+    background-color: #C5A46D; /* Swatch 3: Camel Gold */
+    color: #173D35; /* Swatch 2: Forest Green */
   }
 
-  /* Custom Clean Gold & Halka Green Scrollbar */
+  /* Custom Clean Camel Gold & Ivory Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #DFECE2;
+    background: #EFECE4;
   }
   ::-webkit-scrollbar-thumb {
-    background: #D4AF37;
+    background: #C5A46D;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #B8860B;
+    background: #8A6632;
   }
 }
 
@@ -60,24 +60,24 @@
 
 /* Gold Text Shimmer */
 .gold-text-shimmer {
-  background: linear-gradient(135deg, #FFF0B8 0%, #D4AF37 50%, #B8860B 100%);
+  background: linear-gradient(135deg, #FAF6EE 0%, #C5A46D 50%, #8A6632 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Gold & Blue Gradient Accent */
 .gold-blue-gradient {
-  background: linear-gradient(135deg, #D4AF37 0%, #0284C7 100%);
+  background: linear-gradient(135deg, #C5A46D 0%, #0284C7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Halka Green Background Helper */
+/* Background Helpers */
 .bg-halka-green {
-  background-color: #EAF3EC;
+  background-color: #F8F7F2;
 }
 .bg-halka-green-alt {
-  background-color: #DFECE2;
+  background-color: #EFECE4;
 }
 
 /* Image Shimmer sweep effect */
@@ -98,18 +98,11 @@
     rgba(255, 255, 255, 0.4) 50%,
     transparent 100%
   );
-  transform: skewX(-20deg);
-  transition: transform 0.8s ease;
-}
-.shine-sweep:hover::after {
-  left: 200%;
-  transition: left 0.9s ease-in-out;
+  animation: sweep 4s infinite ease-in-out;
 }
 
-/* Subtle architectural hover zoom */
-.hover-zoom-img {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.hover-zoom-img:hover {
-  transform: scale(1.035);
+@keyframes sweep {
+  0% { left: -150%; }
+  50% { left: 150%; }
+  100% { left: 150%; }
 }

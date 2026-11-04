@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       {/* Top Corporate Strip (Clean Luxury Light Theme) */}
-      <div className={`hidden lg:block bg-[#DFECE2] border-b border-[#CCE2D2] text-xs transition-all duration-300 ${
+      <div className={`hidden lg:block bg-[#EFECE4] border-b border-[#E2DCBE] text-xs transition-all duration-300 ${
         isScrolled ? 'h-0 py-0 overflow-hidden border-none opacity-0' : 'py-2 opacity-100'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-slate-600">
@@ -111,8 +111,8 @@ export const Header: React.FC<HeaderProps> = () => {
       </div>
 
       {/* Main Sticky Header */}
-      <header className={`sticky top-0 z-40 bg-[#EAF3EC]/95 backdrop-blur-xl transition-all duration-300 border-b ${
-        isScrolled ? 'border-[#CCE2D2] shadow-md py-2.5' : 'border-[#CCE2D2] py-3.5'
+      <header className={`sticky top-0 z-40 bg-[#F8F7F2]/95 backdrop-blur-xl transition-all duration-300 border-b ${
+        isScrolled ? 'border-[#E2DCBE] shadow-md py-2.5' : 'border-[#E2DCBE] py-3.5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
@@ -138,7 +138,7 @@ export const Header: React.FC<HeaderProps> = () => {
                         className={({ isActive }) => `whitespace-nowrap flex items-center gap-1 px-3 py-2 rounded-lg text-[13px] xl:text-[13.5px] 2xl:text-[14px] font-heading font-bold transition-all ${
                           isActive || location.pathname.startsWith('/projects')
                             ? 'text-amber-800 bg-amber-100/70 border-b-2 border-amber-500' 
-                            : 'text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2]'
+                            : 'text-slate-700 hover:text-amber-800 hover:bg-[#EFECE4]'
                         }`}
                       >
                         <span>{item.label}</span>
@@ -151,7 +151,7 @@ export const Header: React.FC<HeaderProps> = () => {
                             <Link
                               key={sub.to}
                               to={sub.to}
-                              className="block px-4 py-2.5 text-xs font-heading font-semibold text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2] transition-colors"
+                              className="block px-4 py-2.5 text-xs font-heading font-semibold text-slate-700 hover:text-amber-800 hover:bg-[#EFECE4] transition-colors"
                             >
                               {sub.label}
                             </Link>
@@ -169,7 +169,7 @@ export const Header: React.FC<HeaderProps> = () => {
                     className={({ isActive }) => `whitespace-nowrap px-3 py-2 rounded-lg text-[13px] xl:text-[13.5px] 2xl:text-[14px] font-heading font-bold transition-all ${
                       isActive 
                         ? 'text-amber-800 bg-amber-100/70 border-b-2 border-amber-500' 
-                        : 'text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2]'
+                        : 'text-slate-700 hover:text-amber-800 hover:bg-[#EFECE4]'
                     }`}
                   >
                     {item.label}

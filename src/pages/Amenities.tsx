@@ -151,10 +151,10 @@ export const Amenities: React.FC = () => {
   }, [amenityHeaderSlides.length]);
 
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
       
       {/* Header with Auto-Sliding Amenities Carousel (Soft Shadow, Bright & Clear) */}
-      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#CCE2D2]">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E2DCBE]">
         <AnimatePresence mode="wait">
           <motion.div 
             key={currentHeaderSlide}
@@ -224,7 +224,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#CCE2D2] sticky top-16 z-30 shadow-xs">
+      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E2DCBE] sticky top-16 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2.5">
             {[
@@ -241,7 +241,7 @@ export const Amenities: React.FC = () => {
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeFilter === tab.id
                     ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
-                    : 'bg-slate-100 border border-[#CCE2D2] text-slate-700 hover:text-[#8C6514] hover:bg-slate-200'
+                    : 'bg-slate-100 border border-[#E2DCBE] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
                 }`}
               >
                 {tab.label}
@@ -252,7 +252,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Amenities Grid */}
-      <section className="py-16 sm:py-24 bg-[#DFECE2] border-b border-[#CCE2D2]">
+      <section className="py-16 sm:py-24 bg-[#EFECE4] border-b border-[#E2DCBE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAmenities.map((amenity, idx) => (
@@ -273,7 +273,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-20 lg:py-28 bg-white border-b border-[#CCE2D2]">
+      <section className="py-20 lg:py-28 bg-white border-b border-[#E2DCBE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -286,7 +286,7 @@ export const Amenities: React.FC = () => {
             <span className="text-[10px] font-bold uppercase tracking-wider text-amber-950 bg-amber-100/90 border border-amber-300 px-3.5 py-1 rounded-full">
               Construction Standards
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632]">
               Architectural <span className="text-sky-600">Specifications</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
@@ -302,13 +302,13 @@ export const Amenities: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: (idx % 3) * 0.1 }}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-[#CCE2D2] shadow-sm space-y-4 hover:border-emerald-400 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-[#E2DCBE] shadow-sm space-y-4 hover:border-emerald-400 hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <div className="flex items-center justify-between pb-3 border-b border-[#CCE2D2]">
+                <div className="flex items-center justify-between pb-3 border-b border-[#E2DCBE]">
                   <span className="text-3xl font-black text-sky-600">
                     {item.num}
                   </span>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#8C6514]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#8A6632]">
                     {item.title}
                   </span>
                 </div>
@@ -316,7 +316,7 @@ export const Amenities: React.FC = () => {
                 <div className="space-y-3">
                   {item.specs.map((spec, sIdx) => (
                     <div key={sIdx} className="text-xs">
-                      <strong className="block text-[#8C6514] mb-0.5 font-bold">{spec.label}</strong>
+                      <strong className="block text-[#8A6632] mb-0.5 font-bold">{spec.label}</strong>
                       <p className="text-slate-600 leading-relaxed">{spec.value}</p>
                     </div>
                   ))}

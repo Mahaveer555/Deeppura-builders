@@ -268,7 +268,7 @@ export const Home: React.FC = () => {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="min-h-screen bg-[#EAF3EC] text-slate-800">
+    <div className="min-h-screen bg-[#F8F7F2] text-slate-800">
       
       {/* SECTION B: HERO SECTION - CINEMATIC SLIDER */}
       <section 
@@ -455,7 +455,7 @@ export const Home: React.FC = () => {
       <MarqueeBanner variant="light" />
 
       {/* SECTION B.3: EXECUTIVE KEY METRICS & REPUTATION COUNTERS */}
-      <section className="py-16 sm:py-20 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
         {/* Glow ambient */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
 
@@ -471,10 +471,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
                 <AnimatedCounter to={14} suffix="+" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -494,10 +494,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Award className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
                 <AnimatedCounter to={4} suffix="" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -517,10 +517,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Landmark className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
                 <AnimatedCounter to={90} suffix="%" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -540,10 +540,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Compass className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
                 <AnimatedCounter to={100} suffix=" Ft." />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -559,7 +559,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION C: ABOUT DEEPPURA GROUP */}
-      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -772,7 +772,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D: FEATURED ONGOING PROJECT - MUKUNDRA PRIME */}
-      <section className="py-20 lg:py-28 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -788,7 +788,7 @@ export const Home: React.FC = () => {
               Featured Ongoing Development
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Mukundra Prime <span className="text-[#8C6514]">Residences</span>
+              Mukundra Prime <span className="text-[#8A6632]">Residences</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               An ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Raipura, Kota, Rajasthan.
@@ -831,19 +831,19 @@ export const Home: React.FC = () => {
 
                 <div className="space-y-2.5 text-xs sm:text-sm text-slate-600">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Located on 100 Feet Wide Road near Decent School &amp; Allen Career Institute</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Adjacent to Rajasthan's largest 200-Bigha Herbal Park</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Up to 90% Home Loan pre-approved with leading national banks</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Gated community with 24×7 security, CCTV, and boundary wall</span>
                   </div>
                 </div>
@@ -890,7 +890,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D.2: CRAFTED FOR FAMILY LIVING (FEATURING BOTH NEW LUXURY LIVING EXPERIENCES) */}
-      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div
@@ -904,7 +904,7 @@ export const Home: React.FC = () => {
               <span>Thoughtful Living Experience</span>
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Homes Designed for <span className="text-[#8C6514]">Family Happiness</span>
+              Homes Designed for <span className="text-[#8A6632]">Family Happiness</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Expansive living rooms, ambient warm lighting, and private balconies built to celebrate every moment of family life.
@@ -1007,7 +1007,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION E: UNIT PLAN PREVIEW */}
-      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -1034,7 +1034,7 @@ export const Home: React.FC = () => {
               className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
             >
               <span>View All Unit Plans</span>
-              <ArrowRight className="w-3.5 h-3.5 text-[#8C6514]" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#8A6632]" />
             </Link>
           </motion.div>
 
@@ -1126,7 +1126,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION F: AMENITIES SECTION - 14 AMENITIES */}
-      <section className="py-20 lg:py-28 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -1203,7 +1203,7 @@ export const Home: React.FC = () => {
       />
 
       {/* SECTION H: APPROVED BANKING PARTNERS (AUTHENTIC REAL LOGOS & CONTINUOUS RUNNING MARQUEE) */}
-      <section className="py-16 sm:py-20 bg-[#EAF3EC] border-b border-[#CCE2D2] overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#F8F7F2] border-b border-[#E2DCBE] overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1212,14 +1212,14 @@ export const Home: React.FC = () => {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 shadow-xs mb-3">
-            <Landmark className="w-3.5 h-3.5 text-[#8C6514]" />
+            <Landmark className="w-3.5 h-3.5 text-[#8A6632]" />
             <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-800">
               Financial Assistance &amp; Loan Approvals
             </span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900">
-            Approved Banking Partners <span className="text-[#8C6514]">(Up to 90% Loan)</span>
+            Approved Banking Partners <span className="text-[#8A6632]">(Up to 90% Loan)</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto mt-2">
@@ -1232,7 +1232,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION I: ENQUIRY CTA SECTION */}
-      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#DFECE2] relative overflow-hidden">
+      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#EFECE4] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -1249,7 +1249,7 @@ export const Home: React.FC = () => {
               </div>
 
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
                 Find Your Ideal Space at <span className="text-sky-600">Mukundra Prime</span>
               </h2>
 
@@ -1260,7 +1260,7 @@ export const Home: React.FC = () => {
               {/* Direct Booking Desk Contacts */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 space-y-4 shadow-xl">
                 <div className="text-xs uppercase font-bold tracking-wider text-amber-800 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-[#8C6514]" />
+                  <PhoneCall className="w-4 h-4 text-[#8A6632]" />
                   <span>Direct Booking Lines</span>
                 </div>
 
