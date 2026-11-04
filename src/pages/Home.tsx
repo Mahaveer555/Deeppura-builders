@@ -220,7 +220,7 @@ export const Home: React.FC = () => {
   const heroSlides = [
     {
       id: 1,
-      image: '/assets/projects/mukundra-prime/mukundra-prime-elevation-golden.jpg',
+      image: '/assets/hero/mukundra-prime-luxury-hero.jpg',
       tag: 'Mukundra Prime • Royal Architectural Gold Living',
       title: 'Building Landmarks.',
       titleHighlight: 'Crafting Golden Futures.',
@@ -236,7 +236,7 @@ export const Home: React.FC = () => {
     },
     {
       id: 3,
-      image: '/assets/hero/mukundra-prime-twilight-gate.jpg',
+      image: '/assets/hero/mukundra-prime-twilight-hero.jpg',
       tag: 'Gated Township • 14 Verified Resort Amenities',
       title: 'Comfort & Security.',
       titleHighlight: 'Every Single Day.',
@@ -264,7 +264,7 @@ export const Home: React.FC = () => {
     if (isPaused) return;
     const timer = setInterval(() => {
       nextSlide();
-    }, 2200);
+    }, 4500);
     return () => clearInterval(timer);
   }, [isPaused, nextSlide]);
 
@@ -294,6 +294,10 @@ export const Home: React.FC = () => {
             />
           </motion.div>
         </AnimatePresence>
+
+        {/* Subtle Cinematic Vignette & Gradient Overlay for Ultra-Luxury Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/45 to-transparent z-[1] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-slate-950/20 z-[1] pointer-events-none" />
 
         {/* Carousel Navigation Arrow: Left (<) */}
         <button
