@@ -1,7 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Maximize2, Layers } from 'lucide-react';
 import { GalleryModal, GalleryImage } from '../components/GalleryModal';
+
+const featured3DPlans = [
+  {
+    id: '3d-2bhk',
+    title: '2 BHK 3D Isometric Furnished Cutaway',
+    category: '2 BHK Residences',
+    src: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
+    description: 'Detailed 3D layout featuring 2 bedrooms, living & dining hall, modern modular kitchen, 2 washrooms, and private balcony.'
+  },
+  {
+    id: '3d-3bhk',
+    title: '3 BHK 3D Isometric Furnished Cutaway',
+    category: '3 BHK Deluxe Residences',
+    src: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
+    description: 'Expansive 3D layout featuring master bedroom suite, 2 guest bedrooms, sprawling family living room, modular kitchen, and dual balconies.'
+  }
+];
 
 const unitPlanImages = [
   { id: 1, src: '/assets/unit-plans/unit_plan_1.jpg' },
@@ -21,12 +39,20 @@ export const FloorPlans: React.FC = () => {
     index: 0,
   });
 
-  const lightboxImages: GalleryImage[] = unitPlanImages.map((u) => ({
-    url: u.src,
-    captionEn: `Unit Plan ${u.id}`,
-    captionHi: `Unit Plan ${u.id}`,
-    category: 'Unit Plan',
-  }));
+  const allFloorImages: GalleryImage[] = [
+    ...featured3DPlans.map((p) => ({
+      url: p.src,
+      captionEn: p.title,
+      captionHi: p.title,
+      category: '3D Floor Plan',
+    })),
+    ...unitPlanImages.map((u) => ({
+      url: u.src,
+      captionEn: `Architectural Blueprint Unit Plan ${u.id}`,
+      captionHi: `Architectural Blueprint Unit Plan ${u.id}`,
+      category: '2D Unit Plan',
+    }))
+  ];
 
   const openLightbox = (idx: number) => {
     setGalleryModal({ isOpen: true, index: idx });
@@ -85,8 +111,73 @@ export const FloorPlans: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Pure Unit Plan Showcase Sections (Alternating Light Slate Backgrounds, Clean) */}
+      {/* Featured 3D Isometric Cutaway Showcase */}
+      <section className="py-12 sm:py-16 bg-slate-900 text-white border-b border-slate-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider border border-emerald-500/30 mb-3">
+              <Layers className="w-3.5 h-3.5" />
+              <span>Realistic 3D Isometric Layouts</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
+              Explore 3D Furnished Unit Plans
+            </h2>
+            <p className="text-slate-400 text-sm mt-2">
+              Walk through thoughtfully planned room distributions, modular kitchen setups, and expansive living zones with authentic isometric cutaways.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {featured3DPlans.map((plan, idx) => (
+              <motion.div
+                key={plan.id}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.15 }}
+                className="rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500/60 overflow-hidden shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
+                onClick={() => openLightbox(idx)}
+              >
+                <div className="relative aspect-[16/9] overflow-hidden bg-slate-900/60 p-3">
+                  <img
+                    src={plan.src}
+                    alt={plan.title}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-xl"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 rounded-full bg-emerald-500 text-slate-950 text-xs font-black uppercase tracking-wider shadow-md">
+                      {plan.category}
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Maximize2 className="w-4 h-4" />
+                  </div>
+                </div>
+                <div className="p-5 border-t border-slate-800/80 bg-slate-950/80">
+                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                    {plan.title}
+                  </h3>
+                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                    {plan.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 2D Unit Plan Blueprint Showcase Sections */}
       <div className="w-full">
+        <div className="py-8 bg-slate-100/70 border-b border-slate-200 text-center">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+            Official Architectural Blueprints
+          </span>
+          <h3 className="text-xl sm:text-2xl font-black text-slate-900 mt-0.5">
+            Detailed 2D Floor Plans &amp; Dimensions
+          </h3>
+        </div>
+
         {unitPlanImages.map((item, index) => {
           const isEven = index % 2 === 0;
           return (
@@ -101,7 +192,7 @@ export const FloorPlans: React.FC = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                   className="w-full max-w-5xl overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 sm:p-6"
-                  onClick={() => openLightbox(index)}
+                  onClick={() => openLightbox(featured3DPlans.length + index)}
                 >
                   <img
                     src={item.src}
@@ -120,7 +211,7 @@ export const FloorPlans: React.FC = () => {
       <GalleryModal
         isOpen={galleryModal.isOpen}
         currentIndex={galleryModal.index}
-        images={lightboxImages}
+        images={allFloorImages}
         onClose={() => setGalleryModal({ isOpen: false, index: 0 })}
         onNavigate={(newIdx) => setGalleryModal({ isOpen: true, index: newIdx })}
       />

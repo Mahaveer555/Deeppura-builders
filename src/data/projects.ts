@@ -96,6 +96,7 @@ export const floorPlansData: FloorPlanItem[] = [
     tagEn: 'Unit Plan',
     tagHi: 'Unit Plan',
     image: '/assets/unit-plans/unit_plan_3.jpg',
+    isoImage: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
     featuresEn: [],
     featuresHi: []
   },
@@ -109,6 +110,7 @@ export const floorPlansData: FloorPlanItem[] = [
     tagEn: 'Unit Plan',
     tagHi: 'Unit Plan',
     image: '/assets/unit-plans/unit_plan_4.jpg',
+    isoImage: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
     featuresEn: [],
     featuresHi: []
   },
@@ -122,6 +124,7 @@ export const floorPlansData: FloorPlanItem[] = [
     tagEn: 'Unit Plan',
     tagHi: 'Unit Plan',
     image: '/assets/unit-plans/unit_plan_5.jpg',
+    isoImage: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
     featuresEn: [],
     featuresHi: []
   },
@@ -135,6 +138,7 @@ export const floorPlansData: FloorPlanItem[] = [
     tagEn: 'Unit Plan',
     tagHi: 'Unit Plan',
     image: '/assets/unit-plans/unit_plan_6.jpg',
+    isoImage: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
     featuresEn: [],
     featuresHi: []
   },
@@ -148,6 +152,7 @@ export const floorPlansData: FloorPlanItem[] = [
     tagEn: 'Unit Plan',
     tagHi: 'Unit Plan',
     image: '/assets/unit-plans/unit_plan_7.jpg',
+    isoImage: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
     featuresEn: [],
     featuresHi: []
   },
@@ -193,7 +198,7 @@ export const mukundraPrimeProject: Project = {
   taglineHi: 'Thoughtfully Planned Modern Residences in Kota',
   descriptionEn: 'Mukundra Prime is an ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Kota, Rajasthan. Located on a 100 ft. wide road near Decent School and in close proximity to Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, on-premises temple, swimming pool, gym, supermarket, and kids play park.',
   descriptionHi: 'Mukundra Prime is an ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Kota, Rajasthan. Located on a 100 ft. wide road near Decent School and in close proximity to Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, on-premises temple, swimming pool, gym, supermarket, and kids play park.',
-  heroImage: '/assets/hero/hero-building.jpg',
+  heroImage: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
   address: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
   googleMapQuery: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
   configurations: ['1 BHK Standard', '2 BHK Standard (701.5 sq. ft.)', '3 BHK Standard', '3 BHK Deluxe (960 sq. ft.)'],
@@ -218,6 +223,36 @@ export const mukundraPrimeProject: Project = {
     'Swimming pool, kids play area, open gym & supermarket'
   ],
   images: [
+    {
+      url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/aerial-masterplan-100ft.jpg',
+      captionEn: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      captionHi: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower.jpg',
+      captionEn: 'Mukundra Prime On-Site High-Rise Tower Construction Progress',
+      captionHi: 'Mukundra Prime On-Site High-Rise Tower Construction Progress',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 2 BHK 3D Isometric Furnished Cutaway Layout',
+      captionHi: 'Mukundra Prime 2 BHK 3D Isometric Furnished Cutaway Layout',
+      category: 'floorPlan'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 3 BHK 3D Isometric Furnished Cutaway Layout',
+      captionHi: 'Mukundra Prime 3 BHK 3D Isometric Furnished Cutaway Layout',
+      category: 'floorPlan'
+    },
     {
       url: '/assets/hero/mukundra-prime-daylight-towers.jpg',
       captionEn: 'Mukundra Prime Multi-Wing Towers on 100 Ft. Road (Daylight View)',

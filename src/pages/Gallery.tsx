@@ -13,6 +13,36 @@ export const Gallery: React.FC = () => {
 
   const allImages: GalleryImage[] = [
     {
+      url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/aerial-masterplan-100ft.jpg',
+      captionEn: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      captionHi: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower.jpg',
+      captionEn: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress',
+      captionHi: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress',
+      category: 'Real Site Progress'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 2 BHK 3D Furnished Isometric Floor Plan',
+      captionHi: 'Mukundra Prime 2 BHK 3D Furnished Isometric Floor Plan',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 3 BHK 3D Furnished Isometric Floor Plan',
+      captionHi: 'Mukundra Prime 3 BHK 3D Furnished Isometric Floor Plan',
+      category: 'Floor Plans'
+    },
+    {
       url: '/assets/hero/mukundra-prime-daylight-towers.jpg',
       captionEn: 'Mukundra Prime 100 Ft. Road Architectural Elevation (Daylight View)',
       captionHi: 'Mukundra Prime 100 Ft. Road Architectural Elevation (Daylight View)',
@@ -140,7 +170,7 @@ export const Gallery: React.FC = () => {
     }
   ];
 
-  const categories = ['All', 'Exterior', 'Interior', 'Amenities', 'Floor Plans', 'Completed Projects'];
+  const categories = ['All', 'Exterior', 'Real Site Progress', 'Interior', 'Amenities', 'Floor Plans', 'Completed Projects'];
 
   const filteredImages = activeCategory === 'All' 
     ? allImages 

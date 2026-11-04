@@ -39,6 +39,36 @@ export const Home: React.FC = () => {
   // Curated project gallery items for lightbox
   const galleryImages: GalleryImage[] = [
     {
+      url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/aerial-masterplan-100ft.jpg',
+      captionEn: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      captionHi: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower.jpg',
+      captionEn: 'Mukundra Prime On-Site High-Rise Tower Construction Progress',
+      captionHi: 'Mukundra Prime On-Site High-Rise Tower Construction Progress',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 2 BHK 3D Isometric Furnished Cutaway Layout',
+      captionHi: 'Mukundra Prime 2 BHK 3D Isometric Furnished Cutaway Layout',
+      category: 'Interior'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 3 BHK 3D Isometric Furnished Cutaway Layout',
+      captionHi: 'Mukundra Prime 3 BHK 3D Isometric Furnished Cutaway Layout',
+      category: 'Interior'
+    },
+    {
       url: '/assets/hero/mukundra-prime-daylight-towers.jpg',
       captionEn: 'Mukundra Prime Multi-Wing Towers on 100 Ft. Road (Daylight View)',
       captionHi: 'Mukundra Prime Multi-Wing Towers on 100 Ft. Road (Daylight View)',
@@ -173,27 +203,27 @@ export const Home: React.FC = () => {
   const heroSlides = [
     {
       id: 1,
-      image: '/assets/hero/mukundra-prime-daylight-towers.jpg',
+      image: '/assets/hero/mukundra-prime-twilight-gate.jpg',
       tag: 'Mukundra Prime • Raipura, Kota',
       title: 'Building Spaces.',
       titleHighlight: 'Creating Better Living.',
-      subtitle: 'Thoughtfully planned modern 1, 2 & 3 BHK residences in Kota, Rajasthan.',
+      subtitle: 'Thoughtfully planned modern 1, 2 & 3 BHK residences on 100 Ft. Road in Kota, Rajasthan.',
     },
     {
       id: 2,
-      image: '/assets/home/family-living-twilight.jpg',
-      tag: 'Gated Township • Cherished Living',
-      title: 'Comfort & Security.',
-      titleHighlight: 'Every Single Day.',
-      subtitle: 'Spacious, sunlit 1, 2 & 3 BHK living rooms designed for unforgettable family memories.',
+      image: '/assets/projects/mukundra-prime/aerial-masterplan-100ft.jpg',
+      tag: '100 Ft. Road • Masterplanned Township',
+      title: 'Visionary Design.',
+      titleHighlight: 'Grand Living.',
+      subtitle: 'Multi-tower gated residential development adjacent to Kota’s 200-Bigha Herbal Park & Allen Institute.',
     },
     {
       id: 3,
-      image: '/assets/hero/mukundra-prime-aerial-masterplan.jpg',
-      tag: 'Strategic 100 Ft. Road Location',
-      title: 'Thoughtfully Planned.',
-      titleHighlight: 'Modern Residences.',
-      subtitle: 'Adjacent to Kota’s 200-Bigha Herbal Park & Allen Career Institute.',
+      image: '/assets/hero/mukundra-prime-daylight-towers.jpg',
+      tag: 'Gated Township • 14 Verified Resort Amenities',
+      title: 'Comfort & Security.',
+      titleHighlight: 'Every Single Day.',
+      subtitle: 'Temple, swimming pool, open gym, kids park, and 24×7 security within gates.',
     },
     {
       id: 4,
@@ -201,7 +231,7 @@ export const Home: React.FC = () => {
       tag: 'Luxury Interiors • Modern Lifestyle',
       title: 'Crafted for Joy.',
       titleHighlight: 'Life in Full Bloom.',
-      subtitle: 'Premium finishes, elegant ambient lighting, and resort-grade amenities within gates.',
+      subtitle: 'Premium finishes, elegant ambient lighting, and complete loanability up to 90% with approved banks.',
     }
   ];
 
