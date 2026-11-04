@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:text-amber-600 hover:border-amber-400 transition-all cursor-pointer hover:shadow-md"
+                className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:text-emerald-600 hover:border-emerald-400 transition-all cursor-pointer hover:shadow-md"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -97,9 +97,9 @@ export const Footer: React.FC = () => {
                 <li key={link.to}>
                   <Link 
                     to={link.to} 
-                    className="inline-flex items-center gap-2 text-slate-600 hover:text-amber-700 transition-colors group"
+                    className="inline-flex items-center gap-2 text-slate-600 hover:text-emerald-700 transition-colors group"
                   >
-                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                     <span>{link.label}</span>
                   </Link>
                 </li>
@@ -114,31 +114,31 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/projects/mukundra-prime" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-amber-700 transition-colors group">
-                  <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0 group-hover:scale-125 transition-transform shadow-xs" />
+                <Link to="/projects/mukundra-prime" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-emerald-700 transition-colors group">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 group-hover:scale-125 transition-transform shadow-xs" />
                   <span>Mukundra Prime (Ongoing)</span>
                 </Link>
               </li>
               <li>
-                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-amber-700 transition-colors group">
+                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-emerald-700 transition-colors group">
                   <span className="w-2 h-2 rounded-full bg-slate-400 shrink-0 group-hover:scale-125 transition-transform" />
                   <span>Mukundra Heights (R.K. Puram)</span>
                 </Link>
               </li>
               <li>
-                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-amber-700 transition-colors group">
+                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-emerald-700 transition-colors group">
                   <span className="w-2 h-2 rounded-full bg-slate-400 shrink-0 group-hover:scale-125 transition-transform" />
                   <span>Ashiyana Homes (Thekra)</span>
                 </Link>
               </li>
               <li>
-                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-amber-700 transition-colors group">
+                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-emerald-700 transition-colors group">
                   <span className="w-2 h-2 rounded-full bg-slate-400 shrink-0 group-hover:scale-125 transition-transform" />
                   <span>Mahalaxmi Apartment (Chawani)</span>
                 </Link>
               </li>
               <li>
-                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-amber-700 transition-colors group">
+                <Link to="/completed-projects" className="inline-flex items-center gap-2.5 text-slate-600 hover:text-emerald-700 transition-colors group">
                   <span className="w-2 h-2 rounded-full bg-slate-400 shrink-0 group-hover:scale-125 transition-transform" />
                   <span>Royal Heritage Farm House (Alaniya)</span>
                 </Link>
@@ -155,15 +155,15 @@ export const Footer: React.FC = () => {
             <div className="space-y-4 text-sm">
               {/* Phone */}
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0 text-amber-700 shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-700 shadow-sm">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Call Us</div>
-                  <a href="tel:7357690111" className="text-slate-900 hover:text-amber-700 font-bold transition-colors block">
+                  <a href="tel:7357690111" className="text-slate-900 hover:text-emerald-700 font-bold transition-colors block">
                     +91 73576 90111
                   </a>
-                  <a href="tel:8239999520" className="text-slate-600 hover:text-amber-700 text-xs transition-colors block">
+                  <a href="tel:8239999520" className="text-slate-600 hover:text-emerald-700 text-xs transition-colors block">
                     +91 82399 99520
                   </a>
                 </div>
@@ -171,12 +171,12 @@ export const Footer: React.FC = () => {
 
               {/* Email */}
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0 text-amber-700 shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-700 shadow-sm">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Email Address</div>
-                  <a href="mailto:deeppura9@gmail.com" className="text-slate-900 hover:text-amber-700 transition-colors break-all font-semibold">
+                  <a href="mailto:deeppura9@gmail.com" className="text-slate-900 hover:text-emerald-700 transition-colors break-all font-semibold">
                     deeppura9@gmail.com
                   </a>
                 </div>
@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
 
               {/* Location */}
               <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0 text-amber-700 shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center shrink-0 text-emerald-700 shadow-sm">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
@@ -193,7 +193,7 @@ export const Footer: React.FC = () => {
                     G-1-319 A, IPIA Road No. 6, Anantpura, Kota (Rajasthan)
                   </p>
                   <div className="text-xs text-slate-500 font-medium mt-2">Site Address</div>
-                  <p className="text-amber-700 font-semibold text-xs leading-relaxed">
+                  <p className="text-emerald-700 font-semibold text-xs leading-relaxed">
                     Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota (Rajasthan)
                   </p>
                 </div>
@@ -237,8 +237,8 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center gap-2.5 px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold">
-            <span className="w-2 h-2 rounded-full bg-amber-500" />
+          <div className="hidden lg:flex items-center gap-2.5 px-4 py-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
             <span>Pre-Approved Bank Loans (SBI, HDFC, ICICI, BOB, Axis, Kotak)</span>
           </div>
         </div>
@@ -250,16 +250,16 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link to="/privacy-policy" className="hover:text-amber-700 transition-colors">
+            <Link to="/privacy-policy" className="hover:text-emerald-700 transition-colors">
               Privacy Policy
             </Link>
             <button 
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 hover:text-amber-700 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 hover:text-emerald-700 transition-colors cursor-pointer"
               aria-label="Scroll to top of page"
             >
               <span>Back to top</span>
-              <ArrowUp className="w-3.5 h-3.5 text-amber-600" />
+              <ArrowUp className="w-3.5 h-3.5 text-emerald-600" />
             </button>
           </div>
         </div>

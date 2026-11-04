@@ -46,9 +46,9 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
       case 'gold':
       default:
         return {
-          icon: 'text-amber-600',
-          bg: 'bg-amber-50 border-amber-200 text-amber-600',
-          dot: 'text-amber-500'
+          icon: 'text-emerald-600',
+          bg: 'bg-emerald-50 border-emerald-200 text-emerald-600',
+          dot: 'text-emerald-500'
         };
     }
   };

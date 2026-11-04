@@ -210,12 +210,12 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
         {/* Top Header Bar */}
         <div className="bg-slate-950/90 px-4 sm:px-6 py-3.5 border-b border-slate-800 flex items-center justify-between gap-3 shrink-0">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center shrink-0">
-              <FileText className="w-5 h-5 text-amber-400" />
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0">
+              <FileText className="w-5 h-5 text-emerald-400" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] uppercase font-black tracking-widest text-amber-400">
+                <span className="text-[10px] uppercase font-black tracking-widest text-emerald-400">
                   OFFICIAL PUBLICATION
                 </span>
                 <span className="hidden sm:inline-block text-[10px] text-slate-400">•</span>
@@ -235,7 +235,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             <a
               href={pdfUrl}
               download="Mukundra-Prime-Official-Brochure.pdf"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md"
               title="Download Full 8-Page Official Brochure (8.5 MB PDF)"
             >
               <Download className="w-3.5 h-3.5 text-slate-950" />
@@ -287,7 +287,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             {/* Left Previous Arrow */}
             <button
               onClick={handlePrev}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-amber-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-emerald-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
               aria-label="Previous Page Spread"
             >
               <ChevronLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
@@ -296,7 +296,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             {/* Right Next Arrow */}
             <button
               onClick={handleNext}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-amber-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-emerald-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
               aria-label="Next Page Spread"
             >
               <ChevronRight className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" />
@@ -306,7 +306,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
           {/* Spread Info Pill Overlay */}
           <div className="mt-2.5 flex items-center justify-center gap-3">
             <span className="px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700 text-[11px] font-bold text-slate-300">
-              Spread <strong className="text-amber-400">{currentPage + 1}</strong> of {brochureSpreads.length}
+              Spread <strong className="text-emerald-400">{currentPage + 1}</strong> of {brochureSpreads.length}
             </span>
             <span className="text-xs text-slate-400 hidden sm:inline-block">
               {currentSpread.subtitle}
@@ -317,13 +317,13 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
         {/* Highlights Bar for Active Spread */}
         <div className="bg-slate-900/90 px-4 sm:px-6 py-2.5 border-t border-slate-800/80 hidden md:block">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-slate-300">
-            <span className="text-amber-400 font-bold uppercase tracking-wider text-[10px] flex items-center gap-1">
+            <span className="text-emerald-400 font-bold uppercase tracking-wider text-[10px] flex items-center gap-1">
               <Eye className="w-3.5 h-3.5" />
               <span>Spread Details:</span>
             </span>
             {currentSpread.highlights.map((h, i) => (
               <div key={i} className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3 h-3 text-amber-400 shrink-0" />
+                <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
                 <span>{h}</span>
               </div>
             ))}
@@ -341,7 +341,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
                   onClick={() => setCurrentPage(idx)}
                   className={`relative flex-shrink-0 w-20 sm:w-28 md:w-32 rounded-lg overflow-hidden border-2 transition-all cursor-pointer group text-left ${
                     isActive
-                      ? 'border-amber-400 ring-2 ring-amber-400/30 scale-105'
+                      ? 'border-emerald-400 ring-2 ring-emerald-400/30 scale-105'
                       : 'border-slate-800 hover:border-slate-600 opacity-70 hover:opacity-100'
                   }`}
                 >
@@ -351,7 +351,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
                     className="w-full h-10 sm:h-14 object-cover"
                   />
                   <div className="p-1 bg-slate-900/95 text-[9px] sm:text-[10px] font-bold text-slate-300 truncate">
-                    <span className="text-amber-400 mr-1">{idx + 1}.</span>
+                    <span className="text-emerald-400 mr-1">{idx + 1}.</span>
                     <span>{spread.category}</span>
                   </div>
                 </button>
@@ -367,7 +367,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             <span className="hidden sm:inline">Have questions about this floor plan or pricing?</span>
             <a
               href="tel:7357690111"
-              className="font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 transition-colors"
+              className="font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
               <span>7357690111 / 8239999520</span>
@@ -380,16 +380,16 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
               href="https://wa.me/917357690111?text=Hello%2C%20please%20send%20the%20official%20Mukundra%20Prime%20Brochure%20PDF%20and%20latest%20pricing%20details."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-xl bg-amber-600/30 hover:bg-amber-600/40 text-amber-300 border border-amber-500/40 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
+              className="px-4 py-2 rounded-xl bg-emerald-600/30 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-500/40 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-amber-400" />
+              <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
               <span>WhatsApp PDF</span>
             </a>
 
             <a
               href={pdfUrl}
               download="Mukundra-Prime-Official-Brochure.pdf"
-              className="px-5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
+              className="px-5 py-2 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
             >
               <Download className="w-4 h-4 text-slate-950" />
               <span>Download PDF (8.5 MB)</span>

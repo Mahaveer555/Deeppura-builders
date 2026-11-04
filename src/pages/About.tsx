@@ -34,22 +34,22 @@ export const About: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-amber-300 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full inline-block">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-emerald-300 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full inline-block">
               About DEEPPURA GROUP
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
-              Building Trust Through <span className="text-amber-400">Thoughtful Development</span>
+              Building Trust Through <span className="text-emerald-400">Thoughtful Development</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed font-normal">
               A dedicated corporate real estate developer delivering enduring architectural quality, structured engineering, and thoughtful residential living in Kota, Rajasthan.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-amber-400 transition-colors">
+                <Link to="/" className="hover:text-emerald-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-amber-400">ABOUT US</span>
+                <span className="text-emerald-400">ABOUT US</span>
               </nav>
             </div>
           </motion.div>
@@ -82,22 +82,22 @@ export const About: React.FC = () => {
 
               {/* Leadership Spotlight Card */}
               <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-md space-y-3">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-700">
-                  <ShieldCheck className="w-4 h-4 text-amber-600" />
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700">
+                  <ShieldCheck className="w-4 h-4 text-emerald-600" />
                   <span>Founder &amp; Director</span>
                 </div>
                 <h3 className="text-2xl font-black text-slate-900">
                   Prakash Jain (Deeppura)
                 </h3>
-                <p className="text-xs text-slate-600 leading-relaxed italic border-l-2 border-amber-500 pl-3">
+                <p className="text-xs text-slate-600 leading-relaxed italic border-l-2 border-emerald-500 pl-3">
                   "Our mission is simple: to build with integrity, design with purpose, and create homes that stand as testaments of trust for the families of Kota."
                 </p>
                 <div className="pt-2">
                   <a
                     href="tel:8875000404"
-                    className="inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800 transition-colors"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 hover:text-emerald-800 transition-colors"
                   >
-                    <PhoneCall className="w-3.5 h-3.5 text-amber-600" />
+                    <PhoneCall className="w-3.5 h-3.5 text-emerald-600" />
                     <span>Director Helpline: +91 88750 00404</span>
                   </a>
                 </div>
@@ -112,12 +112,12 @@ export const About: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7 space-y-6"
             >
-              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full inline-block">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full inline-block">
                 Company Overview
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Crafting Dreams, Creating <span className="text-amber-600">Landmarks in Kota</span>
+                Crafting Dreams, Creating <span className="text-emerald-600">Landmarks in Kota</span>
               </h2>
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -135,7 +135,7 @@ export const About: React.FC = () => {
               {/* 3 Core Values */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 border-t border-slate-200">
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Quality &amp; Safety
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -144,7 +144,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Prime Road Frontage
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -153,7 +153,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Transparent Conduct
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -165,7 +165,7 @@ export const About: React.FC = () => {
               <div className="pt-3 flex flex-wrap items-center gap-4">
                 <Link
                   to="/projects"
-                  className="px-8 py-3.5 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all inline-flex items-center gap-2 shadow-[0_4px_14px_rgba(212,175,55,0.35)] hover:-translate-y-0.5"
+                  className="px-8 py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all inline-flex items-center gap-2 shadow-[0_4px_14px_rgba(16,185,129,0.35)] hover:-translate-y-0.5"
                 >
                   <span>Explore Our Projects</span>
                   <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -173,7 +173,7 @@ export const About: React.FC = () => {
 
                 <Link
                   to="/contact"
-                  className="px-8 py-3.5 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-amber-700 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-2 shadow-sm hover:-translate-y-0.5"
+                  className="px-8 py-3.5 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-emerald-700 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-2 shadow-sm hover:-translate-y-0.5"
                 >
                   <span>Contact Our Team</span>
                 </Link>
@@ -195,11 +195,11 @@ export const About: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
               Operations &amp; Governance
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900">
-              Our Kota <span className="text-amber-600">Headquarters</span>
+              Our Kota <span className="text-emerald-600">Headquarters</span>
             </h2>
           </motion.div>
 
@@ -211,7 +211,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="p-8 rounded-2xl bg-white border border-slate-200 shadow-md space-y-3"
             >
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-700">Corporate Headquarters</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Corporate Headquarters</span>
               <h3 className="text-xl font-black text-slate-900">Corporate Office</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan
@@ -228,7 +228,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="p-8 rounded-2xl bg-white border border-slate-200 shadow-md space-y-3"
             >
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-700">Project Site Office</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Project Site Office</span>
               <h3 className="text-xl font-black text-slate-900">Mukundra Prime Site Office</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan

@@ -60,7 +60,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
             {currentIndex + 1} / {images.length}
           </span>
           {currentImage.category && (
-            <span className="px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/40 text-xs font-bold text-amber-400">
+            <span className="px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/40 text-xs font-bold text-emerald-400">
               {currentImage.category}
             </span>
           )}
