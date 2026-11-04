@@ -8,34 +8,34 @@ interface MarqueeBannerProps {
 
 export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' }) => {
   const items = [
-    { text: "RERA & UIT Kota Approved Township", icon: ShieldCheck, color: 'emerald' },
+    { text: "RERA & UIT Kota Approved Township", icon: ShieldCheck, color: 'gold' },
     { text: "Direct 100 Ft. Wide Masterplan Road Access", icon: Building, color: 'gold' },
     { text: "Up to 90% Bank Loan Available (SBI, ICICI, Axis, BOB)", icon: Landmark, color: 'blue' },
     { text: "1, 2 & 3 BHK Verified Architectural Blueprints", icon: CheckCircle2, color: 'gold' },
-    { text: "14+ Resort Lifestyle Amenities (Pool, Temple, Gym)", icon: Sparkles, color: 'emerald' },
+    { text: "14+ Resort Lifestyle Amenities (Pool, Temple, Gym)", icon: Sparkles, color: 'gold' },
     { text: "Over 6.5 Lakh Sq. Ft. Land Delivered Across Kota", icon: Award, color: 'blue' },
-    { text: "Adjacent to 200 Bigha Herbal Park & Clean Green Corridor", icon: CheckCircle2, color: 'emerald' },
+    { text: "Adjacent to 200 Bigha Herbal Park & Clean Green Corridor", icon: CheckCircle2, color: 'gold' },
     { text: "Zero Brokerage Direct Developer Allotment Desk", icon: ShieldCheck, color: 'gold' },
   ];
 
   const bgStyles = {
-    dark: 'bg-[#061812] text-white border-y border-emerald-950/80',
+    dark: 'bg-[#18140E] text-white border-y border-[#C5A46D]/30',
     light: 'bg-white/95 text-slate-800 border-y border-slate-200/90 shadow-xs backdrop-blur-md',
-    champagne: 'bg-[#F4F8F5] text-slate-800 border-y border-emerald-100',
+    champagne: 'bg-[#FAF7F0] text-slate-800 border-y border-[#E8D8B3]',
   }[variant];
 
-  const fadeBg = variant === 'dark' ? 'from-[#061812]' : 'from-[#F3F7F4]';
+  const fadeBg = variant === 'dark' ? 'from-[#18140E]' : 'from-[#FAF7F0]';
 
   // Double items for a continuous, seamless loop
   const duplicatedItems = [...items, ...items];
 
   const getColorClasses = (color: string) => {
     switch (color) {
-      case 'emerald':
+      case 'gold_accent':
         return {
-          icon: 'text-emerald-600',
-          bg: 'bg-emerald-50 border-emerald-200 text-emerald-600',
-          dot: 'text-emerald-500'
+          icon: 'text-amber-700',
+          bg: 'bg-amber-50 border-amber-200 text-amber-700',
+          dot: 'text-amber-600'
         };
       case 'blue':
         return {
@@ -46,9 +46,9 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
       case 'gold':
       default:
         return {
-          icon: 'text-emerald-600',
-          bg: 'bg-emerald-50 border-emerald-200 text-emerald-600',
-          dot: 'text-emerald-500'
+          icon: 'text-amber-700',
+          bg: 'bg-amber-50 border-amber-200 text-amber-700',
+          dot: 'text-amber-600'
         };
     }
   };

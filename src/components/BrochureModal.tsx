@@ -318,9 +318,9 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
               href="https://wa.me/917357690111?text=Hello%2C%20please%20send%20the%20official%20Mukundra%20Prime%20Brochure%20PDF%20and%20latest%20pricing%20details."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-xl bg-emerald-600/30 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-500/40 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
+              className="px-4 py-2 rounded-xl bg-amber-600/30 hover:bg-amber-600/40 text-[#DCBF89] border border-[#C5A46D]/40 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+              <MessageCircle className="w-3.5 h-3.5 text-[#C5A46D]" />
               <span>WhatsApp PDF</span>
             </a>
 

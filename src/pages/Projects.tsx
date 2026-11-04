@@ -13,7 +13,7 @@ import { mukundraPrimeProject } from '../data/projects';
 
 export const Projects: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800 pt-20">
       
       {/* Page Header with High-Resolution Towers Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -32,23 +32,23 @@ export const Projects: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Building2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[#DCBF89] text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Building2 className="w-4 h-4 text-[#C5A46D]" />
               <span>Current Developments</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              Ongoing Residential <span className="text-emerald-400">Developments in Kota</span>
+              Ongoing Residential <span className="text-[#C5A46D]">Developments in Kota</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Explore ongoing residential landmarks by DEEPPURA GROUP, crafted with architectural excellence, wide arterial road connectivity, and community-centric living in Kota, Rajasthan.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-[#C5A46D] transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">PROJECTS</span>
+                <span className="text-[#C5A46D]">PROJECTS</span>
               </nav>
             </div>
           </motion.div>
@@ -56,7 +56,7 @@ export const Projects: React.FC = () => {
       </section>
 
       {/* Flagship Featured Project Showcase */}
-      <section className="py-16 sm:py-24 bg-[#EFECE4]">
+      <section className="py-16 sm:py-24 bg-[#F5EEDB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -75,7 +75,7 @@ export const Projects: React.FC = () => {
               </h2>
             </div>
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 text-xs font-bold border border-amber-200">
                 <BadgeCheck className="w-4 h-4 text-sky-600" />
                 <span>RERA &amp; UIT Approved</span>
               </span>
@@ -88,21 +88,21 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-2xl bg-white border border-[#E2DCBE] overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
+            className="rounded-2xl bg-white border border-[#E8D8B3] overflow-hidden shadow-xl hover:border-amber-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
           >
             {/* Visual */}
-            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-[#E2DCBE] group">
+            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-[#E8D8B3] group">
               <img
                 src={mukundraPrimeProject.heroImage}
                 alt="Mukundra Prime"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-[#E2DCBE]">
+              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-amber-900 text-xs font-bold uppercase tracking-wider shadow-md border border-[#E8D8B3]">
                 Ongoing Development
               </span>
               <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 text-xs text-white font-medium flex items-center justify-between">
                 <span>Developer: Mukundra Infra Project Pvt. Ltd.</span>
-                <span className="text-emerald-400 font-bold">1, 2 &amp; 3 BHK</span>
+                <span className="text-[#C5A46D] font-bold">1, 2 &amp; 3 BHK</span>
               </div>
             </div>
 
@@ -126,19 +126,19 @@ export const Projects: React.FC = () => {
               </p>
 
               {/* Key Value Points */}
-              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-[#E2DCBE]">
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE]">
+              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-[#E8D8B3]">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E8D8B3]">
                   <span className="text-[11px] text-slate-500 block">Pricing &amp; Allotment</span>
                   <strong className="text-xs sm:text-sm text-[#8A6632] font-bold">Enquire for Details</strong>
                 </div>
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE]">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#E8D8B3]">
                   <span className="text-[11px] text-slate-500 block">Home Loan</span>
                   <strong className="text-xs sm:text-sm text-amber-800 font-bold">Up to 90% Loanable</strong>
                 </div>
               </div>
 
               {/* Confirmed Amenities Checklist */}
-              <div className="space-y-2 pt-2 border-t border-[#E2DCBE]">
+              <div className="space-y-2 pt-2 border-t border-[#E8D8B3]">
                 <strong className="text-xs text-[#8A6632] uppercase font-bold block">
                   Project Highlights:
                 </strong>
@@ -166,7 +166,7 @@ export const Projects: React.FC = () => {
               <div className="pt-3 flex flex-wrap items-center gap-3">
                 <Link
                   to="/projects/mukundra-prime"
-                  className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(16,185,129,0.35)] hover:-translate-y-0.5"
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(197,164,109,0.35)] hover:-translate-y-0.5"
                 >
                   <span>Explore Full Project</span>
                   <ArrowRight className="w-4 h-4 text-slate-950" />

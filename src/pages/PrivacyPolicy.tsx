@@ -4,11 +4,11 @@ import { Lock } from 'lucide-react';
 
 export const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20 pb-20">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800 pt-20 pb-20">
       
       {/* Header */}
-      <section className="relative py-16 sm:py-24 bg-slate-50 border-b border-[#E2DCBE] overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-emerald-500/10 blur-[120px] pointer-events-none rounded-full" />
+      <section className="relative py-16 sm:py-24 bg-slate-50 border-b border-[#E8D8B3] overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-[#C5A46D]/10 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -17,7 +17,7 @@ export const PrivacyPolicy: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-200">
               <Lock className="w-3.5 h-3.5 text-sky-600" />
               <span>Legal &amp; Transparency</span>
             </div>
@@ -32,9 +32,9 @@ export const PrivacyPolicy: React.FC = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-[#EFECE4]">
+      <section className="py-16 bg-[#F5EEDB]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 md:p-12 rounded-2xl border border-[#E2DCBE] shadow-xl space-y-8 text-sm text-slate-600 leading-relaxed">
+          <div className="bg-white p-8 md:p-12 rounded-2xl border border-[#E8D8B3] shadow-xl space-y-8 text-sm text-slate-600 leading-relaxed">
             
             <div className="space-y-3">
               <h2 className="text-xl font-black text-[#8A6632]">
@@ -81,7 +81,7 @@ export const PrivacyPolicy: React.FC = () => {
                 4. WhatsApp Direct Communication
               </h2>
               <p>
-                Our website utilizes WhatsApp direct messaging to enable prompt customer support. When you submit an enquiry, WhatsApp is initiated on your personal device with an automated structured summary addressed to our verified booking numbers (<a href="tel:7357690111" className="text-amber-800 font-bold hover:text-emerald-800">7357690111</a> / <a href="tel:8239999520" className="text-amber-800 font-bold hover:text-emerald-800">8239999520</a>). Communication through WhatsApp is governed by WhatsApp's end-to-end security protocols.
+                Our website utilizes WhatsApp direct messaging to enable prompt customer support. When you submit an enquiry, WhatsApp is initiated on your personal device with an automated structured summary addressed to our verified booking numbers (<a href="tel:7357690111" className="text-amber-800 font-bold hover:text-amber-900">7357690111</a> / <a href="tel:8239999520" className="text-amber-800 font-bold hover:text-amber-900">8239999520</a>). Communication through WhatsApp is governed by WhatsApp's end-to-end security protocols.
               </p>
             </div>
 
@@ -92,10 +92,10 @@ export const PrivacyPolicy: React.FC = () => {
               <p>
                 For questions regarding this policy or to request removal of your records, please reach out directly:
               </p>
-              <div className="p-5 rounded-xl bg-slate-50 border border-[#E2DCBE] space-y-2 text-xs sm:text-sm text-slate-600">
+              <div className="p-5 rounded-xl bg-slate-50 border border-[#E8D8B3] space-y-2 text-xs sm:text-sm text-slate-600">
                 <div><strong className="text-[#8A6632]">Company:</strong> DEEPPURA GROUP</div>
                 <div><strong className="text-[#8A6632]">Founder &amp; Director:</strong> Prakash Jain (Deeppura) (+91 88750 00404)</div>
-                <div><strong className="text-[#8A6632]">Official Email:</strong> <a href="mailto:deeppura9@gmail.com" className="text-amber-800 hover:text-emerald-800 font-semibold">deeppura9@gmail.com</a></div>
+                <div><strong className="text-[#8A6632]">Official Email:</strong> <a href="mailto:deeppura9@gmail.com" className="text-amber-800 hover:text-amber-900 font-semibold">deeppura9@gmail.com</a></div>
                 <div><strong className="text-[#8A6632]">Booking Desk:</strong> +91 7357690111 / +91 8239999520</div>
                 <div><strong className="text-[#8A6632]">Corporate Office:</strong> G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan</div>
               </div>

@@ -45,7 +45,7 @@ export const AmenityCard: React.FC<AmenityCardProps> = ({ amenity, onImageClick 
   const IconComponent = iconMap[amenity.icon] || ShieldCheck;
 
   return (
-    <div className="group rounded-3xl bg-white border border-slate-200 hover:border-emerald-400 p-6 sm:p-7 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full">
+    <div className="group rounded-3xl bg-white border border-slate-200 hover:border-amber-400 p-6 sm:p-7 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full">
       <div>
         {amenity.image && (
           <div 
@@ -59,8 +59,8 @@ export const AmenityCard: React.FC<AmenityCardProps> = ({ amenity, onImageClick 
               loading="lazy"
             />
             <div className="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span className="p-3.5 rounded-full bg-white/95 text-emerald-700 shadow-xl border border-slate-200 flex items-center gap-1.5 font-bold text-xs">
-                <Maximize2 className="w-4 h-4 text-emerald-600" />
+              <span className="p-3.5 rounded-full bg-white/95 text-amber-800 shadow-xl border border-slate-200 flex items-center gap-1.5 font-bold text-xs">
+                <Maximize2 className="w-4 h-4 text-amber-700" />
                 <span>View Fullscreen</span>
               </span>
             </div>
@@ -68,14 +68,14 @@ export const AmenityCard: React.FC<AmenityCardProps> = ({ amenity, onImageClick 
         )}
 
         <div className="flex items-center gap-4 mb-3.5">
-          <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-200 group-hover:scale-105 group-hover:bg-emerald-100 transition-all shadow-sm">
-            <IconComponent className="w-7 h-7 text-emerald-600" />
+          <div className="w-14 h-14 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center shrink-0 border border-amber-200 group-hover:scale-105 group-hover:bg-amber-100 transition-all shadow-sm">
+            <IconComponent className="w-7 h-7 text-amber-700" />
           </div>
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
               {amenity.category}
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
+            <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-amber-800 transition-colors leading-snug">
               {amenity.nameEn}
             </h3>
           </div>
@@ -88,10 +88,10 @@ export const AmenityCard: React.FC<AmenityCardProps> = ({ amenity, onImageClick 
 
       <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm">
         <span className="font-semibold text-slate-600 flex items-center gap-1.5">
-          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          <CheckCircle2 className="w-4 h-4 text-amber-700" />
           <span>Brochure Verified</span>
         </span>
-        <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+        <span className="text-xs font-bold text-amber-800 uppercase tracking-wider bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
           Mukundra Prime
         </span>
       </div>

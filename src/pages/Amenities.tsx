@@ -151,10 +151,10 @@ export const Amenities: React.FC = () => {
   }, [amenityHeaderSlides.length]);
 
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800 pt-20">
       
       {/* Header with Auto-Sliding Amenities Carousel (Soft Shadow, Bright & Clear) */}
-      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E2DCBE]">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E8D8B3]">
         <AnimatePresence mode="wait">
           <motion.div 
             key={currentHeaderSlide}
@@ -179,29 +179,29 @@ export const Amenities: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
-              <Building2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md text-[#DCBF89] text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20 shadow-md">
+              <Building2 className="w-4 h-4 text-[#C5A46D]" />
               <span>Lifestyle &amp; Facilities</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight drop-shadow-lg">
-              14 Verified <span className="text-emerald-400">Resort Amenities</span>
+              14 Verified <span className="text-[#C5A46D]">Resort Amenities</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-100 leading-relaxed max-w-3xl font-medium drop-shadow-md">
               Experience thoughtfully designed community living at Mukundra Prime, featuring every confirmed amenity from our brochure to enrich family life in Raipura, Kota.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-200 drop-shadow">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-[#C5A46D] transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">AMENITIES</span>
+                <span className="text-[#C5A46D]">AMENITIES</span>
               </nav>
 
               {/* Active Slide Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/70 backdrop-blur-md text-white text-xs font-semibold border border-white/20 shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Showing: <strong className="text-emerald-300">{amenityHeaderSlides[currentHeaderSlide].title}</strong></span>
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <span>Showing: <strong className="text-[#DCBF89]">{amenityHeaderSlides[currentHeaderSlide].title}</strong></span>
               </div>
             </div>
 
@@ -213,7 +213,7 @@ export const Amenities: React.FC = () => {
                   type="button"
                   onClick={() => setCurrentHeaderSlide(idx)}
                   className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                    currentHeaderSlide === idx ? 'w-8 bg-emerald-400' : 'w-2.5 bg-white/60 hover:bg-white'
+                    currentHeaderSlide === idx ? 'w-8 bg-amber-500' : 'w-2.5 bg-white/60 hover:bg-white'
                   }`}
                   aria-label={`Slide to ${slide.title}`}
                 />
@@ -224,7 +224,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E2DCBE] sticky top-16 z-30 shadow-xs">
+      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E8D8B3] sticky top-16 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2.5">
             {[
@@ -240,8 +240,8 @@ export const Amenities: React.FC = () => {
                 onClick={() => setActiveFilter(tab.id as any)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeFilter === tab.id
-                    ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
-                    : 'bg-slate-100 border border-[#E2DCBE] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
+                    ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black shadow-md'
+                    : 'bg-slate-100 border border-[#E8D8B3] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
                 }`}
               >
                 {tab.label}
@@ -252,7 +252,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Amenities Grid */}
-      <section className="py-16 sm:py-24 bg-[#EFECE4] border-b border-[#E2DCBE]">
+      <section className="py-16 sm:py-24 bg-[#F5EEDB] border-b border-[#E8D8B3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAmenities.map((amenity, idx) => (
@@ -273,7 +273,7 @@ export const Amenities: React.FC = () => {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-20 lg:py-28 bg-white border-b border-[#E2DCBE]">
+      <section className="py-20 lg:py-28 bg-white border-b border-[#E8D8B3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -302,9 +302,9 @@ export const Amenities: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: (idx % 3) * 0.1 }}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-[#E2DCBE] shadow-sm space-y-4 hover:border-emerald-400 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-[#E8D8B3] shadow-sm space-y-4 hover:border-amber-400 hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <div className="flex items-center justify-between pb-3 border-b border-[#E2DCBE]">
+                <div className="flex items-center justify-between pb-3 border-b border-[#E8D8B3]">
                   <span className="text-3xl font-black text-sky-600">
                     {item.num}
                   </span>

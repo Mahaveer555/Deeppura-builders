@@ -269,7 +269,7 @@ export const Home: React.FC = () => {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800">
       
       {/* SECTION B: HERO SECTION - CINEMATIC SLIDER */}
       <section 
@@ -299,7 +299,7 @@ export const Home: React.FC = () => {
         <button
           type="button"
           onClick={prevSlide}
-          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-amber-500 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-amber-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
@@ -309,7 +309,7 @@ export const Home: React.FC = () => {
         <button
           type="button"
           onClick={nextSlide}
-          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-amber-500 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-amber-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
@@ -325,7 +325,7 @@ export const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider shadow-md">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-black text-xs font-bold uppercase tracking-wider shadow-md">
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                 <span>{heroSlides[currentSlide].tag}</span>
               </span>
@@ -340,7 +340,7 @@ export const Home: React.FC = () => {
               className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.08] tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]"
             >
               {heroSlides[currentSlide].title}
-              <span className="text-emerald-400 block mt-1 drop-shadow-[0_0_20px_rgba(16,185,129,0.5)]">
+              <span className="text-[#C5A46D] block mt-1 drop-shadow-[0_0_20px_rgba(197,164,109,0.5)]">
                 {heroSlides[currentSlide].titleHighlight}
               </span>
             </motion.h1>
@@ -360,7 +360,7 @@ export const Home: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <Link
                 to="/projects"
-                className="px-7 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
+                className="px-7 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(197,164,109,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" />
@@ -394,7 +394,7 @@ export const Home: React.FC = () => {
                 <img src="/assets/badges/uit-approved.png" alt="UIT Approved" className="w-5 h-5 object-contain" />
                 <span>UIT APPROVED</span>
               </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-emerald-400/30 backdrop-blur-md border border-emerald-400/50 text-emerald-200 shadow-sm">
+              <span className="px-3.5 py-1.5 rounded-full bg-[#C5A46D]/25 backdrop-blur-md border border-amber-400/50 text-amber-200 shadow-sm">
                 Up to 90% Loan
               </span>
             </div>
@@ -438,7 +438,7 @@ export const Home: React.FC = () => {
               onClick={() => setCurrentSlide(idx)}
               className={`transition-all duration-300 rounded-full cursor-pointer ${
                 currentSlide === idx
-                  ? 'w-7 h-2.5 bg-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.8)]'
+                  ? 'w-7 h-2.5 bg-amber-500 shadow-[0_0_10px_rgba(197,164,109,0.8)]'
                   : 'w-2.5 h-2.5 bg-white/40 hover:bg-white/80'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
@@ -456,9 +456,9 @@ export const Home: React.FC = () => {
       <MarqueeBanner variant="light" />
 
       {/* SECTION B.3: EXECUTIVE KEY METRICS & REPUTATION COUNTERS */}
-      <section className="py-16 sm:py-20 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#F5EEDB] border-b border-[#E8D8B3] relative overflow-hidden">
         {/* Glow ambient */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-amber-500/5 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -470,9 +470,9 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-amber-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-amber-100 transition-all border border-amber-200">
                 <Sparkles className="w-6 h-6" />
               </div>
               <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
@@ -493,9 +493,9 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-amber-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-amber-100 transition-all border border-amber-200">
                 <Award className="w-6 h-6" />
               </div>
               <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
@@ -516,9 +516,9 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.25 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-amber-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-amber-100 transition-all border border-amber-200">
                 <Landmark className="w-6 h-6" />
               </div>
               <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
@@ -539,9 +539,9 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.35 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-amber-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#8A6632] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-amber-100 transition-all border border-amber-200">
                 <Compass className="w-6 h-6" />
               </div>
               <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight">
@@ -560,7 +560,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION C: ABOUT DEEPPURA GROUP */}
-      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#FAF7F0] border-b border-[#E8D8B3] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -627,7 +627,7 @@ export const Home: React.FC = () => {
 
               {/* 3 Pillars */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-400/60 transition-colors">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Architectural Integrity
                   </h4>
@@ -636,7 +636,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-400/60 transition-colors">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Strategic Locations
                   </h4>
@@ -645,7 +645,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-400/60 transition-colors">
                   <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Transparent Conduct
                   </h4>
@@ -658,7 +658,7 @@ export const Home: React.FC = () => {
               <div className="pt-2">
                 <Link
                   to="/about"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_12px_rgba(16,185,129,0.35)] hover:bg-emerald-300 transition-all hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_12px_rgba(197,164,109,0.35)] hover:bg-amber-400 transition-all hover:-translate-y-0.5"
                 >
                   <span>Learn More About Our Company</span>
                   <ArrowRight className="w-4 h-4 text-slate-950" />
@@ -672,10 +672,10 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION C.5: OFFICIAL PRICING & SPECIAL DHAMAKA OFFER SHOWCASE */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-[#173D35] via-[#112E28] to-[#0B1E1A] text-white border-y border-[#C5A46D]/30 relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-[#18140E] via-[#1A140B] to-[#100C06] text-white border-y border-[#C5A46D]/30 relative overflow-hidden">
         {/* Glow & Decorative accents */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#C5A46D]/15 blur-[120px] pointer-events-none rounded-full" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#173D35]/30 blur-[100px] pointer-events-none rounded-full" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#18140E]/30 blur-[100px] pointer-events-none rounded-full" />
         
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           
@@ -720,7 +720,7 @@ export const Home: React.FC = () => {
           </div>
 
           {/* Dhamaka Offer Box */}
-          <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-[#1F4E44]/70 border border-[#C5A46D]/50 backdrop-blur-md flex items-center justify-center gap-3 shadow-xl mb-7">
+          <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-[#241D14]/70 border border-[#C5A46D]/50 backdrop-blur-md flex items-center justify-center gap-3 shadow-xl mb-7">
             <Sparkles className="w-5 h-5 text-[#C5A46D] shrink-0" />
             <div className="text-xs sm:text-sm font-semibold text-slate-100 text-left sm:text-center">
               <strong className="text-[#C5A46D] font-black">धमाका ऑफर:</strong> फुली फर्निश्ड फ्लैट मॉड्यूलर किचन के साथ बिना किसी अतिरिक्त खर्च!
@@ -750,7 +750,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D: FEATURED ONGOING PROJECT - MUKUNDRA PRIME */}
-      <section className="py-20 lg:py-28 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#F5EEDB] border-b border-[#E8D8B3] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -762,7 +762,7 @@ export const Home: React.FC = () => {
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
               Featured Ongoing Development
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
@@ -843,7 +843,7 @@ export const Home: React.FC = () => {
                 <div className="pt-4 flex flex-wrap gap-3 border-t border-slate-100">
                   <Link
                     to="/projects/mukundra-prime"
-                    className="flex-1 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 text-xs font-black uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 shadow-[0_2px_12px_rgba(16,185,129,0.3)] hover:-translate-y-0.5"
+                    className="flex-1 py-3 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs font-black uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 shadow-[0_2px_12px_rgba(197,164,109,0.3)] hover:-translate-y-0.5"
                   >
                     <span>View Project Details</span>
                     <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -855,7 +855,7 @@ export const Home: React.FC = () => {
                       const elem = document.getElementById('enquiry-section');
                       if (elem) elem.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-amber-800 hover:border-emerald-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
+                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-amber-800 hover:border-amber-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
                   >
                     Enquire Now
                   </button>
@@ -868,7 +868,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D.2: CRAFTED FOR FAMILY LIVING (FEATURING BOTH NEW LUXURY LIVING EXPERIENCES) */}
-      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#FAF7F0] border-b border-[#E8D8B3] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div
@@ -914,7 +914,7 @@ export const Home: React.FC = () => {
                   Designer Living Space
                 </div>
                 <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <span className="px-4 py-2 rounded-full bg-white/95 text-amber-900 text-xs font-bold shadow-lg flex items-center gap-1.5">
                     <span>Click to Enlarge</span>
                   </span>
                 </div>
@@ -959,7 +959,7 @@ export const Home: React.FC = () => {
                   Panoramic Balcony Living
                 </div>
                 <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <span className="px-4 py-2 rounded-full bg-white/95 text-amber-900 text-xs font-bold shadow-lg flex items-center gap-1.5">
                     <span>Click to Enlarge</span>
                   </span>
                 </div>
@@ -985,7 +985,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION E: UNIT PLAN PREVIEW */}
-      <section className="py-20 lg:py-28 bg-[#F8F7F2] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#FAF7F0] border-b border-[#E8D8B3] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -996,7 +996,7 @@ export const Home: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
           >
             <div className="space-y-2.5">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
                 Residential Layouts
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
@@ -1009,7 +1009,7 @@ export const Home: React.FC = () => {
 
             <Link
               to="/unit-plan"
-              className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
+              className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-amber-500 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
             >
               <span>View All Unit Plans</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#8A6632]" />
@@ -1038,7 +1038,7 @@ export const Home: React.FC = () => {
                     openLightboxAtIndex(galleryImages.length - 1);
                   }
                 }}
-                className="group rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
+                className="group rounded-2xl bg-white border border-slate-200 hover:border-amber-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-50 p-4 flex items-center justify-center">
                   <img
@@ -1048,7 +1048,7 @@ export const Home: React.FC = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                    <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 font-bold text-xs shadow-xl border border-slate-200">
+                    <span className="px-4 py-2 rounded-full bg-white/95 text-amber-900 font-bold text-xs shadow-xl border border-slate-200">
                       Click to Enlarge
                     </span>
                   </div>
@@ -1058,14 +1058,14 @@ export const Home: React.FC = () => {
           </div>
 
           {/* Official 8-Page Brochure Callout Banner */}
-          <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white border border-emerald-500/30 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#18140E] via-[#241D14] to-[#18140E] text-white border border-[#C5A46D]/30 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0">
-                <FileText className="w-7 h-7 text-emerald-400" />
+              <div className="w-14 h-14 rounded-2xl bg-[#C5A46D]/20 text-[#C5A46D] border border-[#C5A46D]/40 flex items-center justify-center shrink-0">
+                <FileText className="w-7 h-7 text-[#C5A46D]" />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-[#C5A46D] bg-[#C5A46D]/10 px-2.5 py-0.5 rounded-full border border-[#C5A46D]/30">
                     Official 8-Page Publication
                   </span>
                   <span className="text-[10px] text-slate-400 font-bold hidden sm:inline">• PDF Size: 8.5 MB</span>
@@ -1083,16 +1083,16 @@ export const Home: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setBrochureOpen(true)}
-                className="px-5 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-500/40 font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all cursor-pointer"
+                className="px-5 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-[#DCBF89] border border-[#C5A46D]/40 font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all cursor-pointer"
               >
-                <BookOpen className="w-4 h-4 text-emerald-400" />
+                <BookOpen className="w-4 h-4 text-[#C5A46D]" />
                 <span>Interactive Viewer</span>
               </button>
 
               <a
                 href="/assets/projects/mukundra-prime/mukundra-prime-brochure.pdf"
                 download="Mukundra-Prime-Official-Brochure.pdf"
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg hover:shadow-emerald-400/30 cursor-pointer"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg hover:shadow-amber-400/30 cursor-pointer"
               >
                 <Download className="w-4 h-4 text-slate-950" />
                 <span>Download PDF (8.5 MB)</span>
@@ -1104,7 +1104,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION F: AMENITIES SECTION - 14 AMENITIES */}
-      <section className="py-20 lg:py-28 bg-[#EFECE4] border-b border-[#E2DCBE] relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#F5EEDB] border-b border-[#E8D8B3] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -1114,7 +1114,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
               Lifestyle &amp; Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
@@ -1152,7 +1152,7 @@ export const Home: React.FC = () => {
           <div className="text-center pt-12">
             <Link
               to="/amenities"
-              className="px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
+              className="px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(197,164,109,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
             >
               <span>Explore All 14 Amenities</span>
               <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -1181,7 +1181,7 @@ export const Home: React.FC = () => {
       />
 
       {/* SECTION H: APPROVED BANKING PARTNERS (AUTHENTIC REAL LOGOS & CONTINUOUS RUNNING MARQUEE) */}
-      <section className="py-16 sm:py-20 bg-[#F8F7F2] border-b border-[#E2DCBE] overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#FAF7F0] border-b border-[#E8D8B3] overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1189,9 +1189,9 @@ export const Home: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 shadow-xs mb-3">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 shadow-xs mb-3">
             <Landmark className="w-3.5 h-3.5 text-[#8A6632]" />
-            <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-800">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-amber-900">
               Financial Assistance &amp; Loan Approvals
             </span>
           </div>
@@ -1210,7 +1210,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION I: ENQUIRY CTA SECTION */}
-      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#EFECE4] relative overflow-hidden">
+      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#F5EEDB] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -1245,13 +1245,13 @@ export const Home: React.FC = () => {
                 <div className="space-y-2.5">
                   <a
                     href="tel:8875000404"
-                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
+                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors flex items-center justify-between"
                   >
                     <div>
                       <div className="text-[10px] text-slate-500 font-medium uppercase">Director Desk</div>
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
-                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full">
+                    <span className="text-[10px] font-bold text-amber-900 bg-[#F5EEDB] border border-amber-200 px-3 py-1 rounded-full">
                       Prakash Jain (Deeppura)
                     </span>
                   </a>
@@ -1259,7 +1259,7 @@ export const Home: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     <a
                       href="tel:7357690111"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 1</div>
                       <div className="font-bold text-xs text-slate-900">7357690111</div>
@@ -1267,7 +1267,7 @@ export const Home: React.FC = () => {
 
                     <a
                       href="tel:8239999520"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 2</div>
                       <div className="font-bold text-xs text-slate-900">8239999520</div>

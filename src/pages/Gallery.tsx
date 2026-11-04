@@ -253,7 +253,7 @@ export const Gallery: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800 pt-20">
       
       {/* Header with High-Resolution Architectural Elevation Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -272,23 +272,23 @@ export const Gallery: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Building2 className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[#DCBF89] text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Building2 className="w-4 h-4 text-[#C5A46D]" />
               <span>Visual Portfolio</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              DEEPPURA GROUP <span className="text-emerald-400">Visual Gallery</span>
+              DEEPPURA GROUP <span className="text-[#C5A46D]">Visual Gallery</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Immerse yourself in high-resolution exterior elevations, furnished interiors, verified floor plan blueprints, and delivered residential landmarks across Kota, Rajasthan.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-[#C5A46D] transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">GALLERY</span>
+                <span className="text-[#C5A46D]">GALLERY</span>
               </nav>
             </div>
           </motion.div>
@@ -296,7 +296,7 @@ export const Gallery: React.FC = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E2DCBE] sticky top-16 z-30 shadow-xs">
+      <section className="py-6 bg-white/95 backdrop-blur-md border-b border-[#E8D8B3] sticky top-16 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2.5">
             {categories.map((cat) => (
@@ -306,8 +306,8 @@ export const Gallery: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
-                    : 'bg-slate-100 border border-[#E2DCBE] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
+                    ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black shadow-md'
+                    : 'bg-slate-100 border border-[#E8D8B3] text-slate-700 hover:text-[#8A6632] hover:bg-slate-200'
                 }`}
               >
                 {cat}
@@ -318,7 +318,7 @@ export const Gallery: React.FC = () => {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16 sm:py-24 bg-[#EFECE4]">
+      <section className="py-16 sm:py-24 bg-[#F5EEDB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredImages.map((img, idx) => (
@@ -330,7 +330,7 @@ export const Gallery: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
                 onClick={() => openLightbox(allImages.findIndex(i => i.url === img.url))}
-                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-[#E2DCBE] hover:border-emerald-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
+                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-[#E8D8B3] hover:border-amber-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
               >
                 <img
                   src={img.url}
@@ -342,13 +342,13 @@ export const Gallery: React.FC = () => {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-between">
                   <div className="self-end">
-                    <span className="p-2.5 rounded-full bg-white/90 text-emerald-800 inline-block shadow-md border border-[#E2DCBE]">
+                    <span className="p-2.5 rounded-full bg-white/90 text-amber-900 inline-block shadow-md border border-[#E8D8B3]">
                       <Maximize2 className="w-4 h-4 text-amber-800" />
                     </span>
                   </div>
 
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 block mb-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#DCBF89] block mb-1">
                       {img.category}
                     </span>
                     <h3 className="font-bold text-sm text-white line-clamp-2 leading-snug">
@@ -357,7 +357,7 @@ export const Gallery: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-[#E2DCBE] text-[10px] font-bold uppercase tracking-wider text-emerald-800 shadow-sm group-hover:opacity-0 transition-opacity">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-[#E8D8B3] text-[10px] font-bold uppercase tracking-wider text-amber-900 shadow-sm group-hover:opacity-0 transition-opacity">
                   {img.category}
                 </div>
               </motion.div>

@@ -6,41 +6,41 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #173D35; /* Swatch 2: Deep Regal Forest Pine Green */
-    background-color: #F8F7F2; /* Swatch 1: Warm Ivory / Alabaster Background */
+    color: #1F190E; /* Deep Charcoal / Warm Bronze Slate */
+    background-color: #FAF7F0; /* Soft Golden Ivory Background */
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    background-color: #F8F7F2; /* Swatch 1: Warm Ivory Background */
-    color: #1E293B;
+    background-color: #FAF7F0; /* Soft Golden Ivory Background */
+    color: #1F190E;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     line-height: 1.65;
   }
 
-  /* Headings in Deep Camel Gold / Forest Green */
+  /* Headings in Deep Royal Burnished Gold */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
-    color: #8A6632; /* Deep Camel Gold (High Contrast Readable) */
+    color: #8A6632; /* Deep Burnished Gold (High-Contrast & Luxurious) */
     letter-spacing: -0.03em;
     font-weight: 900;
   }
 
   ::selection {
-    background-color: #C5A46D; /* Swatch 3: Camel Gold */
-    color: #173D35; /* Swatch 2: Forest Green */
+    background-color: #C5A46D; /* Royal Gold Selection */
+    color: #18140E;
   }
 
-  /* Custom Clean Camel Gold & Ivory Scrollbar */
+  /* Custom Clean Royal Gold Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #EFECE4;
+    background: #F5EEDB;
   }
   ::-webkit-scrollbar-thumb {
     background: #C5A46D;
@@ -74,10 +74,10 @@
 
 /* Background Helpers */
 .bg-halka-green {
-  background-color: #F8F7F2;
+  background-color: #FAF7F0;
 }
 .bg-halka-green-alt {
-  background-color: #EFECE4;
+  background-color: #F5EEDB;
 }
 
 /* Image Shimmer sweep effect */

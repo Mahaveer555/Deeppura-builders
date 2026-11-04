@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
   const siteOfficeAddress = "Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan";
 
   return (
-    <div className="min-h-screen bg-[#F8F7F2] text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#FAF7F0] text-slate-800 pt-20">
       
       {/* Header with High-Resolution Aerial Masterplan Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -36,23 +36,23 @@ export const Contact: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Phone className="w-4 h-4 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[#DCBF89] text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Phone className="w-4 h-4 text-[#C5A46D]" />
               <span>Direct Communication</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              Connect with <span className="text-emerald-400">DEEPPURA GROUP</span>
+              Connect with <span className="text-[#C5A46D]">DEEPPURA GROUP</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Connect directly with our corporate headquarters in Talwandi, our project site sales office in Raipura, or speak directly with Director Prakash Jain (Deeppura).
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-emerald-400 transition-colors">
+                <Link to="/" className="hover:text-[#C5A46D] transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-emerald-400">CONTACT</span>
+                <span className="text-[#C5A46D]">CONTACT</span>
               </nav>
             </div>
           </motion.div>
@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
       </section>
 
       {/* Main Offices & Contact Grid */}
-      <section className="py-16 sm:py-24 bg-[#EFECE4]">
+      <section className="py-16 sm:py-24 bg-[#F5EEDB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
                 <span>Official Booking Desk</span>
               </div>
 
@@ -87,7 +87,7 @@ export const Contact: React.FC = () => {
               </p>
 
               {/* Direct Booking Desk Contacts */}
-              <div className="p-6 rounded-2xl bg-white border border-[#E2DCBE] space-y-4 shadow-xl">
+              <div className="p-6 rounded-2xl bg-white border border-[#E8D8B3] space-y-4 shadow-xl">
                 <div className="text-xs uppercase font-bold tracking-wider text-amber-800 flex items-center gap-2">
                   <PhoneCall className="w-4 h-4 text-sky-600" />
                   <span>Direct Booking Lines</span>
@@ -96,13 +96,13 @@ export const Contact: React.FC = () => {
                 <div className="space-y-2.5">
                   <a
                     href="tel:8875000404"
-                    className="p-4 rounded-xl bg-slate-50 border border-[#E2DCBE] text-[#8A6632] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
+                    className="p-4 rounded-xl bg-slate-50 border border-[#E8D8B3] text-[#8A6632] hover:border-amber-400 hover:bg-amber-50/50 transition-colors flex items-center justify-between"
                   >
                     <div>
                       <div className="text-[10px] text-slate-500 font-medium uppercase">Director Desk</div>
                       <div className="font-bold text-sm text-[#8A6632]">+91 88750 00404</div>
                     </div>
-                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full">
+                    <span className="text-[10px] font-bold text-amber-900 bg-[#F5EEDB] border border-amber-200 px-3 py-1 rounded-full">
                       Prakash Jain (Deeppura)
                     </span>
                   </a>
@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     <a
                       href="tel:7357690111"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE] text-[#8A6632] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-[#E8D8B3] text-[#8A6632] hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 1</div>
                       <div className="font-bold text-xs text-[#8A6632]">7357690111</div>
@@ -118,7 +118,7 @@ export const Contact: React.FC = () => {
 
                     <a
                       href="tel:8239999520"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-[#E2DCBE] text-[#8A6632] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-[#E8D8B3] text-[#8A6632] hover:border-amber-400 hover:bg-amber-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 2</div>
                       <div className="font-bold text-xs text-[#8A6632]">8239999520</div>
@@ -126,7 +126,7 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-[#E2DCBE]">
+                <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-[#E8D8B3]">
                   <div><strong className="text-[#8A6632]">Corporate Office:</strong> {corpOfficeAddress}</div>
                   <div><strong className="text-[#8A6632]">Site Office:</strong> {siteOfficeAddress}</div>
                   <div><strong className="text-[#8A6632]">Email:</strong> deeppura9@gmail.com</div>
@@ -157,7 +157,7 @@ export const Contact: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 pt-12 border-t border-[#E2DCBE]"
+            className="mt-16 pt-12 border-t border-[#E8D8B3]"
           >
             <div className="mb-6">
               <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block mb-1">
@@ -171,7 +171,7 @@ export const Contact: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-[#E2DCBE] shadow-xl bg-white p-2">
+            <div className="rounded-2xl overflow-hidden border border-[#E8D8B3] shadow-xl bg-white p-2">
               <iframe
                 title="DEEPPURA GROUP Mukundra Prime Location Map"
                 src="https://maps.google.com/maps?q=Deoli%20Arab%20Road,%20Near%20Decent%20School,%20Raipura,%20Kota,%20Rajasthan&t=&z=14&ie=UTF8&iwloc=&output=embed"
