@@ -6,47 +6,48 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #0F172A;
-    background-color: #F2F7F4;
+    color: #1A2E22;
+    background-color: #EAF3EC; /* Halka Green Background */
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    background-color: #F2F7F4;
-    color: #334155;
+    background-color: #EAF3EC; /* Halka Green Background */
+    color: #1E293B;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     line-height: 1.65;
   }
 
+  /* Headings in prestigious Gold by default */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
-    color: #0F172A;
+    color: #8C6514; /* Deep Architectural Gold */
     letter-spacing: -0.03em;
     font-weight: 900;
   }
 
   ::selection {
-    background-color: #10B981;
-    color: #FFFFFF;
+    background-color: #D4AF37;
+    color: #051912;
   }
 
-  /* Custom Clean Architectural Emerald & Sage Scrollbar */
+  /* Custom Clean Gold & Halka Green Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #E8EFEA;
+    background: #DFECE2;
   }
   ::-webkit-scrollbar-thumb {
-    background: #059669;
+    background: #D4AF37;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #047857;
+    background: #B8860B;
   }
 }
 
@@ -57,16 +58,26 @@
   font-weight: 500;
 }
 
-/* Eco-Luxury Emerald & Sage Gradient Text Shimmer */
-.emerald-shimmer {
-  background: linear-gradient(135deg, #34D399 0%, #059669 50%, #047857 100%);
+/* Gold Text Shimmer */
+.gold-text-shimmer {
+  background: linear-gradient(135deg, #FFF0B8 0%, #D4AF37 50%, #B8860B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Pearl Sage Background Class */
-.bg-pearl-sage {
-  background-color: #F2F7F4;
+/* Gold & Blue Gradient Accent */
+.gold-blue-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Halka Green Background Helper */
+.bg-halka-green {
+  background-color: #EAF3EC;
+}
+.bg-halka-green-alt {
+  background-color: #DFECE2;
 }
 
 /* Image Shimmer sweep effect */

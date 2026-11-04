@@ -13,7 +13,7 @@ import { mukundraPrimeProject } from '../data/projects';
 
 export const Projects: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
       
       {/* Page Header with High-Resolution Towers Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -56,7 +56,7 @@ export const Projects: React.FC = () => {
       </section>
 
       {/* Flagship Featured Project Showcase */}
-      <section className="py-16 sm:py-24 bg-[#F8FAFC]">
+      <section className="py-16 sm:py-24 bg-[#DFECE2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -67,16 +67,16 @@ export const Projects: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-800 block mb-1">
                 FLAGSHIP ONGOING RESIDENTIAL DEVELOPMENT
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#8C6514]">
                 Mukundra Prime – Raipura, Kota
               </h2>
             </div>
             <div className="flex items-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
-                <BadgeCheck className="w-4 h-4 text-emerald-600" />
+                <BadgeCheck className="w-4 h-4 text-sky-600" />
                 <span>RERA &amp; UIT Approved</span>
               </span>
             </div>
@@ -88,16 +88,16 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
+            className="rounded-2xl bg-white border border-[#CCE2D2] overflow-hidden shadow-xl hover:border-emerald-400/80 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 md:p-8"
           >
             {/* Visual */}
-            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-slate-200 group">
+            <div className="lg:col-span-7 rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 relative border border-[#CCE2D2] group">
               <img
                 src={mukundraPrimeProject.heroImage}
                 alt="Mukundra Prime"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-slate-200">
+              <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-white/95 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-md border border-[#CCE2D2]">
                 Ongoing Development
               </span>
               <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 text-xs text-white font-medium flex items-center justify-between">
@@ -109,14 +109,14 @@ export const Projects: React.FC = () => {
             {/* Info */}
             <div className="lg:col-span-5 space-y-5">
               <div>
-                <span className="text-xs uppercase font-bold text-emerald-700 tracking-wider block">
+                <span className="text-xs uppercase font-bold text-amber-800 tracking-wider block">
                   DEEPPURA GROUP RESIDENTIAL
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mt-1">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#8C6514] mt-1">
                   Mukundra Prime
                 </h3>
                 <div className="flex items-start gap-1.5 text-xs text-slate-500 mt-2">
-                  <MapPin className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
                   <span>{mukundraPrimeProject.address}</span>
                 </div>
               </div>
@@ -126,37 +126,37 @@ export const Projects: React.FC = () => {
               </p>
 
               {/* Key Value Points */}
-              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-slate-200">
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+              <div className="grid grid-cols-2 gap-3 pt-2 border-t border-[#CCE2D2]">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2]">
                   <span className="text-[11px] text-slate-500 block">Pricing &amp; Allotment</span>
-                  <strong className="text-xs sm:text-sm text-slate-900 font-bold">Enquire for Details</strong>
+                  <strong className="text-xs sm:text-sm text-[#8C6514] font-bold">Enquire for Details</strong>
                 </div>
-                <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2]">
                   <span className="text-[11px] text-slate-500 block">Home Loan</span>
-                  <strong className="text-xs sm:text-sm text-emerald-700 font-bold">Up to 90% Loanable</strong>
+                  <strong className="text-xs sm:text-sm text-amber-800 font-bold">Up to 90% Loanable</strong>
                 </div>
               </div>
 
               {/* Confirmed Amenities Checklist */}
-              <div className="space-y-2 pt-2 border-t border-slate-200">
-                <strong className="text-xs text-slate-900 uppercase font-bold block">
+              <div className="space-y-2 pt-2 border-t border-[#CCE2D2]">
+                <strong className="text-xs text-[#8C6514] uppercase font-bold block">
                   Project Highlights:
                 </strong>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-sky-600" />
                     <span>100 Feet Wide Road</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-sky-600" />
                     <span>Temple &amp; Splash Pool</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-sky-600" />
                     <span>Kids Play Park &amp; Gym</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <Check className="w-3.5 h-3.5 text-sky-600" />
                     <span>24×7 Security &amp; CCTV</span>
                   </li>
                 </ul>
@@ -166,7 +166,7 @@ export const Projects: React.FC = () => {
               <div className="pt-3 flex flex-wrap items-center gap-3">
                 <Link
                   to="/projects/mukundra-prime"
-                  className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(16,185,129,0.35)] hover:-translate-y-0.5"
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-[0_4px_14px_rgba(16,185,129,0.35)] hover:-translate-y-0.5"
                 >
                   <span>Explore Full Project</span>
                   <ArrowRight className="w-4 h-4 text-slate-950" />
@@ -174,7 +174,7 @@ export const Projects: React.FC = () => {
 
                 <Link
                   to="/unit-plan"
-                  className="px-6 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-emerald-700 font-bold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5 shadow-sm"
+                  className="px-6 py-3 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 hover:text-amber-800 font-bold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5 shadow-sm"
                 >
                   <span>View Floor Plans</span>
                 </Link>
@@ -183,9 +183,9 @@ export const Projects: React.FC = () => {
                   href="https://wa.me/917357690111?text=Hello%20DEEPPURA%20GROUP,%20I%20would%20like%20more%20details%20about%20Mukundra%20Prime%20residences."
                   target="_blank"
                   rel="noreferrer"
-                  className="px-4 py-3 rounded-full text-slate-600 hover:text-emerald-700 text-xs font-bold flex items-center gap-1.5 transition-colors"
+                  className="px-4 py-3 rounded-full text-slate-600 hover:text-amber-800 text-xs font-bold flex items-center gap-1.5 transition-colors"
                 >
-                  <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                  <MessageSquare className="w-3.5 h-3.5 text-sky-600" />
                   <span>WhatsApp Desk</span>
                 </a>
               </div>

@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       {/* Top Corporate Strip (Clean Luxury Light Theme) */}
-      <div className={`hidden lg:block bg-slate-50 border-b border-slate-200 text-xs transition-all duration-300 ${
+      <div className={`hidden lg:block bg-[#DFECE2] border-b border-[#CCE2D2] text-xs transition-all duration-300 ${
         isScrolled ? 'h-0 py-0 overflow-hidden border-none opacity-0' : 'py-2 opacity-100'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-slate-600">
@@ -61,13 +61,13 @@ export const Header: React.FC<HeaderProps> = () => {
           {/* Left: Office Locations & Approvals */}
           <div className="flex items-center gap-5 text-[11.5px] font-medium whitespace-nowrap shrink-0">
             <div className="flex items-center gap-1.5 text-slate-800">
-              <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
               <span className="font-bold text-slate-900">Kota, Rajasthan:</span>
               <span className="text-slate-600">Talwandi (Corporate) • Raipura (Site)</span>
             </div>
             <span className="text-slate-300">•</span>
             <div className="flex items-center gap-1.5 text-slate-800">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <ShieldCheck className="w-3.5 h-3.5 text-sky-600 shrink-0" />
               <span className="font-medium text-slate-700">UIT &amp; RERA Approved Projects</span>
             </div>
           </div>
@@ -76,19 +76,19 @@ export const Header: React.FC<HeaderProps> = () => {
           <div className="flex items-center gap-4 text-[11.5px] font-medium whitespace-nowrap shrink-0">
             <div className="flex items-center gap-2">
               <span className="text-slate-800 font-bold flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-amber-700 shrink-0" />
                 Booking Desk:
               </span>
               <a 
                 href="tel:7357690111" 
-                className="font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
+                className="font-bold text-amber-800 hover:text-amber-900 transition-colors"
               >
                 7357690111
               </a>
               <span className="text-slate-300">•</span>
               <a 
                 href="tel:8239999520" 
-                className="font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
+                className="font-bold text-amber-800 hover:text-amber-900 transition-colors"
               >
                 8239999520
               </a>
@@ -111,8 +111,8 @@ export const Header: React.FC<HeaderProps> = () => {
       </div>
 
       {/* Main Sticky Header */}
-      <header className={`sticky top-0 z-40 bg-white/95 backdrop-blur-xl transition-all duration-300 border-b ${
-        isScrolled ? 'border-slate-200/90 shadow-md py-2.5' : 'border-slate-200/60 py-3.5'
+      <header className={`sticky top-0 z-40 bg-[#EAF3EC]/95 backdrop-blur-xl transition-all duration-300 border-b ${
+        isScrolled ? 'border-[#CCE2D2] shadow-md py-2.5' : 'border-[#CCE2D2] py-3.5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
@@ -137,8 +137,8 @@ export const Header: React.FC<HeaderProps> = () => {
                         to={item.to}
                         className={({ isActive }) => `whitespace-nowrap flex items-center gap-1 px-3 py-2 rounded-lg text-[13px] xl:text-[13.5px] 2xl:text-[14px] font-heading font-bold transition-all ${
                           isActive || location.pathname.startsWith('/projects')
-                            ? 'text-emerald-700 bg-emerald-50 border-b-2 border-emerald-500' 
-                            : 'text-slate-700 hover:text-emerald-700 hover:bg-slate-50'
+                            ? 'text-amber-800 bg-amber-100/70 border-b-2 border-amber-500' 
+                            : 'text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2]'
                         }`}
                       >
                         <span>{item.label}</span>
@@ -151,7 +151,7 @@ export const Header: React.FC<HeaderProps> = () => {
                             <Link
                               key={sub.to}
                               to={sub.to}
-                              className="block px-4 py-2.5 text-xs font-heading font-semibold text-slate-700 hover:text-emerald-700 hover:bg-slate-50 transition-colors"
+                              className="block px-4 py-2.5 text-xs font-heading font-semibold text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2] transition-colors"
                             >
                               {sub.label}
                             </Link>
@@ -168,8 +168,8 @@ export const Header: React.FC<HeaderProps> = () => {
                     to={item.to}
                     className={({ isActive }) => `whitespace-nowrap px-3 py-2 rounded-lg text-[13px] xl:text-[13.5px] 2xl:text-[14px] font-heading font-bold transition-all ${
                       isActive 
-                        ? 'text-emerald-700 bg-emerald-50 border-b-2 border-emerald-500' 
-                        : 'text-slate-700 hover:text-emerald-700 hover:bg-slate-50'
+                        ? 'text-amber-800 bg-amber-100/70 border-b-2 border-amber-500' 
+                        : 'text-slate-700 hover:text-amber-800 hover:bg-[#DFECE2]'
                     }`}
                   >
                     {item.label}
@@ -187,10 +187,10 @@ export const Header: React.FC<HeaderProps> = () => {
               <button
                 type="button"
                 onClick={() => setBrochureModalOpen(true)}
-                className="whitespace-nowrap flex items-center gap-1.5 px-4 py-2 rounded-xl border border-slate-300 hover:border-emerald-500 bg-white hover:bg-emerald-50/70 text-slate-800 hover:text-emerald-700 font-heading font-black text-xs xl:text-sm tracking-wider uppercase transition-all cursor-pointer group shadow-sm"
+                className="whitespace-nowrap flex items-center gap-1.5 px-4 py-2 rounded-xl border border-amber-400 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 shadow-md font-heading font-black text-xs xl:text-sm tracking-wider uppercase transition-all cursor-pointer group shadow-sm"
               >
                 <span>BROCHURE</span>
-                <ChevronDown className={`w-3.5 h-3.5 text-slate-500 group-hover:text-emerald-600 transition-transform duration-200 ${brochureDropdownOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-3.5 h-3.5 text-slate-500 group-hover:text-amber-700 transition-transform duration-200 ${brochureDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {brochureDropdownOpen && (
@@ -274,7 +274,7 @@ export const Header: React.FC<HeaderProps> = () => {
                       <div className="text-xs font-bold text-emerald-800 group-hover/item:text-emerald-900">
                         Get Brochure via WhatsApp
                       </div>
-                      <div className="text-[11px] text-emerald-600">
+                      <div className="text-[11px] text-amber-700">
                         Direct delivery on your phone (+91 7357690111)
                       </div>
                     </div>
@@ -291,7 +291,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
                 aria-label="Toggle navigation menu"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6 text-emerald-600" /> : <Menu className="w-6 h-6 text-slate-800" />}
+                {mobileMenuOpen ? <X className="w-6 h-6 text-amber-700" /> : <Menu className="w-6 h-6 text-slate-800" />}
               </button>
             </div>
 
@@ -331,12 +331,12 @@ export const Header: React.FC<HeaderProps> = () => {
               </button>
               <div className="flex items-center justify-center gap-4 text-xs text-slate-500 pt-2">
                 <a href="tel:7357690111" className="flex items-center gap-1.5 font-bold text-emerald-700">
-                  <Phone className="w-3.5 h-3.5 text-emerald-600" />
+                  <Phone className="w-3.5 h-3.5 text-amber-700" />
                   <span>7357690111</span>
                 </a>
                 <span>•</span>
                 <a href="tel:8239999520" className="flex items-center gap-1.5 font-bold text-emerald-700">
-                  <Phone className="w-3.5 h-3.5 text-emerald-600" />
+                  <Phone className="w-3.5 h-3.5 text-amber-700" />
                   <span>8239999520</span>
                 </a>
               </div>

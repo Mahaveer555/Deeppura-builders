@@ -105,7 +105,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
   const visibleProjects = getVisibleProjects();
 
   return (
-    <section className="py-20 lg:py-28 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+    <section className="py-20 lg:py-28 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
       {/* Background Soft Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-emerald-500/5 blur-[140px] pointer-events-none rounded-full" />
 
@@ -120,14 +120,14 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
           className="text-center max-w-3xl mx-auto mb-14 space-y-3"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 shadow-xs">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+            <ShieldCheck className="w-4 h-4 text-sky-600" />
             <span className="text-xs font-bold uppercase tracking-wider text-emerald-800">
               DEEPPURA GROUP Portfolio
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight uppercase">
-            OUR <span className="text-emerald-600">PROJECTS</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight uppercase">
+            OUR <span className="text-sky-600">PROJECTS</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -142,7 +142,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
           <button
             onClick={prevSlide}
             aria-label="Previous Projects"
-            className="absolute -left-3 sm:-left-5 top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white hover:bg-emerald-400 text-slate-800 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 shadow-xl flex items-center justify-center transition-all cursor-pointer group"
+            className="absolute -left-3 sm:-left-5 top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white hover:bg-emerald-400 text-slate-800 hover:text-slate-950 border border-[#CCE2D2] hover:border-emerald-400 shadow-xl flex items-center justify-center transition-all cursor-pointer group"
           >
             <ChevronLeft className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" />
           </button>
@@ -150,7 +150,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
           <button
             onClick={nextSlide}
             aria-label="Next Projects"
-            className="absolute -right-3 sm:-right-5 top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white hover:bg-emerald-400 text-slate-800 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 shadow-xl flex items-center justify-center transition-all cursor-pointer group"
+            className="absolute -right-3 sm:-right-5 top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white hover:bg-emerald-400 text-slate-800 hover:text-slate-950 border border-[#CCE2D2] hover:border-emerald-400 shadow-xl flex items-center justify-center transition-all cursor-pointer group"
           >
             <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
           </button>
@@ -166,7 +166,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.35, ease: 'easeOut' }}
-                  className="group rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/70 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+                  className="group rounded-2xl bg-white border border-[#CCE2D2] hover:border-emerald-400/70 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
                 >
                   {/* Building Exterior Photo */}
                   <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
@@ -192,7 +192,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                           </>
                         ) : (
                           <>
-                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-sky-600" />
                             {project.statusLabel}
                           </>
                         )}
@@ -201,7 +201,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
 
                     {/* Official RERA & UIT Badges for Mukundra Prime */}
                     {project.id === 'mukundra-prime' && (
-                      <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full border border-slate-200 shadow-md">
+                      <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full border border-[#CCE2D2] shadow-md">
                         <img 
                           src="/assets/badges/rera-approved.png" 
                           alt="RERA Approved" 
@@ -220,9 +220,9 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
 
                     {/* Subtle Overlay Action on Hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4 pointer-events-none">
-                      <span className="text-slate-900 text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 bg-white/95 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-slate-200 shadow-md">
+                      <span className="text-[#8C6514] text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 bg-white/95 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-[#CCE2D2] shadow-md">
                         <span>Click to Enlarge / Details</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+                        <ArrowRight className="w-3.5 h-3.5 text-sky-600" />
                       </span>
                     </div>
                   </div>
@@ -230,12 +230,12 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                   {/* Clean Attached White Plate Title Bar */}
                   <div className="p-6 text-center bg-white border-t border-slate-100 flex flex-col justify-between flex-1">
                     <div>
-                      <h3 className="font-black text-xl sm:text-2xl text-slate-900 group-hover:text-emerald-700 transition-colors tracking-tight">
+                      <h3 className="font-black text-xl sm:text-2xl text-[#8C6514] group-hover:text-amber-800 transition-colors tracking-tight">
                         {project.name}
                       </h3>
 
                       <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500 mt-2 font-medium">
-                        <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                         <span className="truncate">{project.location}</span>
                       </div>
                     </div>
@@ -243,7 +243,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                     <div className="pt-5 mt-5 border-t border-slate-100">
                       <Link
                         to={project.link}
-                        className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_15px_rgba(16,185,129,0.35)] transition-all hover:-translate-y-0.5"
+                        className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_15px_rgba(16,185,129,0.35)] transition-all hover:-translate-y-0.5"
                       >
                         <span>{project.status === 'ongoing' ? 'Explore Mukundra Prime' : 'View Completed Details'}</span>
                         <ArrowRight className="w-3.5 h-3.5 text-slate-950 group-hover:translate-x-1 transition-transform" />

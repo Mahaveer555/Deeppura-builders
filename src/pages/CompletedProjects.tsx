@@ -30,13 +30,13 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-emerald-400 transition-all"
+      className="rounded-2xl border border-[#CCE2D2] overflow-hidden bg-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 hover:border-emerald-400 transition-all"
     >
       {/* Image Container & Switcher */}
       <div className={`lg:col-span-6 space-y-3 ${idx % 2 === 1 ? 'lg:order-2' : ''}`}>
         <div 
           onClick={() => onOpenLightbox(currentImg.url, currentImg.captionEn)}
-          className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 border border-slate-200 cursor-pointer group"
+          className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-100 border border-[#CCE2D2] cursor-pointer group"
         >
           <AnimatePresence mode="wait">
             <motion.img
@@ -52,15 +52,15 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
           </AnimatePresence>
 
           {/* Hover Zoom Pill */}
-          <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
-            <Maximize2 className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#CCE2D2] text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+            <Maximize2 className="w-3.5 h-3.5 text-sky-600" />
             <span>Click to Enlarge</span>
           </div>
 
           {/* Multiple views indicator badge */}
           {images.length > 1 && (
-            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200 text-emerald-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-              <Camera className="w-3 h-3 text-emerald-600" />
+            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-[#CCE2D2] text-emerald-800 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+              <Camera className="w-3 h-3 text-sky-600" />
               <span>{images.length} Architectural Views</span>
             </div>
           )}
@@ -76,7 +76,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
                 className={`relative rounded-lg overflow-hidden w-20 h-14 shrink-0 border-2 transition-all cursor-pointer ${
                   selectedImageIndex === i 
                     ? 'border-emerald-500 shadow-md scale-105' 
-                    : 'border-slate-200 opacity-60 hover:opacity-100'
+                    : 'border-[#CCE2D2] opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img.url} alt={img.captionEn} className="w-full h-full object-cover" />
@@ -92,16 +92,16 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
       {/* Content Details */}
       <div className={`lg:col-span-6 space-y-4 ${idx % 2 === 1 ? 'lg:order-1' : ''}`}>
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
-          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+          <CheckCircle2 className="w-3.5 h-3.5 text-sky-600" />
           <span>Completed &amp; Handed Over</span>
         </div>
 
-        <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
+        <h3 className="text-2xl sm:text-3xl font-black text-[#8C6514]">
           {project.nameEn}
         </h3>
 
         <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
-          <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+          <MapPin className="w-4 h-4 text-sky-600 shrink-0" />
           <span>{project.locationEn}</span>
         </div>
 
@@ -110,7 +110,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
         </p>
 
         <div className="pt-2">
-          <span className="text-xs uppercase font-bold tracking-wider text-emerald-700 block mb-2">
+          <span className="text-xs uppercase font-bold tracking-wider text-amber-800 block mb-2">
             Key Highlights:
           </span>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
@@ -130,7 +130,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
           >
-            <MapPin className="w-3.5 h-3.5 text-emerald-600" />
+            <MapPin className="w-3.5 h-3.5 text-sky-600" />
             <span>View Location on Google Maps</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
@@ -199,10 +199,10 @@ export const CompletedProjects: React.FC = () => {
   }, [headerSlides.length]);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
       
       {/* Header with Auto-Sliding Completed Projects Carousel (Soft Shadow, Bright & Clear) */}
-      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-200">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#CCE2D2]">
         <AnimatePresence mode="wait">
           <motion.div 
             key={currentHeaderSlide}
@@ -272,7 +272,7 @@ export const CompletedProjects: React.FC = () => {
       </section>
 
       {/* Grid of 4 Completed Projects */}
-      <section className="py-16 sm:py-24 bg-[#F8FAFC]">
+      <section className="py-16 sm:py-24 bg-[#DFECE2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -282,10 +282,10 @@ export const CompletedProjects: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 block mb-1">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-800 block mb-1">
               PORTFOLIO SHOWCASE
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#8C6514]">
               Delivered Residential &amp; Farmhouse Communities
             </h2>
           </motion.div>

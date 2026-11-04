@@ -268,7 +268,7 @@ export const Home: React.FC = () => {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="min-h-screen bg-white text-slate-800">
+    <div className="min-h-screen bg-[#EAF3EC] text-slate-800">
       
       {/* SECTION B: HERO SECTION - CINEMATIC SLIDER */}
       <section 
@@ -359,7 +359,7 @@ export const Home: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <Link
                 to="/projects"
-                className="px-7 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
+                className="px-7 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" />
@@ -419,7 +419,7 @@ export const Home: React.FC = () => {
             <div className="text-[10px] font-black uppercase tracking-wider text-slate-900">
               Government Verified
             </div>
-            <div className="text-[11px] font-bold text-emerald-700">
+            <div className="text-[11px] font-bold text-amber-800">
               RERA &amp; UIT Approved
             </div>
             <div className="text-[9px] text-slate-500 font-medium">
@@ -455,7 +455,7 @@ export const Home: React.FC = () => {
       <MarqueeBanner variant="light" />
 
       {/* SECTION B.3: EXECUTIVE KEY METRICS & REPUTATION COUNTERS */}
-      <section className="py-16 sm:py-20 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
         {/* Glow ambient */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
 
@@ -471,10 +471,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
                 <AnimatedCounter to={14} suffix="+" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -494,10 +494,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Award className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
                 <AnimatedCounter to={4} suffix="" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -517,10 +517,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Landmark className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
                 <AnimatedCounter to={90} suffix="%" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -540,10 +540,10 @@ export const Home: React.FC = () => {
               whileHover={{ y: -6 }}
               className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#8C6514] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Compass className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] tracking-tight">
                 <AnimatedCounter to={100} suffix=" Ft." />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -559,7 +559,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION C: ABOUT DEEPPURA GROUP */}
-      <section className="py-20 lg:py-28 bg-white border-b border-slate-200 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -581,7 +581,7 @@ export const Home: React.FC = () => {
 
                 {/* Director Leadership Badge */}
                 <div className="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-xl border border-slate-200 text-slate-900 shadow-2xl">
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-emerald-700">
+                  <div className="text-[10px] uppercase font-bold tracking-wider text-amber-800">
                     Founder &amp; Director
                   </div>
                   <div className="text-lg font-black text-slate-900">
@@ -602,13 +602,13 @@ export const Home: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider">
                 <span>About DEEPPURA GROUP</span>
               </div>
 
               {/* Main Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Building Trust Through <span className="text-emerald-600">Thoughtful Development</span>
+                Building Trust Through <span className="text-sky-600">Thoughtful Development</span>
               </h2>
 
               <p className="text-sm font-semibold text-slate-700 leading-relaxed">
@@ -627,7 +627,7 @@ export const Home: React.FC = () => {
               {/* 3 Pillars */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Architectural Integrity
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -636,7 +636,7 @@ export const Home: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Strategic Locations
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -645,7 +645,7 @@ export const Home: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-amber-800 mb-1">
                     Transparent Conduct
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -731,7 +731,7 @@ export const Home: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => openLightboxAtIndex(0)}
-                  className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-all flex items-center gap-2 cursor-pointer hover:-translate-y-0.5"
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider shadow-lg transition-all flex items-center gap-2 cursor-pointer hover:-translate-y-0.5"
                 >
                   <Eye className="w-4 h-4 text-slate-950" />
                   <span>View Official Pricing Poster</span>
@@ -772,7 +772,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D: FEATURED ONGOING PROJECT - MUKUNDRA PRIME */}
-      <section className="py-20 lg:py-28 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -783,12 +783,12 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-xs">
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Featured Ongoing Development
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Mukundra Prime <span className="text-emerald-600">Residences</span>
+              Mukundra Prime <span className="text-[#8C6514]">Residences</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               An ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Raipura, Kota, Rajasthan.
@@ -821,7 +821,7 @@ export const Home: React.FC = () => {
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div>
                     <span className="text-[10px] text-slate-500 uppercase font-semibold">Project Status</span>
-                    <div className="text-xs font-bold text-emerald-700">Ongoing Development</div>
+                    <div className="text-xs font-bold text-amber-800">Ongoing Development</div>
                   </div>
                   <div>
                     <span className="text-[10px] text-slate-500 uppercase font-semibold">Location</span>
@@ -831,19 +831,19 @@ export const Home: React.FC = () => {
 
                 <div className="space-y-2.5 text-xs sm:text-sm text-slate-600">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
                     <span>Located on 100 Feet Wide Road near Decent School &amp; Allen Career Institute</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
                     <span>Adjacent to Rajasthan's largest 200-Bigha Herbal Park</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
                     <span>Up to 90% Home Loan pre-approved with leading national banks</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8C6514] shrink-0 mt-0.5" />
                     <span>Gated community with 24×7 security, CCTV, and boundary wall</span>
                   </div>
                 </div>
@@ -877,7 +877,7 @@ export const Home: React.FC = () => {
                       const elem = document.getElementById('enquiry-section');
                       if (elem) elem.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-emerald-700 hover:border-emerald-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
+                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-amber-800 hover:border-emerald-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
                   >
                     Enquire Now
                   </button>
@@ -890,7 +890,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION D.2: CRAFTED FOR FAMILY LIVING (FEATURING BOTH NEW LUXURY LIVING EXPERIENCES) */}
-      <section className="py-20 lg:py-28 bg-white border-b border-slate-200 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div
@@ -900,11 +900,11 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-14 space-y-2.5"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider">
               <span>Thoughtful Living Experience</span>
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Homes Designed for <span className="text-emerald-600">Family Happiness</span>
+              Homes Designed for <span className="text-[#8C6514]">Family Happiness</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Expansive living rooms, ambient warm lighting, and private balconies built to celebrate every moment of family life.
@@ -943,7 +943,7 @@ export const Home: React.FC = () => {
               </div>
               <div className="p-7 space-y-2 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-amber-800 transition-colors">
                     Warm Ambient Interiors &amp; Grand Living
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mt-2">
@@ -951,7 +951,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <span className="font-semibold text-emerald-700">Mukundra Prime Residences</span>
+                  <span className="font-semibold text-amber-800">Mukundra Prime Residences</span>
                   <span>Brochure Verified Layout</span>
                 </div>
               </div>
@@ -988,7 +988,7 @@ export const Home: React.FC = () => {
               </div>
               <div className="p-7 space-y-2 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-amber-800 transition-colors">
                     Sunlit Rooms with Private Panoramic Balconies
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mt-2">
@@ -996,7 +996,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <span className="font-semibold text-emerald-700">Mukundra Prime Residences</span>
+                  <span className="font-semibold text-amber-800">Mukundra Prime Residences</span>
                   <span>100 Ft. Road Facing</span>
                 </div>
               </div>
@@ -1007,7 +1007,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION E: UNIT PLAN PREVIEW */}
-      <section className="py-20 lg:py-28 bg-white border-b border-slate-200 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#EAF3EC] border-b border-[#CCE2D2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -1022,7 +1022,7 @@ export const Home: React.FC = () => {
                 Residential Layouts
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-                Mukundra Prime <span className="text-emerald-600">Unit Plan</span>
+                Mukundra Prime <span className="text-sky-600">Unit Plan</span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
                 Thoughtfully planned residential unit blueprints. Click on any plan to inspect high-resolution dimensions.
@@ -1034,7 +1034,7 @@ export const Home: React.FC = () => {
               className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
             >
               <span>View All Unit Plans</span>
-              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#8C6514]" />
             </Link>
           </motion.div>
 
@@ -1114,7 +1114,7 @@ export const Home: React.FC = () => {
               <a
                 href="/assets/projects/mukundra-prime/mukundra-prime-brochure.pdf"
                 download="Mukundra-Prime-Official-Brochure.pdf"
-                className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg hover:shadow-emerald-400/30 cursor-pointer"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg hover:shadow-emerald-400/30 cursor-pointer"
               >
                 <Download className="w-4 h-4 text-slate-950" />
                 <span>Download PDF (8.5 MB)</span>
@@ -1126,7 +1126,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION F: AMENITIES SECTION - 14 AMENITIES */}
-      <section className="py-20 lg:py-28 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section className="py-20 lg:py-28 bg-[#DFECE2] border-b border-[#CCE2D2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <motion.div 
@@ -1140,7 +1140,7 @@ export const Home: React.FC = () => {
               Lifestyle &amp; Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              14 Verified <span className="text-emerald-600">Resort Amenities</span>
+              14 Verified <span className="text-sky-600">Resort Amenities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Every facility confirmed in the official Mukundra Prime brochure to enrich daily family life.
@@ -1174,7 +1174,7 @@ export const Home: React.FC = () => {
           <div className="text-center pt-12">
             <Link
               to="/amenities"
-              className="px-8 py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
+              className="px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black shadow-[0_4px_16px_rgba(212,175,55,0.4)] text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(16,185,129,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
             >
               <span>Explore All 14 Amenities</span>
               <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -1203,7 +1203,7 @@ export const Home: React.FC = () => {
       />
 
       {/* SECTION H: APPROVED BANKING PARTNERS (AUTHENTIC REAL LOGOS & CONTINUOUS RUNNING MARQUEE) */}
-      <section className="py-16 sm:py-20 bg-white border-b border-slate-200 overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#EAF3EC] border-b border-[#CCE2D2] overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1212,14 +1212,14 @@ export const Home: React.FC = () => {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 shadow-xs mb-3">
-            <Landmark className="w-3.5 h-3.5 text-emerald-600" />
+            <Landmark className="w-3.5 h-3.5 text-[#8C6514]" />
             <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-800">
               Financial Assistance &amp; Loan Approvals
             </span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900">
-            Approved Banking Partners <span className="text-emerald-600">(Up to 90% Loan)</span>
+            Approved Banking Partners <span className="text-[#8C6514]">(Up to 90% Loan)</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto mt-2">
@@ -1232,7 +1232,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SECTION I: ENQUIRY CTA SECTION */}
-      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="enquiry-section" className="py-20 lg:py-28 bg-[#DFECE2] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -1244,13 +1244,13 @@ export const Home: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider">
                 <span>Official Booking Desk</span>
               </div>
 
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Find Your Ideal Space at <span className="text-emerald-600">Mukundra Prime</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] leading-tight">
+                Find Your Ideal Space at <span className="text-sky-600">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1259,8 +1259,8 @@ export const Home: React.FC = () => {
 
               {/* Direct Booking Desk Contacts */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 space-y-4 shadow-xl">
-                <div className="text-xs uppercase font-bold tracking-wider text-emerald-700 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-emerald-600" />
+                <div className="text-xs uppercase font-bold tracking-wider text-amber-800 flex items-center gap-2">
+                  <PhoneCall className="w-4 h-4 text-[#8C6514]" />
                   <span>Direct Booking Lines</span>
                 </div>
 

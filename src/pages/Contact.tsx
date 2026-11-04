@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
   const siteOfficeAddress = "Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan";
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 pt-20">
+    <div className="min-h-screen bg-[#EAF3EC] text-slate-800 pt-20">
       
       {/* Header with High-Resolution Aerial Masterplan Background */}
       <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-slate-800">
@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
       </section>
 
       {/* Main Offices & Contact Grid */}
-      <section className="py-16 sm:py-24 bg-[#F8FAFC]">
+      <section className="py-16 sm:py-24 bg-[#DFECE2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -78,8 +78,8 @@ export const Contact: React.FC = () => {
               </div>
 
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Find Your Ideal Space at <span className="text-emerald-600">Mukundra Prime</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8C6514] leading-tight">
+                Find Your Ideal Space at <span className="text-sky-600">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -87,20 +87,20 @@ export const Contact: React.FC = () => {
               </p>
 
               {/* Direct Booking Desk Contacts */}
-              <div className="p-6 rounded-2xl bg-white border border-slate-200 space-y-4 shadow-xl">
-                <div className="text-xs uppercase font-bold tracking-wider text-emerald-700 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-emerald-600" />
+              <div className="p-6 rounded-2xl bg-white border border-[#CCE2D2] space-y-4 shadow-xl">
+                <div className="text-xs uppercase font-bold tracking-wider text-amber-800 flex items-center gap-2">
+                  <PhoneCall className="w-4 h-4 text-sky-600" />
                   <span>Direct Booking Lines</span>
                 </div>
 
                 <div className="space-y-2.5">
                   <a
                     href="tel:8875000404"
-                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
+                    className="p-4 rounded-xl bg-slate-50 border border-[#CCE2D2] text-[#8C6514] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
                   >
                     <div>
                       <div className="text-[10px] text-slate-500 font-medium uppercase">Director Desk</div>
-                      <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
+                      <div className="font-bold text-sm text-[#8C6514]">+91 88750 00404</div>
                     </div>
                     <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full">
                       Prakash Jain (Deeppura)
@@ -110,26 +110,26 @@ export const Contact: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     <a
                       href="tel:7357690111"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2] text-[#8C6514] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 1</div>
-                      <div className="font-bold text-xs text-slate-900">7357690111</div>
+                      <div className="font-bold text-xs text-[#8C6514]">7357690111</div>
                     </a>
 
                     <a
                       href="tel:8239999520"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-[#CCE2D2] text-[#8C6514] hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 2</div>
-                      <div className="font-bold text-xs text-slate-900">8239999520</div>
+                      <div className="font-bold text-xs text-[#8C6514]">8239999520</div>
                     </a>
                   </div>
                 </div>
 
-                <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-slate-200">
-                  <div><strong className="text-slate-900">Corporate Office:</strong> {corpOfficeAddress}</div>
-                  <div><strong className="text-slate-900">Site Office:</strong> {siteOfficeAddress}</div>
-                  <div><strong className="text-slate-900">Email:</strong> deeppura9@gmail.com</div>
+                <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-[#CCE2D2]">
+                  <div><strong className="text-[#8C6514]">Corporate Office:</strong> {corpOfficeAddress}</div>
+                  <div><strong className="text-[#8C6514]">Site Office:</strong> {siteOfficeAddress}</div>
+                  <div><strong className="text-[#8C6514]">Email:</strong> deeppura9@gmail.com</div>
                 </div>
               </div>
             </motion.div>
@@ -157,13 +157,13 @@ export const Contact: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 pt-12 border-t border-slate-200"
+            className="mt-16 pt-12 border-t border-[#CCE2D2]"
           >
             <div className="mb-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block mb-1">
                 PROJECT LOCATION MAP
               </span>
-              <h2 className="text-2xl font-black text-slate-900">
+              <h2 className="text-2xl font-black text-[#8C6514]">
                 Visit Mukundra Prime Site Office
               </h2>
               <p className="text-xs text-slate-600">
@@ -171,7 +171,7 @@ export const Contact: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white p-2">
+            <div className="rounded-2xl overflow-hidden border border-[#CCE2D2] shadow-xl bg-white p-2">
               <iframe
                 title="DEEPPURA GROUP Mukundra Prime Location Map"
                 src="https://maps.google.com/maps?q=Deoli%20Arab%20Road,%20Near%20Decent%20School,%20Raipura,%20Kota,%20Rajasthan&t=&z=14&ie=UTF8&iwloc=&output=embed"
