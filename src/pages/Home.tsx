@@ -1138,9 +1138,9 @@ export const Home: React.FC = () => {
                 </div>
 
                 <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-slate-200">
-                  <div><strong className="text-slate-900">Corporate Office:</strong> G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan</div>
+                  <div><strong className="text-slate-900">Corporate Office:</strong> G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan</div>
                   <div><strong className="text-slate-900">Site Office:</strong> Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan</div>
-                  <div><strong className="text-slate-900">Email:</strong> deeppura@gmail.com</div>
+                  <div><strong className="text-slate-900">Email:</strong> deeppura9@gmail.com</div>
                 </div>
               </div>
             </motion.div>

@@ -214,10 +214,10 @@ export const About: React.FC = () => {
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Corporate Headquarters</span>
               <h3 className="text-xl font-black text-slate-900">Corporate Office</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan
+                G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan
               </p>
               <div className="pt-2 text-xs text-slate-500">
-                <strong className="text-slate-900">Email:</strong> deeppura@gmail.com
+                <strong className="text-slate-900">Email:</strong> deeppura9@gmail.com
               </div>
             </motion.div>
 

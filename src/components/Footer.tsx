@@ -174,8 +174,8 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Email Address</div>
-                  <a href="mailto:deeppura@gmail.com" className="text-slate-900 hover:text-emerald-700 transition-colors break-all font-semibold">
-                    deeppura@gmail.com
+                  <a href="mailto:deeppura9@gmail.com" className="text-slate-900 hover:text-emerald-700 transition-colors break-all font-semibold">
+                    deeppura9@gmail.com
                   </a>
                 </div>
               </div>
@@ -186,12 +186,13 @@ export const Footer: React.FC = () => {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs text-slate-500 font-medium">Location</div>
+                  <div className="text-xs text-slate-500 font-medium">Corporate Office</div>
                   <p className="text-slate-900 text-xs leading-relaxed">
-                    G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan
+                    G-1-319 A, IPIA Road No. 6, Anantpura, Kota (Rajasthan)
                   </p>
-                  <p className="text-emerald-700 font-semibold text-[11px] mt-0.5">
-                    Site: Raipura, Kota
+                  <div className="text-xs text-slate-500 font-medium mt-2">Site Address</div>
+                  <p className="text-emerald-700 font-semibold text-xs leading-relaxed">
+                    Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota (Rajasthan)
                   </p>
                 </div>
               </div>

@@ -21,6 +21,30 @@ const featured3DPlans = [
   }
 ];
 
+const officialBrochurePlans = [
+  {
+    id: 'brochure-3bhk',
+    name: '3 BHK Residential Unit Plan',
+    area: 'Area 755 sq.ft.',
+    src: '/assets/floor-plans/plan-2d-3bhk-755sqft.jpg',
+    specs: ['Bed Room: 10×11 ft', 'Bed Room: 10×10 ft', 'Bed Room: 9.25×9 ft', 'Living Room: 9×14 ft', 'Open Kitchen: 7×5.5 ft', 'Balcony: 3.75×7.5 ft', '2 Toilets with cooler ledges']
+  },
+  {
+    id: 'brochure-2bhk',
+    name: '2 BHK Residential Unit Plan',
+    area: 'Area 700.15 sq.ft.',
+    src: '/assets/floor-plans/plan-2d-2bhk-700sqft.jpg',
+    specs: ['Bed Room: 10.25×10 ft', 'Bed Room: 9.5×10 ft', 'Living Room: 16×9 ft', 'Open Kitchen: 10×5.5 ft', 'Dual Balconies: 5.5×3 ft each', '2 Toilets: 4.75×6.25 ft & 7.5×4 ft']
+  },
+  {
+    id: 'brochure-1bhk',
+    name: '1 BHK Deluxe Unit Plan',
+    area: '1 BHK Deluxe',
+    src: '/assets/floor-plans/plan-2d-1bhk-deluxe.jpg',
+    specs: ['Bed Room: 9.5×10 ft', 'Living Room: 9×11 ft', 'Kitchen: 5.5×10.5 ft', 'Balcony: 6.5×3 ft', '3.5 Wide Passage', 'Spacious Attached Washroom']
+  }
+];
+
 const unitPlanImages = [
   { id: 1, src: '/assets/unit-plans/unit_plan_1.jpg' },
   { id: 2, src: '/assets/unit-plans/unit_plan_2.jpg' },
@@ -46,6 +70,18 @@ export const FloorPlans: React.FC = () => {
       captionHi: p.title,
       category: '3D Floor Plan',
     })),
+    ...officialBrochurePlans.map((p) => ({
+      url: p.src,
+      captionEn: `${p.name} (${p.area})`,
+      captionHi: `${p.name} (${p.area})`,
+      category: 'Official Brochure Plan',
+    })),
+    {
+      url: '/assets/projects/mukundra-prime/official-brochure-flyer.jpg',
+      captionEn: 'Mukundra Prime Official Brochure & Amenities Flyer',
+      captionHi: 'Mukundra Prime Official Brochure & Amenities Flyer',
+      category: 'Official Brochure Plan',
+    },
     ...unitPlanImages.map((u) => ({
       url: u.src,
       captionEn: `Architectural Blueprint Unit Plan ${u.id}`,
@@ -163,6 +199,89 @@ export const FloorPlans: React.FC = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Official Brochure Unit Plans with Exact Room Dimensions */}
+      <section className="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-300 mb-2">
+              Verified Brochure Layouts
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+              Official Approved Unit Dimensions
+            </h2>
+            <p className="text-slate-600 text-sm mt-2">
+              Directly from the official DEEPPURA BUILDERS Mukundra Prime brochure, featuring confirmed room sizes and balcony spaces.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {officialBrochurePlans.map((plan, idx) => (
+              <motion.div
+                key={plan.id}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="rounded-2xl bg-white border border-slate-200 hover:border-emerald-500 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+                onClick={() => openLightbox(featured3DPlans.length + idx)}
+              >
+                <div className="relative aspect-[4/3] p-4 bg-slate-50/50 flex items-center justify-center border-b border-slate-100 overflow-hidden">
+                  <img
+                    src={plan.src}
+                    alt={plan.name}
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-black uppercase tracking-wider shadow-sm">
+                      {plan.area}
+                    </span>
+                  </div>
+                  <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 border border-slate-200 text-slate-700 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
+                    <Maximize2 className="w-3.5 h-3.5" />
+                  </div>
+                </div>
+
+                <div className="p-5 space-y-3">
+                  <h3 className="font-heading font-black text-lg text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    {plan.name}
+                  </h3>
+                  <div className="space-y-1.5 pt-1 border-t border-slate-100">
+                    {plan.specs.map((spec, sIdx) => (
+                      <div key={sIdx} className="text-xs text-slate-600 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                        <span>{spec}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Banner to view the complete Official Brochure Flyer */}
+          <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-900 via-emerald-800 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+            <div>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-300 block">
+                Full Specification Sheet
+              </span>
+              <h4 className="text-xl font-black mt-1">
+                Official Mukundra Prime Brochure &amp; Amenities Flyer
+              </h4>
+              <p className="text-xs text-emerald-100/80 mt-1 max-w-xl">
+                View confirmed amenities (Swimming Pool, Mandir, Gym, 200-Bigha Herbal Park proximity) and corporate office details in high definition.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => openLightbox(featured3DPlans.length + officialBrochurePlans.length)}
+              className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-all shrink-0 cursor-pointer"
+            >
+              View Official Flyer
+            </button>
           </div>
         </div>
       </section>

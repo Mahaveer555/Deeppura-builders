@@ -19,6 +19,18 @@ export const Gallery: React.FC = () => {
       category: 'Exterior'
     },
     {
+      url: '/assets/projects/mukundra-prime/elevation-daylight-wide.jpg',
+      captionEn: 'Mukundra Prime Daylight Architectural Towers View from 100 Ft. Road',
+      captionHi: 'Mukundra Prime Daylight Architectural Towers View from 100 Ft. Road',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/elevation-twilight-wide.jpg',
+      captionEn: 'Mukundra Prime Twilight Towers Elevation with Gate Signboard',
+      captionHi: 'Mukundra Prime Twilight Towers Elevation with Gate Signboard',
+      category: 'Exterior'
+    },
+    {
       url: '/assets/projects/mukundra-prime/aerial-masterplan-100ft.jpg',
       captionEn: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
       captionHi: 'Mukundra Prime 3D Masterplan Aerial Elevation on 100 Ft. Road',
@@ -26,9 +38,21 @@ export const Gallery: React.FC = () => {
     },
     {
       url: '/assets/projects/mukundra-prime/site-progress-tower.jpg',
-      captionEn: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress',
-      captionHi: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress',
+      captionEn: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress (Angle 1)',
+      captionHi: 'Mukundra Prime Real On-Site High-Rise Tower Construction Progress (Angle 1)',
       category: 'Real Site Progress'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower-angle2.jpg',
+      captionEn: 'Mukundra Prime On-Site Multi-Storey Tower Construction (Angle 2)',
+      captionHi: 'Mukundra Prime On-Site Multi-Storey Tower Construction (Angle 2)',
+      category: 'Real Site Progress'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/official-brochure-flyer.jpg',
+      captionEn: 'Mukundra Prime Official Project Brochure & Amenities Specification Sheet',
+      captionHi: 'Mukundra Prime Official Project Brochure & Amenities Specification Sheet',
+      category: 'Floor Plans'
     },
     {
       url: '/assets/floor-plans/mukundra-prime-2bhk-3d-plan.jpg',
@@ -40,6 +64,30 @@ export const Gallery: React.FC = () => {
       url: '/assets/floor-plans/mukundra-prime-3bhk-3d-plan.jpg',
       captionEn: 'Mukundra Prime 3 BHK 3D Furnished Isometric Floor Plan',
       captionHi: 'Mukundra Prime 3 BHK 3D Furnished Isometric Floor Plan',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/floor-plans/mukundra-prime-3bhk-deluxe-3d-plan.jpg',
+      captionEn: 'Mukundra Prime 3 BHK Deluxe 3D Furnished Isometric Layout (Alternate Angle)',
+      captionHi: 'Mukundra Prime 3 BHK Deluxe 3D Furnished Isometric Layout (Alternate Angle)',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/floor-plans/plan-2d-3bhk-755sqft.jpg',
+      captionEn: 'Mukundra Prime 3 BHK Architectural Unit Plan (755 Sq. Ft.)',
+      captionHi: 'Mukundra Prime 3 BHK Architectural Unit Plan (755 Sq. Ft.)',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/floor-plans/plan-2d-2bhk-700sqft.jpg',
+      captionEn: 'Mukundra Prime 2 BHK Architectural Unit Plan (700.15 Sq. Ft.)',
+      captionHi: 'Mukundra Prime 2 BHK Architectural Unit Plan (700.15 Sq. Ft.)',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/floor-plans/plan-2d-1bhk-deluxe.jpg',
+      captionEn: 'Mukundra Prime 1 BHK Deluxe Architectural Unit Plan',
+      captionHi: 'Mukundra Prime 1 BHK Deluxe Architectural Unit Plan',
       category: 'Floor Plans'
     },
     {

@@ -95,9 +95,9 @@ export const PrivacyPolicy: React.FC = () => {
               <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-2 text-xs sm:text-sm text-slate-600">
                 <div><strong className="text-slate-900">Company:</strong> DEEPPURA GROUP</div>
                 <div><strong className="text-slate-900">Founder &amp; Director:</strong> Animesh Jain (+91 88750 00404)</div>
-                <div><strong className="text-slate-900">Official Email:</strong> <a href="mailto:deeppura@gmail.com" className="text-emerald-700 hover:text-emerald-800 font-semibold">deeppura@gmail.com</a></div>
+                <div><strong className="text-slate-900">Official Email:</strong> <a href="mailto:deeppura9@gmail.com" className="text-emerald-700 hover:text-emerald-800 font-semibold">deeppura9@gmail.com</a></div>
                 <div><strong className="text-slate-900">Booking Desk:</strong> +91 7357690111 / +91 8239999520</div>
-                <div><strong className="text-slate-900">Corporate Office:</strong> G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan</div>
+                <div><strong className="text-slate-900">Corporate Office:</strong> G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan</div>
               </div>
             </div>
 

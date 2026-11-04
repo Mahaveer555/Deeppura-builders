@@ -13,7 +13,7 @@ import {
 import { EnquiryForm } from '../components/EnquiryForm';
 
 export const Contact: React.FC = () => {
-  const corpOfficeAddress = "G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan";
+  const corpOfficeAddress = "G-1-319 A, IPIA Road No. 6, Anantpura, Kota, Rajasthan";
   const siteOfficeAddress = "Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan";
 
   return (
@@ -129,7 +129,7 @@ export const Contact: React.FC = () => {
                 <div className="pt-3 text-[11px] text-slate-600 space-y-1.5 border-t border-slate-200">
                   <div><strong className="text-slate-900">Corporate Office:</strong> {corpOfficeAddress}</div>
                   <div><strong className="text-slate-900">Site Office:</strong> {siteOfficeAddress}</div>
-                  <div><strong className="text-slate-900">Email:</strong> deeppura@gmail.com</div>
+                  <div><strong className="text-slate-900">Email:</strong> deeppura9@gmail.com</div>
                 </div>
               </div>
             </motion.div>
