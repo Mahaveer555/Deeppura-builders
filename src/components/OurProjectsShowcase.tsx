@@ -120,14 +120,14 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
           className="text-center max-w-3xl mx-auto mb-14 space-y-3"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 shadow-xs">
-            <ShieldCheck className="w-4 h-4 text-sky-600" />
+            <ShieldCheck className="w-4 h-4 text-[#8A6632]" />
             <span className="text-xs font-bold uppercase tracking-wider text-amber-900">
               DEEPPURA GROUP Portfolio
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight uppercase">
-            OUR <span className="text-sky-600">PROJECTS</span>
+            OUR <span className="text-[#8A6632] font-black">PROJECTS</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -192,7 +192,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                           </>
                         ) : (
                           <>
-                            <CheckCircle2 className="w-3.5 h-3.5 text-sky-600" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#8A6632]" />
                             {project.statusLabel}
                           </>
                         )}
@@ -222,7 +222,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4 pointer-events-none">
                       <span className="text-[#8A6632] text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 bg-white/95 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-[#E8D8B3] shadow-md">
                         <span>Click to Enlarge / Details</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-sky-600" />
+                        <ArrowRight className="w-3.5 h-3.5 text-[#8A6632]" />
                       </span>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ export const OurProjectsShowcase: React.FC<OurProjectsShowcaseProps> = ({ onImag
                       </h3>
 
                       <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500 mt-2 font-medium">
-                        <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+                        <MapPin className="w-3.5 h-3.5 text-[#8A6632] shrink-0" />
                         <span className="truncate">{project.location}</span>
                       </div>
                     </div>

@@ -189,21 +189,21 @@ export const MukundraPrime: React.FC = () => {
             >
               <div className="p-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#E8D8B3] shadow-2xl space-y-4">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800">
-                  <Sparkles className="w-4 h-4 text-sky-600" />
+                  <Sparkles className="w-4 h-4 text-[#8A6632]" />
                   <span>Township Highlights</span>
                 </div>
 
                 <div className="space-y-3 text-xs text-slate-700 font-medium">
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Direct 100 Feet Wide Road Access near Decent School</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>Adjacent to 200 Bigha Herbal Park &amp; Clean Green Belt</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                     <span>14+ Verified Resort Lifestyle Amenities (Pool, Temple, Gym)</span>
                   </div>
                 </div>
@@ -239,7 +239,7 @@ export const MukundraPrime: React.FC = () => {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
-                Modern Residences Built for <span className="text-sky-600">Enduring Comfort</span>
+                Modern Residences Built for <span className="text-[#8A6632] font-black">Enduring Comfort</span>
               </h2>
 
               {/* Statement Box */}
@@ -311,7 +311,7 @@ export const MukundraPrime: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="p-3 rounded-full bg-white text-amber-800 shadow-xl border border-[#E8D8B3]">
-                    <Maximize2 className="w-5 h-5 text-sky-600" />
+                    <Maximize2 className="w-5 h-5 text-[#8A6632]" />
                   </span>
                 </div>
               </div>
@@ -382,7 +382,7 @@ export const MukundraPrime: React.FC = () => {
               Detailed Unit Plans
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632]">
-              Architectural <span className="text-sky-600">Unit Plans</span>
+              Architectural <span className="text-[#8A6632] font-black">Unit Plans</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Click any layout to inspect high-resolution dimensions in full screen lightbox.
@@ -458,7 +458,7 @@ export const MukundraPrime: React.FC = () => {
               Community Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632]">
-              14 Confirmed <span className="text-sky-600">Amenities</span>
+              14 Confirmed <span className="text-[#8A6632] font-black">Amenities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Every facility confirmed in the official Mukundra Prime brochure to enrich daily family life.
@@ -509,7 +509,7 @@ export const MukundraPrime: React.FC = () => {
               </span>
 
               <h2 className="text-3xl sm:text-4xl font-black text-[#8A6632]">
-                Prime Location on <span className="text-sky-600">100 Feet Wide Road</span>
+                Prime Location on <span className="text-[#8A6632] font-black">100 Feet Wide Road</span>
               </h2>
 
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -518,7 +518,7 @@ export const MukundraPrime: React.FC = () => {
 
               <div className="space-y-3 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#E8D8B3] shadow-sm">
-                  <MapPin className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-[#8A6632] block font-bold">Confirmed Site Address</strong>
                     <span>Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan</span>
@@ -526,7 +526,7 @@ export const MukundraPrime: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#E8D8B3] shadow-sm">
-                  <Trees className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <Trees className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-[#8A6632] block font-bold">200 Bigha Herbal Park</strong>
                     <span>Walk to Rajasthan's largest botanical and herbal reserve for fresh air and daily fitness.</span>
@@ -534,7 +534,7 @@ export const MukundraPrime: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#E8D8B3] shadow-sm">
-                  <Compass className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <Compass className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-[#8A6632] block font-bold">Education Proximity</strong>
                     <span>Immediate connectivity to Decent School and Allen Career Institute.</span>

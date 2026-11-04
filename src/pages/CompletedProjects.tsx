@@ -53,14 +53,14 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
 
           {/* Hover Zoom Pill */}
           <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-[#E8D8B3] text-slate-800 text-xs font-medium flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
-            <Maximize2 className="w-3.5 h-3.5 text-sky-600" />
+            <Maximize2 className="w-3.5 h-3.5 text-[#8A6632]" />
             <span>Click to Enlarge</span>
           </div>
 
           {/* Multiple views indicator badge */}
           {images.length > 1 && (
             <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md border border-[#E8D8B3] text-amber-900 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-              <Camera className="w-3 h-3 text-sky-600" />
+              <Camera className="w-3 h-3 text-[#8A6632]" />
               <span>{images.length} Architectural Views</span>
             </div>
           )}
@@ -92,7 +92,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
       {/* Content Details */}
       <div className={`lg:col-span-6 space-y-4 ${idx % 2 === 1 ? 'lg:order-1' : ''}`}>
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-50 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-200">
-          <CheckCircle2 className="w-3.5 h-3.5 text-sky-600" />
+          <CheckCircle2 className="w-3.5 h-3.5 text-[#8A6632]" />
           <span>Completed &amp; Handed Over</span>
         </div>
 
@@ -101,7 +101,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
         </h3>
 
         <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
-          <MapPin className="w-4 h-4 text-sky-600 shrink-0" />
+          <MapPin className="w-4 h-4 text-[#8A6632] shrink-0" />
           <span>{project.locationEn}</span>
         </div>
 
@@ -130,7 +130,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white hover:bg-amber-50 text-slate-800 hover:text-amber-900 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
           >
-            <MapPin className="w-3.5 h-3.5 text-sky-600" />
+            <MapPin className="w-3.5 h-3.5 text-[#8A6632]" />
             <span>View Location on Google Maps</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>

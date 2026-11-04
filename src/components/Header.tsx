@@ -61,13 +61,13 @@ export const Header: React.FC<HeaderProps> = () => {
           {/* Left: Office Locations & Approvals */}
           <div className="flex items-center gap-5 text-[11.5px] font-medium whitespace-nowrap shrink-0">
             <div className="flex items-center gap-1.5 text-slate-800">
-              <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+              <MapPin className="w-3.5 h-3.5 text-[#8A6632] shrink-0" />
               <span className="font-bold text-slate-900">Kota, Rajasthan:</span>
               <span className="text-slate-600">Talwandi (Corporate) • Raipura (Site)</span>
             </div>
             <span className="text-slate-300">•</span>
             <div className="flex items-center gap-1.5 text-slate-800">
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#8A6632] shrink-0" />
               <span className="font-medium text-slate-700">UIT &amp; RERA Approved Projects</span>
             </div>
           </div>

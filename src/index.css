@@ -65,9 +65,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Gold & Blue Gradient Accent */
-.gold-blue-gradient {
-  background: linear-gradient(135deg, #C5A46D 0%, #0284C7 100%);
+/* Gold Royal Gradient Accent */
+.gold-blue-gradient, .gold-royal-gradient {
+  background: linear-gradient(135deg, #C5A46D 0%, #8A6632 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

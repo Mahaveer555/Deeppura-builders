@@ -83,7 +83,7 @@ export const About: React.FC = () => {
               {/* Leadership Spotlight Card */}
               <div className="p-6 rounded-2xl bg-slate-50 border border-[#E8D8B3] shadow-md space-y-3">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800">
-                  <ShieldCheck className="w-4 h-4 text-sky-600" />
+                  <ShieldCheck className="w-4 h-4 text-[#8A6632]" />
                   <span>Founder &amp; Director</span>
                 </div>
                 <h3 className="text-2xl font-black text-[#8A6632]">
@@ -97,7 +97,7 @@ export const About: React.FC = () => {
                     href="tel:8875000404"
                     className="inline-flex items-center gap-2 text-xs font-bold text-amber-800 hover:text-amber-900 transition-colors"
                   >
-                    <PhoneCall className="w-3.5 h-3.5 text-sky-600" />
+                    <PhoneCall className="w-3.5 h-3.5 text-[#8A6632]" />
                     <span>Director Helpline: +91 88750 00404</span>
                   </a>
                 </div>
@@ -117,7 +117,7 @@ export const About: React.FC = () => {
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
-                Crafting Dreams, Creating <span className="text-sky-600">Landmarks in Kota</span>
+                Crafting Dreams, Creating <span className="text-[#8A6632] font-black">Landmarks in Kota</span>
               </h2>
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -199,7 +199,7 @@ export const About: React.FC = () => {
               Operations &amp; Governance
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#8A6632]">
-              Our Kota <span className="text-sky-600">Headquarters</span>
+              Our Kota <span className="text-[#8A6632] font-black">Headquarters</span>
             </h2>
           </motion.div>
 

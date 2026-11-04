@@ -10,10 +10,10 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
   const items = [
     { text: "RERA & UIT Kota Approved Township", icon: ShieldCheck, color: 'gold' },
     { text: "Direct 100 Ft. Wide Masterplan Road Access", icon: Building, color: 'gold' },
-    { text: "Up to 90% Bank Loan Available (SBI, ICICI, Axis, BOB)", icon: Landmark, color: 'blue' },
+    { text: "Up to 90% Bank Loan Available (SBI, ICICI, Axis, BOB)", icon: Landmark, color: 'gold' },
     { text: "1, 2 & 3 BHK Verified Architectural Blueprints", icon: CheckCircle2, color: 'gold' },
     { text: "14+ Resort Lifestyle Amenities (Pool, Temple, Gym)", icon: Sparkles, color: 'gold' },
-    { text: "Over 6.5 Lakh Sq. Ft. Land Delivered Across Kota", icon: Award, color: 'blue' },
+    { text: "Over 6.5 Lakh Sq. Ft. Land Delivered Across Kota", icon: Award, color: 'gold' },
     { text: "Adjacent to 200 Bigha Herbal Park & Clean Green Corridor", icon: CheckCircle2, color: 'gold' },
     { text: "Zero Brokerage Direct Developer Allotment Desk", icon: ShieldCheck, color: 'gold' },
   ];
@@ -39,9 +39,9 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
         };
       case 'blue':
         return {
-          icon: 'text-sky-600',
-          bg: 'bg-sky-50 border-sky-200 text-sky-600',
-          dot: 'text-sky-500'
+          icon: 'text-[#8A6632]',
+          bg: 'bg-amber-50 border-amber-200 text-[#8A6632]',
+          dot: 'text-[#8A6632]'
         };
       case 'gold':
       default:

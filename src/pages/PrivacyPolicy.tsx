@@ -18,11 +18,11 @@ export const PrivacyPolicy: React.FC = () => {
             className="space-y-4"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 text-amber-900 text-xs font-bold uppercase tracking-wider border border-amber-200">
-              <Lock className="w-3.5 h-3.5 text-sky-600" />
+              <Lock className="w-3.5 h-3.5 text-[#8A6632]" />
               <span>Legal &amp; Transparency</span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] tracking-tight leading-tight">
-              Privacy <span className="text-sky-600">Policy</span>
+              Privacy <span className="text-[#8A6632] font-black">Policy</span>
             </h1>
             <p className="text-xs sm:text-sm text-slate-600">
               DEEPPURA GROUP • www.deeppurabuilders.com • Kota, Rajasthan

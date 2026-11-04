@@ -667,7 +667,7 @@ export const FloorPlans: React.FC = () => {
                     <div className="rounded-xl bg-slate-50/60 border border-[#E8D8B3] overflow-hidden group">
                       <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#E8D8B3] flex items-center justify-between">
                         <span className="text-[11px] font-black uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
-                          <Layers className="w-3.5 h-3.5 text-sky-600" />
+                          <Layers className="w-3.5 h-3.5 text-[#8A6632]" />
                           <span>3D Furnished Isometric View</span>
                         </span>
                         <button
@@ -695,7 +695,7 @@ export const FloorPlans: React.FC = () => {
                     <div className="rounded-xl bg-slate-50/60 border border-[#E8D8B3] overflow-hidden group">
                       <div className="px-3 py-1.5 bg-slate-100/70 border-b border-[#E8D8B3] flex items-center justify-between">
                         <span className="text-[11px] font-black uppercase tracking-wider text-slate-800 flex items-center gap-1.5">
-                          <FileText className="w-3.5 h-3.5 text-sky-600" />
+                          <FileText className="w-3.5 h-3.5 text-[#8A6632]" />
                           <span>2D Architectural Layout &amp; Measurements</span>
                         </span>
                         <button
@@ -728,7 +728,7 @@ export const FloorPlans: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-700">
                       {plan.specs.map((spec, sIdx) => (
                         <div key={sIdx} className="inline-flex items-center gap-1.5">
-                          <CheckCircle2 className="w-3 h-3 text-sky-600 shrink-0" />
+                          <CheckCircle2 className="w-3 h-3 text-[#8A6632] shrink-0" />
                           <span>{spec}</span>
                         </div>
                       ))}

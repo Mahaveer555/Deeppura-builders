@@ -609,7 +609,7 @@ export const Home: React.FC = () => {
 
               {/* Main Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Building Trust Through <span className="text-sky-600">Thoughtful Development</span>
+                Building Trust Through <span className="text-[#8A6632] font-black">Thoughtful Development</span>
               </h2>
 
               <p className="text-sm font-semibold text-slate-700 leading-relaxed">
@@ -766,7 +766,7 @@ export const Home: React.FC = () => {
               Featured Ongoing Development
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Mukundra Prime <span className="text-[#8A6632]">Residences</span>
+              Mukundra Prime <span className="text-[#8A6632] font-black">Residences</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               An ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Raipura, Kota, Rajasthan.
@@ -1000,7 +1000,7 @@ export const Home: React.FC = () => {
                 Residential Layouts
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-                Mukundra Prime <span className="text-sky-600">Unit Plan</span>
+                Mukundra Prime <span className="text-[#8A6632] font-black">Unit Plan</span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
                 Thoughtfully planned residential unit blueprints. Click on any plan to inspect high-resolution dimensions.
@@ -1118,7 +1118,7 @@ export const Home: React.FC = () => {
               Lifestyle &amp; Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              14 Verified <span className="text-sky-600">Resort Amenities</span>
+              14 Verified <span className="text-[#8A6632] font-black">Resort Amenities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Every facility confirmed in the official Mukundra Prime brochure to enrich daily family life.
@@ -1227,8 +1227,8 @@ export const Home: React.FC = () => {
               </div>
 
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
-                Find Your Ideal Space at <span className="text-sky-600">Mukundra Prime</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+                Find Your Ideal Space at <span className="text-[#8A6632] font-black">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">

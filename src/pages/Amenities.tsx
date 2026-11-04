@@ -287,7 +287,7 @@ export const Amenities: React.FC = () => {
               Construction Standards
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632]">
-              Architectural <span className="text-sky-600">Specifications</span>
+              Architectural <span className="text-[#8A6632] font-black">Specifications</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Detailed construction materials and fitment specifications engineered for lasting durability.
@@ -305,7 +305,7 @@ export const Amenities: React.FC = () => {
                 className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-[#E8D8B3] shadow-sm space-y-4 hover:border-amber-400 hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="flex items-center justify-between pb-3 border-b border-[#E8D8B3]">
-                  <span className="text-3xl font-black text-sky-600">
+                  <span className="text-3xl font-black text-[#8A6632]">
                     {item.num}
                   </span>
                   <span className="text-xs font-bold uppercase tracking-wider text-[#8A6632]">

@@ -76,7 +76,7 @@ export const Projects: React.FC = () => {
             </div>
             <div className="flex items-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 text-xs font-bold border border-amber-200">
-                <BadgeCheck className="w-4 h-4 text-sky-600" />
+                <BadgeCheck className="w-4 h-4 text-[#8A6632]" />
                 <span>RERA &amp; UIT Approved</span>
               </span>
             </div>
@@ -116,7 +116,7 @@ export const Projects: React.FC = () => {
                   Mukundra Prime
                 </h3>
                 <div className="flex items-start gap-1.5 text-xs text-slate-500 mt-2">
-                  <MapPin className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-[#8A6632] shrink-0 mt-0.5" />
                   <span>{mukundraPrimeProject.address}</span>
                 </div>
               </div>
@@ -144,19 +144,19 @@ export const Projects: React.FC = () => {
                 </strong>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-sky-600" />
+                    <Check className="w-3.5 h-3.5 text-[#8A6632]" />
                     <span>100 Feet Wide Road</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-sky-600" />
+                    <Check className="w-3.5 h-3.5 text-[#8A6632]" />
                     <span>Temple &amp; Splash Pool</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-sky-600" />
+                    <Check className="w-3.5 h-3.5 text-[#8A6632]" />
                     <span>Kids Play Park &amp; Gym</span>
                   </li>
                   <li className="flex items-center gap-1.5">
-                    <Check className="w-3.5 h-3.5 text-sky-600" />
+                    <Check className="w-3.5 h-3.5 text-[#8A6632]" />
                     <span>24×7 Security &amp; CCTV</span>
                   </li>
                 </ul>
@@ -185,7 +185,7 @@ export const Projects: React.FC = () => {
                   rel="noreferrer"
                   className="px-4 py-3 rounded-full text-slate-600 hover:text-amber-800 text-xs font-bold flex items-center gap-1.5 transition-colors"
                 >
-                  <MessageSquare className="w-3.5 h-3.5 text-sky-600" />
+                  <MessageSquare className="w-3.5 h-3.5 text-[#8A6632]" />
                   <span>WhatsApp Desk</span>
                 </a>
               </div>

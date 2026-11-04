@@ -79,7 +79,7 @@ export const Contact: React.FC = () => {
 
               {/* Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632] leading-tight">
-                Find Your Ideal Space at <span className="text-sky-600">Mukundra Prime</span>
+                Find Your Ideal Space at <span className="text-[#8A6632] font-black">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -89,7 +89,7 @@ export const Contact: React.FC = () => {
               {/* Direct Booking Desk Contacts */}
               <div className="p-6 rounded-2xl bg-white border border-[#E8D8B3] space-y-4 shadow-xl">
                 <div className="text-xs uppercase font-bold tracking-wider text-amber-800 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-sky-600" />
+                  <PhoneCall className="w-4 h-4 text-[#8A6632]" />
                   <span>Direct Booking Lines</span>
                 </div>
 
