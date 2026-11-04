@@ -8,7 +8,7 @@ export const PrivacyPolicy: React.FC = () => {
       
       {/* Header */}
       <section className="relative py-16 sm:py-24 bg-slate-50 border-b border-slate-200 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-cyan-500/10 blur-[120px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-emerald-500/10 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -17,12 +17,12 @@ export const PrivacyPolicy: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 text-cyan-800 text-xs font-bold uppercase tracking-wider border border-cyan-200">
-              <Lock className="w-3.5 h-3.5 text-cyan-600" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+              <Lock className="w-3.5 h-3.5 text-emerald-600" />
               <span>Legal &amp; Transparency</span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-              Privacy <span className="text-cyan-600">Policy</span>
+              Privacy <span className="text-emerald-600">Policy</span>
             </h1>
             <p className="text-xs sm:text-sm text-slate-600">
               DEEPPURA GROUP • www.deeppurabuilders.com • Kota, Rajasthan
@@ -81,7 +81,7 @@ export const PrivacyPolicy: React.FC = () => {
                 4. WhatsApp Direct Communication
               </h2>
               <p>
-                Our website utilizes WhatsApp direct messaging to enable prompt customer support. When you submit an enquiry, WhatsApp is initiated on your personal device with an automated structured summary addressed to our verified booking numbers (<a href="tel:7357690111" className="text-cyan-700 font-bold hover:text-cyan-800">7357690111</a> / <a href="tel:8239999520" className="text-cyan-700 font-bold hover:text-cyan-800">8239999520</a>). Communication through WhatsApp is governed by WhatsApp's end-to-end security protocols.
+                Our website utilizes WhatsApp direct messaging to enable prompt customer support. When you submit an enquiry, WhatsApp is initiated on your personal device with an automated structured summary addressed to our verified booking numbers (<a href="tel:7357690111" className="text-emerald-700 font-bold hover:text-emerald-800">7357690111</a> / <a href="tel:8239999520" className="text-emerald-700 font-bold hover:text-emerald-800">8239999520</a>). Communication through WhatsApp is governed by WhatsApp's end-to-end security protocols.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export const PrivacyPolicy: React.FC = () => {
               <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-2 text-xs sm:text-sm text-slate-600">
                 <div><strong className="text-slate-900">Company:</strong> DEEPPURA GROUP</div>
                 <div><strong className="text-slate-900">Founder &amp; Director:</strong> Animesh Jain (+91 88750 00404)</div>
-                <div><strong className="text-slate-900">Official Email:</strong> <a href="mailto:deeppura@gmail.com" className="text-cyan-700 hover:text-cyan-800 font-semibold">deeppura@gmail.com</a></div>
+                <div><strong className="text-slate-900">Official Email:</strong> <a href="mailto:deeppura@gmail.com" className="text-emerald-700 hover:text-emerald-800 font-semibold">deeppura@gmail.com</a></div>
                 <div><strong className="text-slate-900">Booking Desk:</strong> +91 7357690111 / +91 8239999520</div>
                 <div><strong className="text-slate-900">Corporate Office:</strong> G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan</div>
               </div>

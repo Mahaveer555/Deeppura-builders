@@ -143,7 +143,7 @@ export function App() {
               <div className="relative w-full max-w-2xl z-10 animate-scaleUp">
                 <button
                   onClick={() => setGlobalEnquiryOpen(false)}
-                  className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-white text-slate-800 border border-slate-200 flex items-center justify-center shadow-2xl hover:text-cyan-600 hover:border-cyan-600 transition-all z-20 cursor-pointer"
+                  className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-white text-slate-800 border border-slate-200 flex items-center justify-center shadow-2xl hover:text-emerald-600 hover:border-emerald-600 transition-all z-20 cursor-pointer"
                   aria-label="Close modal"
                 >
                   <X className="w-5 h-5" />

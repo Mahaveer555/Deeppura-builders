@@ -217,7 +217,7 @@ export const Home: React.FC = () => {
     if (isPaused) return;
     const timer = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 2200);
     return () => clearInterval(timer);
   }, [isPaused, nextSlide]);
 
@@ -230,14 +230,14 @@ export const Home: React.FC = () => {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        {/* Background Slider with Smooth Fade Transitions (100% Bright, No Black Shadow) */}
-        <AnimatePresence mode="wait">
+        {/* Fast & Smooth Crossfade Image Animation */}
+        <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
-            initial={{ opacity: 0, scale: 1.02 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
             className="absolute inset-0 z-0"
           >
             <img
@@ -252,7 +252,7 @@ export const Home: React.FC = () => {
         <button
           type="button"
           onClick={prevSlide}
-          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-cyan-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-cyan-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-300 cursor-pointer group"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
@@ -262,7 +262,7 @@ export const Home: React.FC = () => {
         <button
           type="button"
           onClick={nextSlide}
-          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-cyan-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-cyan-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-300 cursor-pointer group"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 border border-slate-200 hover:border-emerald-400 backdrop-blur-md shadow-xl flex items-center justify-center transition-all duration-200 cursor-pointer group"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
@@ -274,12 +274,12 @@ export const Home: React.FC = () => {
             
             {/* Top Project Tag Badge */}
             <motion.div 
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.3 }}
             >
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-400 text-slate-950 text-xs font-bold uppercase tracking-wider shadow-md">
-                <span className="w-2 h-2 rounded-full bg-slate-950 animate-pulse"></span>
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider shadow-md">
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                 <span>{heroSlides[currentSlide].tag}</span>
               </span>
             </motion.div>
@@ -287,13 +287,13 @@ export const Home: React.FC = () => {
             {/* Main Headline */}
             <motion.h1 
               key={`title-${currentSlide}`}
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
               className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.08] tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]"
             >
               {heroSlides[currentSlide].title}
-              <span className="text-cyan-400 block mt-1 drop-shadow-[0_0_20px_rgba(0,210,239,0.5)]">
+              <span className="text-emerald-400 block mt-1 drop-shadow-[0_0_20px_rgba(16,185,129,0.5)]">
                 {heroSlides[currentSlide].titleHighlight}
               </span>
             </motion.h1>
@@ -301,9 +301,9 @@ export const Home: React.FC = () => {
             {/* Short Supporting Text */}
             <motion.p 
               key={`sub-${currentSlide}`}
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.25, ease: 'easeOut', delay: 0.05 }}
               className="text-white text-sm sm:text-base font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] max-w-lg"
             >
               {heroSlides[currentSlide].subtitle}
@@ -313,7 +313,7 @@ export const Home: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <Link
                 to="/projects"
-                className="px-7 py-3 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(0,183,215,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
+                className="px-7 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_4px_14px_rgba(5,150,105,0.4)] transition-all duration-300 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" />
@@ -347,7 +347,7 @@ export const Home: React.FC = () => {
                 <img src="/assets/badges/uit-approved.png" alt="UIT Approved" className="w-5 h-5 object-contain" />
                 <span>UIT APPROVED</span>
               </span>
-              <span className="px-3.5 py-1.5 rounded-full bg-cyan-400/30 backdrop-blur-md border border-cyan-400/50 text-cyan-200 shadow-sm">
+              <span className="px-3.5 py-1.5 rounded-full bg-emerald-400/30 backdrop-blur-md border border-emerald-400/50 text-emerald-200 shadow-sm">
                 Up to 90% Loan
               </span>
             </div>
@@ -373,7 +373,7 @@ export const Home: React.FC = () => {
             <div className="text-[10px] font-black uppercase tracking-wider text-slate-900">
               Government Verified
             </div>
-            <div className="text-[11px] font-bold text-cyan-700">
+            <div className="text-[11px] font-bold text-emerald-700">
               RERA &amp; UIT Approved
             </div>
             <div className="text-[9px] text-slate-500 font-medium">
@@ -391,7 +391,7 @@ export const Home: React.FC = () => {
               onClick={() => setCurrentSlide(idx)}
               className={`transition-all duration-300 rounded-full cursor-pointer ${
                 currentSlide === idx
-                  ? 'w-7 h-2.5 bg-cyan-400 shadow-[0_0_10px_rgba(0,210,239,0.8)]'
+                  ? 'w-7 h-2.5 bg-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.8)]'
                   : 'w-2.5 h-2.5 bg-white/40 hover:bg-white/80'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
@@ -411,7 +411,7 @@ export const Home: React.FC = () => {
       {/* SECTION B.3: EXECUTIVE KEY METRICS & REPUTATION COUNTERS */}
       <section className="py-16 sm:py-20 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
         {/* Glow ambient */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-cyan-500/5 blur-[120px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-emerald-500/5 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -423,12 +423,12 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-cyan-100 transition-all border border-cyan-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-cyan-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
                 <AnimatedCounter to={14} suffix="+" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -446,12 +446,12 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-cyan-100 transition-all border border-cyan-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Award className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-cyan-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
                 <AnimatedCounter to={4} suffix="" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -469,12 +469,12 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.25 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-cyan-100 transition-all border border-cyan-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Landmark className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-cyan-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
                 <AnimatedCounter to={90} suffix="%" />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -492,12 +492,12 @@ export const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.35 }}
               whileHover={{ y: -6 }}
-              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 shadow-md hover:shadow-xl transition-all group"
+              className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 shadow-md hover:shadow-xl transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-cyan-100 transition-all border border-cyan-200">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-emerald-100 transition-all border border-emerald-200">
                 <Compass className="w-6 h-6" />
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-cyan-600 tracking-tight">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 tracking-tight">
                 <AnimatedCounter to={100} suffix=" Ft." />
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mt-1.5">
@@ -535,7 +535,7 @@ export const Home: React.FC = () => {
 
                 {/* Director Leadership Badge */}
                 <div className="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-xl border border-slate-200 text-slate-900 shadow-2xl">
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-cyan-700">
+                  <div className="text-[10px] uppercase font-bold tracking-wider text-emerald-700">
                     Founder &amp; Director
                   </div>
                   <div className="text-lg font-black text-slate-900">
@@ -556,13 +556,13 @@ export const Home: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
                 <span>About DEEPPURA GROUP</span>
               </div>
 
               {/* Main Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Building Trust Through <span className="text-cyan-600">Thoughtful Development</span>
+                Building Trust Through <span className="text-emerald-600">Thoughtful Development</span>
               </h2>
 
               <p className="text-sm font-semibold text-slate-700 leading-relaxed">
@@ -580,8 +580,8 @@ export const Home: React.FC = () => {
 
               {/* 3 Pillars */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-cyan-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-cyan-700 mb-1">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Architectural Integrity
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -589,8 +589,8 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-cyan-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-cyan-700 mb-1">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Strategic Locations
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -598,8 +598,8 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-cyan-400/60 transition-colors">
-                  <h4 className="text-xs font-black uppercase tracking-wider text-cyan-700 mb-1">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-400/60 transition-colors">
+                  <h4 className="text-xs font-black uppercase tracking-wider text-emerald-700 mb-1">
                     Transparent Conduct
                   </h4>
                   <p className="text-xs text-slate-600 leading-normal">
@@ -611,7 +611,7 @@ export const Home: React.FC = () => {
               <div className="pt-2">
                 <Link
                   to="/about"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-cyan-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_12px_rgba(0,210,239,0.35)] hover:bg-cyan-300 transition-all hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_12px_rgba(16,185,129,0.35)] hover:bg-emerald-300 transition-all hover:-translate-y-0.5"
                 >
                   <span>Learn More About Our Company</span>
                   <ArrowRight className="w-4 h-4 text-slate-950" />
@@ -636,12 +636,12 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Featured Ongoing Development
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Mukundra Prime <span className="text-cyan-600">Residences</span>
+              Mukundra Prime <span className="text-emerald-600">Residences</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               An ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK, and 3 BHK residential configurations in Raipura, Kota, Rajasthan.
@@ -674,7 +674,7 @@ export const Home: React.FC = () => {
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div>
                     <span className="text-[10px] text-slate-500 uppercase font-semibold">Project Status</span>
-                    <div className="text-xs font-bold text-cyan-700">Ongoing Development</div>
+                    <div className="text-xs font-bold text-emerald-700">Ongoing Development</div>
                   </div>
                   <div>
                     <span className="text-[10px] text-slate-500 uppercase font-semibold">Location</span>
@@ -684,19 +684,19 @@ export const Home: React.FC = () => {
 
                 <div className="space-y-2.5 text-xs sm:text-sm text-slate-600">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Located on 100 Feet Wide Road near Decent School &amp; Allen Career Institute</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Adjacent to Rajasthan's largest 200-Bigha Herbal Park</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Up to 90% Home Loan pre-approved with leading national banks</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Gated community with 24×7 security, CCTV, and boundary wall</span>
                   </div>
                 </div>
@@ -718,7 +718,7 @@ export const Home: React.FC = () => {
                 <div className="pt-4 flex flex-wrap gap-3 border-t border-slate-100">
                   <Link
                     to="/projects/mukundra-prime"
-                    className="flex-1 py-3 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 text-xs font-black uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 shadow-[0_2px_12px_rgba(0,210,239,0.3)] hover:-translate-y-0.5"
+                    className="flex-1 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 text-xs font-black uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 shadow-[0_2px_12px_rgba(16,185,129,0.3)] hover:-translate-y-0.5"
                   >
                     <span>View Project Details</span>
                     <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -730,7 +730,7 @@ export const Home: React.FC = () => {
                       const elem = document.getElementById('enquiry-section');
                       if (elem) elem.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-cyan-700 hover:border-cyan-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
+                    className="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:text-emerald-700 hover:border-emerald-500 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
                   >
                     Enquire Now
                   </button>
@@ -753,11 +753,11 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-14 space-y-2.5"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
               <span>Thoughtful Living Experience</span>
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Homes Designed for <span className="text-cyan-600">Family Happiness</span>
+              Homes Designed for <span className="text-emerald-600">Family Happiness</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Expansive living rooms, ambient warm lighting, and private balconies built to celebrate every moment of family life.
@@ -789,14 +789,14 @@ export const Home: React.FC = () => {
                   Designer Living Space
                 </div>
                 <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-4 py-2 rounded-full bg-white/95 text-cyan-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
                     <span>Click to Enlarge</span>
                   </span>
                 </div>
               </div>
               <div className="p-7 space-y-2 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-cyan-700 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">
                     Warm Ambient Interiors &amp; Grand Living
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mt-2">
@@ -804,7 +804,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <span className="font-semibold text-cyan-700">Mukundra Prime Residences</span>
+                  <span className="font-semibold text-emerald-700">Mukundra Prime Residences</span>
                   <span>Brochure Verified Layout</span>
                 </div>
               </div>
@@ -834,14 +834,14 @@ export const Home: React.FC = () => {
                   Panoramic Balcony Living
                 </div>
                 <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-4 py-2 rounded-full bg-white/95 text-cyan-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
                     <span>Click to Enlarge</span>
                   </span>
                 </div>
               </div>
               <div className="p-7 space-y-2 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-cyan-700 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">
                     Sunlit Rooms with Private Panoramic Balconies
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mt-2">
@@ -849,7 +849,7 @@ export const Home: React.FC = () => {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <span className="font-semibold text-cyan-700">Mukundra Prime Residences</span>
+                  <span className="font-semibold text-emerald-700">Mukundra Prime Residences</span>
                   <span>100 Ft. Road Facing</span>
                 </div>
               </div>
@@ -871,11 +871,11 @@ export const Home: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
           >
             <div className="space-y-2.5">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
                 Residential Layouts
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-                Mukundra Prime <span className="text-cyan-600">Unit Plan</span>
+                Mukundra Prime <span className="text-emerald-600">Unit Plan</span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
                 Thoughtfully planned residential unit blueprints. Click on any plan to inspect high-resolution dimensions.
@@ -884,10 +884,10 @@ export const Home: React.FC = () => {
 
             <Link
               to="/unit-plan"
-              className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-cyan-400 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
+              className="px-6 py-3 rounded-full border border-slate-300 bg-slate-50 hover:bg-emerald-400 text-slate-900 hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-1.5 shrink-0 shadow-sm hover:shadow-md"
             >
               <span>View All Unit Plans</span>
-              <ArrowRight className="w-3.5 h-3.5 text-cyan-600" />
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
             </Link>
           </motion.div>
 
@@ -913,7 +913,7 @@ export const Home: React.FC = () => {
                     openLightboxAtIndex(galleryImages.length - 1);
                   }
                 }}
-                className="group rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
+                className="group rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-50 p-4 flex items-center justify-center">
                   <img
@@ -923,7 +923,7 @@ export const Home: React.FC = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                    <span className="px-4 py-2 rounded-full bg-white/95 text-cyan-800 font-bold text-xs shadow-xl border border-slate-200">
+                    <span className="px-4 py-2 rounded-full bg-white/95 text-emerald-800 font-bold text-xs shadow-xl border border-slate-200">
                       Click to Enlarge
                     </span>
                   </div>
@@ -946,11 +946,11 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
               Lifestyle &amp; Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              14 Verified <span className="text-cyan-600">Resort Amenities</span>
+              14 Verified <span className="text-emerald-600">Resort Amenities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Every facility confirmed in the official Mukundra Prime brochure to enrich daily family life.
@@ -984,7 +984,7 @@ export const Home: React.FC = () => {
           <div className="text-center pt-12">
             <Link
               to="/amenities"
-              className="px-8 py-3.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(0,183,215,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
+              className="px-8 py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(5,150,105,0.35)] transition-all inline-flex items-center gap-2 hover:-translate-y-0.5"
             >
               <span>Explore All 14 Amenities</span>
               <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -1021,15 +1021,15 @@ export const Home: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 shadow-xs mb-3">
-            <Landmark className="w-3.5 h-3.5 text-cyan-600" />
-            <span className="text-[10px] font-bold uppercase tracking-widest text-cyan-800">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 shadow-xs mb-3">
+            <Landmark className="w-3.5 h-3.5 text-emerald-600" />
+            <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-800">
               Financial Assistance &amp; Loan Approvals
             </span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900">
-            Approved Banking Partners <span className="text-cyan-600">(Up to 90% Loan)</span>
+            Approved Banking Partners <span className="text-emerald-600">(Up to 90% Loan)</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto mt-2">
@@ -1054,13 +1054,13 @@ export const Home: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
                 <span>Official Booking Desk</span>
               </div>
 
               {/* Heading */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Find Your Ideal Space at <span className="text-cyan-600">Mukundra Prime</span>
+                Find Your Ideal Space at <span className="text-emerald-600">Mukundra Prime</span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1069,21 +1069,21 @@ export const Home: React.FC = () => {
 
               {/* Direct Booking Desk Contacts */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 space-y-4 shadow-xl">
-                <div className="text-xs uppercase font-bold tracking-wider text-cyan-700 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-cyan-600" />
+                <div className="text-xs uppercase font-bold tracking-wider text-emerald-700 flex items-center gap-2">
+                  <PhoneCall className="w-4 h-4 text-emerald-600" />
                   <span>Direct Booking Lines</span>
                 </div>
 
                 <div className="space-y-2.5">
                   <a
                     href="tel:8875000404"
-                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-cyan-400 hover:bg-cyan-50/50 transition-colors flex items-center justify-between"
+                    className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors flex items-center justify-between"
                   >
                     <div>
                       <div className="text-[10px] text-slate-500 font-medium uppercase">Director Desk</div>
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
-                    <span className="text-[10px] font-bold text-cyan-800 bg-cyan-100 border border-cyan-200 px-3 py-1 rounded-full">
+                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full">
                       Animesh Jain
                     </span>
                   </a>
@@ -1091,7 +1091,7 @@ export const Home: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     <a
                       href="tel:7357690111"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-cyan-400 hover:bg-cyan-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 1</div>
                       <div className="font-bold text-xs text-slate-900">7357690111</div>
@@ -1099,7 +1099,7 @@ export const Home: React.FC = () => {
 
                     <a
                       href="tel:8239999520"
-                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-cyan-400 hover:bg-cyan-50/50 transition-colors"
+                      className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors"
                     >
                       <div className="text-[10px] text-slate-500">Booking Desk 2</div>
                       <div className="font-bold text-xs text-slate-900">8239999520</div>

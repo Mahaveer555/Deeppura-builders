@@ -52,11 +52,11 @@ export const FloorPlans: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-2"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-cyan-300 text-xs font-bold uppercase tracking-wider border border-white/20 mb-1">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs font-bold uppercase tracking-wider border border-white/20 mb-1">
             <span>Architectural Layouts</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-widest uppercase">
-            UNIT <span className="text-cyan-400">PLAN</span>
+            UNIT <span className="text-emerald-400">PLAN</span>
           </h1>
           <h2 className="text-xs sm:text-sm md:text-base font-semibold tracking-wider text-slate-200">
             RERA No.-RAJ/P/2025/3532
@@ -75,11 +75,11 @@ export const FloorPlans: React.FC = () => {
           </div>
           <div className="pt-2">
             <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-              <Link to="/" className="hover:text-cyan-400 transition-colors">
+              <Link to="/" className="hover:text-emerald-400 transition-colors">
                 HOME
               </Link>
               <span>/</span>
-              <span className="text-cyan-400">UNIT PLAN</span>
+              <span className="text-emerald-400">UNIT PLAN</span>
             </nav>
           </div>
         </motion.div>
@@ -100,7 +100,7 @@ export const FloorPlans: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
-                  className="w-full max-w-5xl overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-cyan-400 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 sm:p-6"
+                  className="w-full max-w-5xl overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 sm:p-6"
                   onClick={() => openLightbox(index)}
                 >
                   <img

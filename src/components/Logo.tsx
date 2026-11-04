@@ -21,7 +21,7 @@ export const Logo: React.FC<LogoProps> = ({
   }[size];
 
   const strokeColor = variant === 'dark' ? '#FFFFFF' : '#1A1D20';
-  const accentColor = variant === 'dark' ? '#00D2EF' : '#00B7D7';
+  const accentColor = variant === 'dark' ? '#34D399' : '#059669';
   const textColor = variant === 'dark' ? 'text-white' : 'text-[#1A1D20]';
   const subTextColor = variant === 'dark' ? 'text-slate-400' : 'text-slate-500';
 
@@ -91,7 +91,7 @@ export const Logo: React.FC<LogoProps> = ({
             <span className={`${dimensions.textScale} font-black ${textColor}`}>
               DEEPPURA
             </span>
-            <span className={`${dimensions.textScale} font-black text-cyan-400 ml-1.5`}>
+            <span className={`${dimensions.textScale} font-black text-emerald-500 ml-1.5`}>
               GROUP
             </span>
           </div>

@@ -29,8 +29,8 @@
   }
 
   ::selection {
-    background-color: #00D2EF;
-    color: #0F172A;
+    background-color: #10B981;
+    color: #FFFFFF;
   }
 
   /* Custom Clean Scrollbar */
@@ -42,11 +42,11 @@
     background: #F1F5F9;
   }
   ::-webkit-scrollbar-thumb {
-    background: #00B7D7;
+    background: #10B981;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #0284C7;
+    background: #059669;
   }
 }
 

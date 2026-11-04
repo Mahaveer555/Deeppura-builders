@@ -12,7 +12,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
   const isOngoing = project.status === 'ongoing';
 
   return (
-    <div className="group rounded-2xl bg-white border border-slate-200 hover:border-cyan-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+    <div className="group rounded-2xl bg-white border border-slate-200 hover:border-emerald-400/80 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
       <div>
         {/* Project Image Container */}
         <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
@@ -27,12 +27,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
           <div className="absolute top-3 left-3 flex items-center gap-2">
             <span className={`px-3.5 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-md flex items-center gap-1.5 backdrop-blur-md border ${
               isOngoing 
-                ? 'bg-white/95 text-cyan-800 border-cyan-300' 
+                ? 'bg-white/95 text-emerald-800 border-emerald-300' 
                 : 'bg-white/95 text-emerald-800 border-emerald-300'
             }`}>
               {isOngoing ? (
                 <>
-                  <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   Ongoing Development
                 </>
               ) : (
@@ -48,11 +48,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
         {/* Project Details */}
         <div className="p-6 space-y-3.5">
           <div>
-            <div className="flex items-center gap-1.5 text-xs text-cyan-700 font-bold uppercase tracking-wider mb-1">
-              <ShieldCheck className="w-4 h-4 shrink-0 text-cyan-600" />
+            <div className="flex items-center gap-1.5 text-xs text-emerald-700 font-bold uppercase tracking-wider mb-1">
+              <ShieldCheck className="w-4 h-4 shrink-0 text-emerald-600" />
               <span className="truncate">{project.developerEn}</span>
             </div>
-            <h3 className="font-black text-xl sm:text-2xl text-slate-900 group-hover:text-cyan-700 transition-colors leading-snug">
+            <h3 className="font-black text-xl sm:text-2xl text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
               {project.nameEn}
             </h3>
             <p className="text-sm text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">
@@ -61,7 +61,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
           </div>
 
           <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 pt-3 border-t border-slate-100">
-            <MapPin className="w-4 h-4 text-cyan-600 shrink-0" />
+            <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
             <span className="truncate font-medium">{project.locationEn}</span>
           </div>
 
@@ -85,7 +85,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
         {isOngoing ? (
           <Link
             to={`/projects/${project.slug}`}
-            className="w-full py-3 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 text-xs font-black text-center uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-[0_2px_12px_rgba(0,210,239,0.3)] cursor-pointer hover:-translate-y-0.5"
+            className="w-full py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 text-xs font-black text-center uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-[0_2px_12px_rgba(16,185,129,0.3)] cursor-pointer hover:-translate-y-0.5"
           >
             <span>Explore Project</span>
             <ArrowRight className="w-4 h-4 text-slate-950" />
@@ -96,7 +96,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
             {onEnquire && (
               <button
                 onClick={() => onEnquire(project.nameEn)}
-                className="text-cyan-700 hover:text-cyan-900 text-xs font-bold uppercase tracking-wider cursor-pointer transition-colors"
+                className="text-emerald-700 hover:text-emerald-900 text-xs font-bold uppercase tracking-wider cursor-pointer transition-colors"
               >
                 Details &rarr;
               </button>

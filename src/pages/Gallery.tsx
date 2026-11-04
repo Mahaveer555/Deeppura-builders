@@ -170,23 +170,23 @@ export const Gallery: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl space-y-4"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-cyan-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
-              <Building2 className="w-4 h-4 text-cyan-400" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider border border-white/20">
+              <Building2 className="w-4 h-4 text-emerald-400" />
               <span>Visual Portfolio</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              DEEPPURA GROUP <span className="text-cyan-400">Visual Gallery</span>
+              DEEPPURA GROUP <span className="text-emerald-400">Visual Gallery</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
               Immerse yourself in high-resolution exterior elevations, furnished interiors, verified floor plan blueprints, and delivered residential landmarks across Kota, Rajasthan.
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
-                <Link to="/" className="hover:text-cyan-400 transition-colors">
+                <Link to="/" className="hover:text-emerald-400 transition-colors">
                   HOME
                 </Link>
                 <span>/</span>
-                <span className="text-cyan-400">GALLERY</span>
+                <span className="text-emerald-400">GALLERY</span>
               </nav>
             </div>
           </motion.div>
@@ -204,7 +204,7 @@ export const Gallery: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-cyan-400 text-slate-950 font-black shadow-md'
+                    ? 'bg-emerald-400 text-slate-950 font-black shadow-md'
                     : 'bg-slate-100 border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200'
                 }`}
               >
@@ -228,7 +228,7 @@ export const Gallery: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
                 onClick={() => openLightbox(allImages.findIndex(i => i.url === img.url))}
-                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-cyan-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
+                className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-emerald-400 cursor-pointer shadow-md hover:shadow-2xl transition-all"
               >
                 <img
                   src={img.url}
@@ -240,13 +240,13 @@ export const Gallery: React.FC = () => {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-between">
                   <div className="self-end">
-                    <span className="p-2.5 rounded-full bg-white/90 text-cyan-800 inline-block shadow-md border border-slate-200">
-                      <Maximize2 className="w-4 h-4 text-cyan-700" />
+                    <span className="p-2.5 rounded-full bg-white/90 text-emerald-800 inline-block shadow-md border border-slate-200">
+                      <Maximize2 className="w-4 h-4 text-emerald-700" />
                     </span>
                   </div>
 
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 block mb-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 block mb-1">
                       {img.category}
                     </span>
                     <h3 className="font-bold text-sm text-white line-clamp-2 leading-snug">
@@ -255,7 +255,7 @@ export const Gallery: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-slate-200 text-[10px] font-bold uppercase tracking-wider text-cyan-800 shadow-sm group-hover:opacity-0 transition-opacity">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm border border-slate-200 text-[10px] font-bold uppercase tracking-wider text-emerald-800 shadow-sm group-hover:opacity-0 transition-opacity">
                   {img.category}
                 </div>
               </motion.div>

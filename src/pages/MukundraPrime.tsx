@@ -84,10 +84,10 @@ export const MukundraPrime: React.FC = () => {
                 }}
                 className="flex flex-wrap items-center gap-2"
               >
-                <span className="px-4 py-1.5 rounded-full bg-cyan-400/20 backdrop-blur-md border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wider shadow-sm flex items-center gap-2">
+                <span className="px-4 py-1.5 rounded-full bg-emerald-400/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 text-xs font-bold uppercase tracking-wider shadow-sm flex items-center gap-2">
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
                   </span>
                   Ongoing Residential Development
                 </span>
@@ -112,7 +112,7 @@ export const MukundraPrime: React.FC = () => {
                 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight drop-shadow-md"
               >
                 Mukundra Prime{' '}
-                <span className="text-cyan-400 block sm:inline drop-shadow-[0_0_20px_rgba(0,210,239,0.4)]">
+                <span className="text-emerald-400 block sm:inline drop-shadow-[0_0_20px_rgba(16,185,129,0.4)]">
                   Residences
                 </span>
               </motion.h1>
@@ -140,7 +140,7 @@ export const MukundraPrime: React.FC = () => {
                   Enquire for Availability
                 </span>
 
-                <span className="px-4 py-2 rounded-full bg-cyan-400/20 backdrop-blur-md text-cyan-300 font-bold border border-cyan-400/40 shadow-[0_0_20px_rgba(0,210,239,0.3)] cursor-default">
+                <span className="px-4 py-2 rounded-full bg-emerald-400/20 backdrop-blur-md text-emerald-300 font-bold border border-emerald-400/40 shadow-[0_0_20px_rgba(16,185,129,0.3)] cursor-default">
                   Up to 90% Loan Available
                 </span>
 
@@ -160,7 +160,7 @@ export const MukundraPrime: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setBrochureOpen(true)}
-                  className="px-8 py-3.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_25px_rgba(0,210,239,0.5)] hover:shadow-[0_0_35px_rgba(0,210,239,0.8)] transition-all duration-300 flex items-center gap-2 cursor-pointer hover:-translate-y-0.5"
+                  className="px-8 py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:shadow-[0_0_35px_rgba(16,185,129,0.8)] transition-all duration-300 flex items-center gap-2 cursor-pointer hover:-translate-y-0.5"
                 >
                   <Download className="w-4 h-4 text-slate-950" />
                   <span>Download Brochure</span>
@@ -168,7 +168,7 @@ export const MukundraPrime: React.FC = () => {
 
                 <Link
                   to="/contact"
-                  className="px-8 py-3.5 rounded-full border border-white/30 bg-white/10 hover:bg-white/20 text-white hover:text-cyan-300 text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md transition-all duration-300 flex items-center gap-2 cursor-pointer shadow-md hover:-translate-y-0.5"
+                  className="px-8 py-3.5 rounded-full border border-white/30 bg-white/10 hover:bg-white/20 text-white hover:text-emerald-300 text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md transition-all duration-300 flex items-center gap-2 cursor-pointer shadow-md hover:-translate-y-0.5"
                 >
                   <span>Enquire Now</span>
                 </Link>
@@ -188,27 +188,27 @@ export const MukundraPrime: React.FC = () => {
               className="hidden lg:block lg:col-span-4"
             >
               <div className="p-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-slate-200 shadow-2xl space-y-4">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cyan-700">
-                  <Sparkles className="w-4 h-4 text-cyan-600" />
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700">
+                  <Sparkles className="w-4 h-4 text-emerald-600" />
                   <span>Township Highlights</span>
                 </div>
 
                 <div className="space-y-3 text-xs text-slate-700 font-medium">
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Direct 100 Feet Wide Road Access near Decent School</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Adjacent to 200 Bigha Herbal Park &amp; Clean Green Belt</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>14+ Verified Resort Lifestyle Amenities (Pool, Temple, Gym)</span>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] text-cyan-800 font-semibold">
+                <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] text-emerald-800 font-semibold">
                   <span>Developer Allotment Desk</span>
                   <span className="text-slate-900 font-bold">Zero Brokerage</span>
                 </div>
@@ -234,16 +234,16 @@ export const MukundraPrime: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7 space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
                 <span>Project Overview</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                Modern Residences Built for <span className="text-cyan-600">Enduring Comfort</span>
+                Modern Residences Built for <span className="text-emerald-600">Enduring Comfort</span>
               </h2>
 
               {/* Statement Box */}
-              <div className="p-5 rounded-2xl bg-cyan-50 border-l-4 border-cyan-500 text-slate-900">
+              <div className="p-5 rounded-2xl bg-emerald-50 border-l-4 border-emerald-500 text-slate-900">
                 <p className="text-base sm:text-lg font-bold leading-relaxed">
                   "Mukundra Prime is an ongoing residential development by Mukundra Infra Project Private Limited, offering thoughtfully planned 1 BHK, 2 BHK and 3 BHK residential configurations in Kota, Rajasthan."
                 </p>
@@ -310,8 +310,8 @@ export const MukundraPrime: React.FC = () => {
                   className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="p-3 rounded-full bg-white text-cyan-700 shadow-xl border border-slate-200">
-                    <Maximize2 className="w-5 h-5 text-cyan-600" />
+                  <span className="p-3 rounded-full bg-white text-emerald-700 shadow-xl border border-slate-200">
+                    <Maximize2 className="w-5 h-5 text-emerald-600" />
                   </span>
                 </div>
               </div>
@@ -378,11 +378,11 @@ export const MukundraPrime: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
               Detailed Unit Plans
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              Architectural <span className="text-cyan-600">Unit Plans</span>
+              Architectural <span className="text-emerald-600">Unit Plans</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Click any layout to inspect high-resolution dimensions in full screen lightbox.
@@ -411,7 +411,7 @@ export const MukundraPrime: React.FC = () => {
                     openLightboxAtIndex(projectGallery.length - 1);
                   }
                 }}
-                className="group rounded-2xl bg-white border border-slate-200 hover:border-cyan-400 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
+                className="group rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-50 p-4 flex items-center justify-center">
                   <img
@@ -421,7 +421,7 @@ export const MukundraPrime: React.FC = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                    <span className="px-4 py-2 rounded-full bg-white text-cyan-800 font-bold text-xs shadow-xl border border-slate-200">
+                    <span className="px-4 py-2 rounded-full bg-white text-emerald-800 font-bold text-xs shadow-xl border border-slate-200">
                       Click to Enlarge
                     </span>
                   </div>
@@ -433,7 +433,7 @@ export const MukundraPrime: React.FC = () => {
           <div className="text-center mt-12">
             <Link
               to="/unit-plan"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-[0_4px_14px_rgba(0,183,215,0.35)] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-[0_4px_14px_rgba(5,150,105,0.35)] hover:-translate-y-0.5"
             >
               <span>Explore All Unit Plans</span>
               <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
@@ -454,11 +454,11 @@ export const MukundraPrime: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
-            <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
               Community Facilities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
-              14 Confirmed <span className="text-cyan-600">Amenities</span>
+              14 Confirmed <span className="text-emerald-600">Amenities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Every facility confirmed in the official Mukundra Prime brochure to enrich daily family life.
@@ -504,12 +504,12 @@ export const MukundraPrime: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="lg:col-span-6 space-y-6"
             >
-              <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full inline-block">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full inline-block">
                 Location Advantages
               </span>
 
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900">
-                Prime Location on <span className="text-cyan-600">100 Feet Wide Road</span>
+                Prime Location on <span className="text-emerald-600">100 Feet Wide Road</span>
               </h2>
 
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -518,7 +518,7 @@ export const MukundraPrime: React.FC = () => {
 
               <div className="space-y-3 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
-                  <MapPin className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-slate-900 block font-bold">Confirmed Site Address</strong>
                     <span>Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan</span>
@@ -526,7 +526,7 @@ export const MukundraPrime: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
-                  <Trees className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                  <Trees className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-slate-900 block font-bold">200 Bigha Herbal Park</strong>
                     <span>Walk to Rajasthan's largest botanical and herbal reserve for fresh air and daily fitness.</span>
@@ -534,7 +534,7 @@ export const MukundraPrime: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
-                  <Compass className="w-4 h-4 text-cyan-600 shrink-0 mt-0.5" />
+                  <Compass className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs text-slate-900 block font-bold">Education Proximity</strong>
                     <span>Immediate connectivity to Decent School and Allen Career Institute.</span>

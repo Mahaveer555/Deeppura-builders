@@ -86,7 +86,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
     <div className={`p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-2xl ${className}`}>
       {/* Header */}
       <div className="mb-6 space-y-1.5">
-        <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 block">
+        <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block">
           Official Sales &amp; Booking Desk
         </span>
         <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
@@ -99,8 +99,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
       {submitted ? (
         <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-4">
-          <div className="w-12 h-12 mx-auto rounded-full bg-cyan-50 text-cyan-600 flex items-center justify-center border border-cyan-200">
-            <CheckCircle2 className="w-7 h-7 text-cyan-600" />
+          <div className="w-12 h-12 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-200">
+            <CheckCircle2 className="w-7 h-7 text-emerald-600" />
           </div>
           <h4 className="text-lg font-black text-slate-900">
             Enquiry Dispatched
@@ -117,7 +117,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             </button>
             <a
               href="tel:7357690111"
-              className="px-6 py-2.5 rounded-full bg-cyan-400 text-slate-950 hover:bg-cyan-300 text-xs font-black uppercase tracking-wider flex items-center gap-2 cursor-pointer shadow-md transition-all"
+              className="px-6 py-2.5 rounded-full bg-emerald-400 text-slate-950 hover:bg-emerald-300 text-xs font-black uppercase tracking-wider flex items-center gap-2 cursor-pointer shadow-md transition-all"
             >
               <Phone className="w-4 h-4 text-slate-950" />
               <span>Call Booking Desk</span>
@@ -129,7 +129,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           {/* Full Name */}
           <div>
             <label className="block text-xs font-bold text-slate-800 mb-1.5">
-              Full Name <span className="text-cyan-600">*</span>
+              Full Name <span className="text-emerald-600">*</span>
             </label>
             <input
               type="text"
@@ -139,7 +139,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                 if (errors.fullName) setErrors({ ...errors, fullName: '' });
               }}
               placeholder="e.g. Rahul Sharma"
-              className={`w-full px-4 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors ${
+              className={`w-full px-4 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors ${
                 errors.fullName ? 'border-rose-400 bg-rose-50' : 'border-slate-200'
               }`}
             />
@@ -154,7 +154,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
             <div>
               <label className="block text-xs font-bold text-slate-800 mb-1.5">
-                Mobile Number <span className="text-cyan-600">*</span>
+                Mobile Number <span className="text-emerald-600">*</span>
               </label>
               <div className="relative">
                 <span className="absolute left-3.5 top-3 text-xs text-slate-500 font-semibold">+91</span>
@@ -167,7 +167,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                     if (errors.phone) setErrors({ ...errors, phone: '' });
                   }}
                   placeholder="10-digit number"
-                  className={`w-full pl-12 pr-3 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors ${
+                  className={`w-full pl-12 pr-3 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors ${
                     errors.phone ? 'border-rose-400 bg-rose-50' : 'border-slate-200'
                   }`}
                 />
@@ -191,7 +191,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                   if (errors.email) setErrors({ ...errors, email: '' });
                 }}
                 placeholder="name@example.com"
-                className={`w-full px-4 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors ${
+                className={`w-full px-4 py-3 rounded-xl bg-slate-50 border text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors ${
                   errors.email ? 'border-rose-400 bg-rose-50' : 'border-slate-200'
                 }`}
               />
@@ -212,7 +212,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               <select
                 value={formData.interestedIn}
                 onChange={(e) => setFormData({ ...formData, interestedIn: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
               >
                 <option value="Not Decided">Select Configuration</option>
                 <option value="1 BHK Standard">1 BHK Standard</option>
@@ -226,7 +226,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
             <div>
               <label className="block text-xs font-bold text-slate-800 mb-1.5 flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5 text-cyan-600" />
+                <Calendar className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Preferred Visit Date</span>
               </label>
               <input
@@ -234,7 +234,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                 min={new Date().toISOString().split('T')[0]}
                 value={formData.siteVisitDate}
                 onChange={(e) => setFormData({ ...formData, siteVisitDate: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
               />
             </div>
           </div>
@@ -249,7 +249,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Tell us about your requirements, floor preferences, or site visit queries..."
-              className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-none"
+              className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors resize-none"
             ></textarea>
           </div>
 
@@ -257,7 +257,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_15px_rgba(0,210,239,0.35)] transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 hover:-translate-y-0.5 active:translate-y-0"
+            className="w-full py-3.5 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_2px_15px_rgba(16,185,129,0.35)] transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 hover:-translate-y-0.5 active:translate-y-0"
           >
             {isSubmitting ? (
               <span>Connecting to Sales Desk...</span>
