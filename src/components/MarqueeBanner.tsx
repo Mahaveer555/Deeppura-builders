@@ -8,27 +8,50 @@ interface MarqueeBannerProps {
 
 export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' }) => {
   const items = [
-    { text: "RERA & UIT Kota Approved Township", icon: ShieldCheck },
-    { text: "Direct 100 Ft. Wide Masterplan Road Access", icon: Building },
-    { text: "Up to 90% Bank Loan Available (SBI, ICICI, Axis, BOB)", icon: Landmark },
-    { text: "1, 2 & 3 BHK Verified Architectural Blueprints", icon: CheckCircle2 },
-    { text: "14+ Resort Lifestyle Amenities (Pool, Temple, Gym)", icon: Sparkles },
-    { text: "Over 6.5 Lakh Sq. Ft. Land Delivered Across Kota", icon: Award },
-    { text: "Adjacent to 200 Bigha Herbal Park & Clean Green Corridor", icon: CheckCircle2 },
-    { text: "Zero Brokerage Direct Developer Allotment Desk", icon: ShieldCheck },
+    { text: "RERA & UIT Kota Approved Township", icon: ShieldCheck, color: 'emerald' },
+    { text: "Direct 100 Ft. Wide Masterplan Road Access", icon: Building, color: 'gold' },
+    { text: "Up to 90% Bank Loan Available (SBI, ICICI, Axis, BOB)", icon: Landmark, color: 'blue' },
+    { text: "1, 2 & 3 BHK Verified Architectural Blueprints", icon: CheckCircle2, color: 'gold' },
+    { text: "14+ Resort Lifestyle Amenities (Pool, Temple, Gym)", icon: Sparkles, color: 'emerald' },
+    { text: "Over 6.5 Lakh Sq. Ft. Land Delivered Across Kota", icon: Award, color: 'blue' },
+    { text: "Adjacent to 200 Bigha Herbal Park & Clean Green Corridor", icon: CheckCircle2, color: 'emerald' },
+    { text: "Zero Brokerage Direct Developer Allotment Desk", icon: ShieldCheck, color: 'gold' },
   ];
 
   const bgStyles = {
-    dark: 'bg-[#0F172A] text-white border-y border-slate-800',
-    light: 'bg-white text-slate-800 border-y border-slate-200 shadow-xs',
-    champagne: 'bg-[#F8FAFC] text-slate-800 border-y border-slate-200',
+    dark: 'bg-[#061812] text-white border-y border-emerald-950/80',
+    light: 'bg-white/95 text-slate-800 border-y border-slate-200/90 shadow-xs backdrop-blur-md',
+    champagne: 'bg-[#F4F8F5] text-slate-800 border-y border-emerald-100',
   }[variant];
 
-  const bulletColor = variant === 'dark' ? 'text-amber-400' : 'text-amber-600';
-  const fadeBg = variant === 'dark' ? 'from-[#0F172A]' : 'from-white';
+  const fadeBg = variant === 'dark' ? 'from-[#061812]' : 'from-[#F3F7F4]';
 
   // Double items for a continuous, seamless loop
   const duplicatedItems = [...items, ...items];
+
+  const getColorClasses = (color: string) => {
+    switch (color) {
+      case 'emerald':
+        return {
+          icon: 'text-emerald-600',
+          bg: 'bg-emerald-50 border-emerald-200 text-emerald-600',
+          dot: 'text-emerald-500'
+        };
+      case 'blue':
+        return {
+          icon: 'text-sky-600',
+          bg: 'bg-sky-50 border-sky-200 text-sky-600',
+          dot: 'text-sky-500'
+        };
+      case 'gold':
+      default:
+        return {
+          icon: 'text-amber-600',
+          bg: 'bg-amber-50 border-amber-200 text-amber-600',
+          dot: 'text-amber-500'
+        };
+    }
+  };
 
   return (
     <div className={`relative overflow-hidden py-3 sm:py-3.5 select-none ${bgStyles}`}>
@@ -48,16 +71,17 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ variant = 'light' 
       >
         {duplicatedItems.map((item, idx) => {
           const Icon = item.icon;
+          const styles = getColorClasses(item.color);
           return (
             <div 
               key={idx}
               className="flex items-center gap-3.5 mx-6 sm:mx-8 shrink-0 text-xs sm:text-[13px] font-heading font-bold tracking-wider uppercase whitespace-nowrap"
             >
-              <span className="p-1 rounded-full bg-amber-50 border border-amber-100 text-amber-600">
-                <Icon className={`w-3.5 h-3.5 ${bulletColor}`} />
+              <span className={`p-1.5 rounded-full border ${styles.bg}`}>
+                <Icon className={`w-3.5 h-3.5 ${styles.icon}`} />
               </span>
               <span className="text-slate-800 font-bold">{item.text}</span>
-              <span className={`${bulletColor} opacity-70 ml-3`}>✦</span>
+              <span className={`${styles.dot} opacity-70 ml-3`}>✦</span>
             </div>
           );
         })}
