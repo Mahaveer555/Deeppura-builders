@@ -201,9 +201,12 @@ export const mukundraPrimeProject: Project = {
   heroImage: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
   address: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
   googleMapQuery: 'Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan',
-  configurations: ['1 BHK Standard', '2 BHK Standard (701.5 sq. ft.)', '3 BHK Standard', '3 BHK Deluxe (960 sq. ft.)'],
+  configurations: ['1 BHK Deluxe', '2 BHK (700.15 sq. ft.)', '3 BHK (755 sq. ft.)', '3 BHK Deluxe'],
   featuresEn: [
     'Approved ongoing development by Mukundra Infra Project Private Limited',
+    'Prices starting at just ₹15 Lakhs* with booking from ₹51,000/-',
+    'PMAY Government Subsidy benefit up to ₹1,80,000/- per flat',
+    'Dhamaka Offer: Fully Furnished Flat with Modular Kitchen at no extra cost',
     'Thoughtfully planned 1 BHK, 2 BHK, and 3 BHK apartment layouts',
     'Located on 100 Feet Wide Road with rapid city access',
     'Near to Allen Career Institute & Decent School',
@@ -214,6 +217,9 @@ export const mukundraPrimeProject: Project = {
   ],
   featuresHi: [
     'Approved ongoing development by Mukundra Infra Project Private Limited',
+    'Prices starting at just ₹15 Lakhs* with booking from ₹51,000/-',
+    'PMAY Government Subsidy benefit up to ₹1,80,000/- per flat',
+    'Dhamaka Offer: Fully Furnished Flat with Modular Kitchen at no extra cost',
     'Thoughtfully planned 1 BHK, 2 BHK, and 3 BHK apartment layouts',
     'Located on 100 Feet Wide Road with rapid city access',
     'Near to Allen Career Institute & Decent School',
@@ -224,9 +230,33 @@ export const mukundraPrimeProject: Project = {
   ],
   images: [
     {
+      url: '/assets/projects/mukundra-prime/gate-daylight-closeup.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Golden Signage (Daylight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Golden Signage (Daylight View)',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/official-pricing-offer-poster.jpg',
+      captionEn: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      captionHi: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      category: 'floorPlan'
+    },
+    {
       url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
       captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
       captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower-angle3.jpg',
+      captionEn: 'Mukundra Prime High-Rise Tower Real Site Construction (Angle 3)',
+      captionHi: 'Mukundra Prime High-Rise Tower Real Site Construction (Angle 3)',
+      category: 'exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/elevation-daylight-crisp.jpg',
+      captionEn: 'Mukundra Prime Daytime Multi-Tower Elevation from 100 Ft. Road',
+      captionHi: 'Mukundra Prime Daytime Multi-Tower Elevation from 100 Ft. Road',
       category: 'exterior'
     },
     {

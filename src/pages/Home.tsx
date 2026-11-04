@@ -14,7 +14,9 @@ import {
   ChevronRight, 
   Award, 
   Sparkles, 
-  Landmark 
+  Landmark,
+  Eye,
+  Maximize2
 } from 'lucide-react';
 import { mukundraPrimeProject, floorPlansData, FloorPlanItem } from '../data/projects';
 import { amenitiesList } from '../data/amenities';
@@ -38,6 +40,18 @@ export const Home: React.FC = () => {
 
   // Curated project gallery items for lightbox
   const galleryImages: GalleryImage[] = [
+    {
+      url: '/assets/projects/mukundra-prime/official-pricing-offer-poster.jpg',
+      captionEn: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      captionHi: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      category: 'Special Offer'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/gate-daylight-closeup.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage (Daylight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage (Daylight View)',
+      category: 'Exterior'
+    },
     {
       url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
       captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
@@ -199,15 +213,15 @@ export const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // 4 Curated Slides: Daylight Architecture & Luxury Family Living (No Night Images)
+  // 4 Curated Slides: Real Mukundra Prime Architectural Elevations & 3D Masterplan
   const heroSlides = [
     {
       id: 1,
-      image: '/assets/hero/mukundra-prime-twilight-gate.jpg',
+      image: '/assets/projects/mukundra-prime/gate-daylight-closeup.jpg',
       tag: 'Mukundra Prime • Raipura, Kota',
       title: 'Building Spaces.',
       titleHighlight: 'Creating Better Living.',
-      subtitle: 'Thoughtfully planned modern 1, 2 & 3 BHK residences on 100 Ft. Road in Kota, Rajasthan.',
+      subtitle: 'Thoughtfully planned modern 1, 2 & 3 BHK residences on 100 Ft. Road in Kota, Rajasthan. Starting ₹15 Lakhs*.',
     },
     {
       id: 2,
@@ -219,19 +233,19 @@ export const Home: React.FC = () => {
     },
     {
       id: 3,
-      image: '/assets/hero/mukundra-prime-daylight-towers.jpg',
+      image: '/assets/hero/mukundra-prime-twilight-gate.jpg',
       tag: 'Gated Township • 14 Verified Resort Amenities',
       title: 'Comfort & Security.',
       titleHighlight: 'Every Single Day.',
-      subtitle: 'Temple, swimming pool, open gym, kids park, and 24×7 security within gates.',
+      subtitle: 'Temple, swimming pool, open gym, kids park, supermarket, and 24×7 security guards within gates.',
     },
     {
       id: 4,
-      image: '/assets/home/family-living-gold.jpg',
-      tag: 'Luxury Interiors • Modern Lifestyle',
+      image: '/assets/projects/mukundra-prime/elevation-daylight-wide.jpg',
+      tag: 'Luxury Modern Architecture • 100 Ft. Road',
       title: 'Crafted for Joy.',
       titleHighlight: 'Life in Full Bloom.',
-      subtitle: 'Premium finishes, elegant ambient lighting, and complete loanability up to 90% with approved banks.',
+      subtitle: 'Pre-approved 90% home loans with SBI, HDFC, ICICI, Axis, Union, BoB, Kotak. Booking from ₹51,000/-.',
     }
   ];
 
@@ -649,6 +663,107 @@ export const Home: React.FC = () => {
               </div>
 
             </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION C.5: OFFICIAL PRICING & SPECIAL DHAMAKA OFFER SHOWCASE */}
+      <section className="py-14 sm:py-18 bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-900 text-white border-y border-emerald-800/40 relative overflow-hidden">
+        {/* Glow & Decorative accents */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 blur-[100px] pointer-events-none rounded-full" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-emerald-400/10 blur-[80px] pointer-events-none rounded-full" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left: Text & Key Pricing Badges (7 cols) */}
+            <div className="lg:col-span-7 space-y-5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-400 text-slate-950 text-xs font-black uppercase tracking-wider shadow-lg">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Special Limited-Time Dhamaka Offer</span>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-[1.12] tracking-tight">
+                मात्र <span className="text-emerald-400">₹15* लाख में</span> पायें अपने सपनों का घर
+              </h2>
+
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                स्मार्ट सिटी कोटा के तेजी से डेवलप होते 100 फीट रोड, रायपुर क्षेत्र में लीजिए अपना आधुनिक 1, 2 व 3 BHK फ्लैट — वो भी सबसे अफोर्डेबल दाम, 90% बैंक लोन सुविधा और सरकारी योजना PMJAY के तहत ₹1,80,000/- तक की छूट के साथ।
+              </p>
+
+              {/* 4 Highlights Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm">
+                  <div className="text-[10px] text-emerald-300 font-bold uppercase tracking-wider">Starting Price</div>
+                  <div className="text-xl font-black text-white mt-0.5">₹15 Lakh*</div>
+                  <div className="text-[10px] text-slate-400">Affordable Luxury</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm">
+                  <div className="text-[10px] text-emerald-300 font-bold uppercase tracking-wider">Booking Start</div>
+                  <div className="text-xl font-black text-emerald-400 mt-0.5">₹51,000/-</div>
+                  <div className="text-[10px] text-slate-400">Easy Booking</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm">
+                  <div className="text-[10px] text-emerald-300 font-bold uppercase tracking-wider">Govt. Subsidy</div>
+                  <div className="text-xl font-black text-white mt-0.5">₹1,80,000</div>
+                  <div className="text-[10px] text-slate-400">PM Scheme benefit</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-sm">
+                  <div className="text-[10px] text-emerald-300 font-bold uppercase tracking-wider">Bank Loan</div>
+                  <div className="text-xl font-black text-emerald-400 mt-0.5">Up to 90%</div>
+                  <div className="text-[10px] text-slate-400">Nationalised Banks</div>
+                </div>
+              </div>
+
+              {/* Dhamaka Offer Box */}
+              <div className="p-4 rounded-xl bg-emerald-500/20 border border-emerald-400/40 backdrop-blur-md flex items-center gap-3 shadow-md">
+                <Sparkles className="w-6 h-6 text-emerald-400 shrink-0" />
+                <div className="text-xs sm:text-sm font-semibold text-emerald-100">
+                  <strong className="text-white font-black">धमाका ऑफर:</strong> फुली फर्निश्ड फ्लैट मॉड्यूलर किचन के साथ बिना किसी अतिरिक्त खर्च! (ऑफर केवल 30 अप्रैल तक)
+                </div>
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <button
+                  type="button"
+                  onClick={() => openLightboxAtIndex(0)}
+                  className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-all flex items-center gap-2 cursor-pointer hover:-translate-y-0.5"
+                >
+                  <Eye className="w-4 h-4 text-slate-950" />
+                  <span>View Official Pricing Poster</span>
+                </button>
+                <a
+                  href="https://wa.me/917357690111?text=Hello%20DEEPPURA%20GROUP,%20I%20am%20interested%20in%20the%20Mukundra%20Prime%20Rs.15%20Lakh%20offer.%20Please%20share%20booking%20details."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-xs uppercase tracking-wider backdrop-blur-md transition-all flex items-center gap-2"
+                >
+                  <span>Inquire via WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Official Poster Preview (5 cols) */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div 
+                className="relative max-w-sm rounded-2xl overflow-hidden shadow-2xl border-2 border-emerald-400/50 group cursor-pointer hover:scale-[1.02] transition-transform duration-300"
+                onClick={() => openLightboxAtIndex(0)}
+              >
+                <img
+                  src="/assets/projects/mukundra-prime/official-pricing-offer-poster.jpg"
+                  alt="Mukundra Prime Official Pricing Poster - Starting 15 Lakhs, Booking 51,000"
+                  className="w-full h-auto object-cover block"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="px-4 py-2 rounded-full bg-emerald-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-xl flex items-center gap-2">
+                    <Maximize2 className="w-4 h-4 text-slate-950" />
+                    <span>Click to Zoom Poster</span>
+                  </span>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>

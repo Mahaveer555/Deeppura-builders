@@ -13,6 +13,30 @@ export const Gallery: React.FC = () => {
 
   const allImages: GalleryImage[] = [
     {
+      url: '/assets/projects/mukundra-prime/gate-daylight-closeup.jpg',
+      captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage (Daylight View)',
+      captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage (Daylight View)',
+      category: 'Exterior'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/official-pricing-offer-poster.jpg',
+      captionEn: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      captionHi: 'Mukundra Prime Official Pricing Poster - Starting ₹15 Lakhs*, Booking ₹51,000/-',
+      category: 'Floor Plans'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/site-progress-tower-angle3.jpg',
+      captionEn: 'Mukundra Prime High-Rise Tower Real Site Construction (Angle 3)',
+      captionHi: 'Mukundra Prime High-Rise Tower Real Site Construction (Angle 3)',
+      category: 'Real Site Progress'
+    },
+    {
+      url: '/assets/projects/mukundra-prime/elevation-daylight-crisp.jpg',
+      captionEn: 'Mukundra Prime Daytime Multi-Tower Elevation from 100 Ft. Road',
+      captionHi: 'Mukundra Prime Daytime Multi-Tower Elevation from 100 Ft. Road',
+      category: 'Exterior'
+    },
+    {
       url: '/assets/projects/mukundra-prime/facade-gate-twilight.jpg',
       captionEn: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
       captionHi: 'Mukundra Prime Grand Entrance Gate with 3D Signage & Facade (Twilight View)',
