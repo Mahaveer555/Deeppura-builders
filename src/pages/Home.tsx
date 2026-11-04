@@ -16,7 +16,9 @@ import {
   Sparkles, 
   Landmark,
   Eye,
-  Maximize2
+  Maximize2,
+  BookOpen,
+  Download,
 } from 'lucide-react';
 import { mukundraPrimeProject, floorPlansData, FloorPlanItem } from '../data/projects';
 import { amenitiesList } from '../data/amenities';
@@ -1075,6 +1077,49 @@ export const Home: React.FC = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Official 8-Page Brochure Callout Banner */}
+          <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white border border-emerald-500/30 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0">
+                <FileText className="w-7 h-7 text-emerald-400" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+                    Official 8-Page Publication
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-bold hidden sm:inline">• PDF Size: 8.5 MB</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-black text-white">
+                  Mukundra Prime Official Brochure &amp; Floor Plans
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+                  Interactive multi-page brochure with 3D furnished cutaways, room dimensions (1 BHK, 2 BHK, 3 BHK), amenities, and Deeppura Group history since 2011.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 shrink-0 w-full sm:w-auto justify-end">
+              <button
+                type="button"
+                onClick={() => setBrochureOpen(true)}
+                className="px-5 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-500/40 font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all cursor-pointer"
+              >
+                <BookOpen className="w-4 h-4 text-emerald-400" />
+                <span>Interactive Viewer</span>
+              </button>
+
+              <a
+                href="/assets/projects/mukundra-prime/mukundra-prime-brochure.pdf"
+                download="Mukundra-Prime-Official-Brochure.pdf"
+                className="px-6 py-3 rounded-full bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg hover:shadow-emerald-400/30 cursor-pointer"
+              >
+                <Download className="w-4 h-4 text-slate-950" />
+                <span>Download PDF (8.5 MB)</span>
+              </a>
+            </div>
           </div>
 
         </div>
