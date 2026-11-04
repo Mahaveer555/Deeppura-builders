@@ -17,13 +17,7 @@ export const Footer: React.FC = () => {
           
           {/* Column 1: Brand Info & Socials */}
           <div className="space-y-5">
-            <Link 
-              to="/" 
-              className="inline-flex items-center gap-2.5 group transition-opacity duration-200 hover:opacity-90"
-              aria-label="DEEPPURA GROUP Home"
-            >
-              <Logo variant="light" />
-            </Link>
+            <Logo variant="light" size="lg" layout="horizontal" />
             
             <p className="text-sm leading-relaxed text-slate-600 pr-2">
               Trusted corporate real estate developer in Kota, Rajasthan. Crafting thoughtfully planned residential spaces, landmark developments, and modern lifestyle conveniences.
