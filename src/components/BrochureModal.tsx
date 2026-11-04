@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Download, FileText, Phone, ChevronLeft, ChevronRight, Eye, CheckCircle2, MessageCircle, Maximize2 } from 'lucide-react';
+import { X, Download, FileText, Phone, ChevronLeft, ChevronRight, Eye, CheckCircle2, MessageCircle, Maximize2, Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { playPageTurnSound } from '../utils/pageFlipSound';
+import { brochureSpreads, BrochureSpread } from '../data/brochureData';
 
 interface BrochureModalProps {
   isOpen: boolean;
@@ -8,177 +10,72 @@ interface BrochureModalProps {
   initialPage?: number;
 }
 
-interface BrochureSpread {
-  id: number;
-  spreadNum: number;
-  title: string;
-  subtitle: string;
-  category: string;
-  image: string;
-  thumb: string;
-  leftPageImage: string;
-  rightPageImage: string;
-  highlights: string[];
-}
-
-const brochureSpreads: BrochureSpread[] = [
-  {
-    id: 1,
-    spreadNum: 1,
-    title: 'Cover & Project Overview',
-    subtitle: '100 Ft. Road, Raipura, Kota (Rajasthan)',
-    category: 'Project Overview',
-    image: '/assets/brochure/page-1.jpg',
-    thumb: '/assets/brochure/page-1-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-1-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-1-right.jpg',
-    highlights: [
-      'Prime 100 Ft. Road Frontage in Rajnagar Raipura',
-      'UIT Kota Sanctioned & Rajasthan RERA Approved',
-      'Corporate & Site Office Contact Information',
-      'Bank Loan Approvals up to 90%'
-    ]
+// Realistic 3D Book Page Turn Variants
+const bookPageFlipVariants: any = {
+  enter: (direction: number) => ({
+    rotateY: direction > 0 ? 70 : -70,
+    opacity: 0.15,
+    scale: 0.94,
+    transformOrigin: direction > 0 ? 'left center' : 'right center',
+    filter: 'brightness(1.15) drop-shadow(0 20px 45px rgba(0,0,0,0.65))',
+  }),
+  center: {
+    rotateY: 0,
+    opacity: 1,
+    scale: 1,
+    transformOrigin: 'center center',
+    filter: 'brightness(1) drop-shadow(0 15px 35px rgba(0,0,0,0.4))',
+    transition: {
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1], // Natural paper flip curve
+    },
   },
-  {
-    id: 2,
-    spreadNum: 2,
-    title: 'About Deeppura Group & Elevation',
-    subtitle: 'Legacy of Trust since 2011 • 6.5+ Lakh Sq.Ft. Delivered',
-    category: 'Group Profile',
-    image: '/assets/brochure/page-2.jpg',
-    thumb: '/assets/brochure/page-2-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-2-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-2-right.jpg',
-    highlights: [
-      'Promoted by Shri Prakash Chand Jain',
-      'Delivered 6.5+ Lakh Sq.Ft. of Quality Construction',
-      'Daylight Architectural Elevation with Gated Security',
-      'Earthquake-resistant RCC Engineered Structure'
-    ]
-  },
-  {
-    id: 3,
-    spreadNum: 3,
-    title: '3 BHK Deluxe Unit Plan',
-    subtitle: 'Super Built-Up Area: 960 Sq.Ft.',
-    category: '3 BHK Deluxe',
-    image: '/assets/brochure/page-3.jpg',
-    thumb: '/assets/brochure/page-3-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-3-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-3-right.jpg',
-    highlights: [
-      'Expansive 960 Sq.Ft. Luxury Layout',
-      'Master Bedroom Suite + 2 Bedrooms',
-      '3D Isometric Furnished Cutaway Layout',
-      'Dual Balconies & Modern Modular Kitchen'
-    ]
-  },
-  {
-    id: 4,
-    spreadNum: 4,
-    title: '3 BHK Standard Unit Plan',
-    subtitle: 'Super Built-Up Area: 755 Sq.Ft.',
-    category: '3 BHK Standard',
-    image: '/assets/brochure/page-4.jpg',
-    thumb: '/assets/brochure/page-4-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-4-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-4-right.jpg',
-    highlights: [
-      '3 Bedrooms: 10×11 ft, 10×10 ft, 9.25×9 ft',
-      'Spacious Living Hall: 9×14 ft',
-      'Open Kitchen: 7×5.5 ft with Utility Balcony 3.75×7.5 ft',
-      '2 Toilets with cooler ledges and fresh air ventilation'
-    ]
-  },
-  {
-    id: 5,
-    spreadNum: 5,
-    title: '2 BHK Standard Unit Plan',
-    subtitle: 'Super Built-Up Area: 700.15 Sq.Ft.',
-    category: '2 BHK Standard',
-    image: '/assets/brochure/page-5.jpg',
-    thumb: '/assets/brochure/page-5-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-5-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-5-right.jpg',
-    highlights: [
-      '2 Bedrooms: 10.25×10 ft and 9.5×10 ft',
-      'Family Living Room: 16×9 ft',
-      'Open Kitchen: 10×5.5 ft',
-      'Dual Balconies: 5.5×3 ft each & 2 Toilets'
-    ]
-  },
-  {
-    id: 6,
-    spreadNum: 6,
-    title: '1 BHK Deluxe Unit Plan',
-    subtitle: 'Generous Single Bedroom Living with Balcony',
-    category: '1 BHK Deluxe',
-    image: '/assets/brochure/page-6.jpg',
-    thumb: '/assets/brochure/page-6-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-6-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-6-right.jpg',
-    highlights: [
-      'Master Bedroom: 9.5×10 ft',
-      'Living Room: 9×11 ft',
-      'Kitchen: 5.5×10.5 ft',
-      'Balcony: 6.5×3 ft with 3.5 ft Wide Passage'
-    ]
-  },
-  {
-    id: 7,
-    spreadNum: 7,
-    title: '1 BHK Standard Unit Plan',
-    subtitle: 'Smart Affordable Living for Couples & Students',
-    category: '1 BHK Standard',
-    image: '/assets/brochure/page-7.jpg',
-    thumb: '/assets/brochure/page-7-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-7-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-7-right.jpg',
-    highlights: [
-      'Optimized 1 BHK Compact Layout',
-      'Natural Sunlight & Cross Ventilation',
-      'Dedicated Kitchen Counter & Storage Space',
-      'High Rental Yield Opportunity in Kota'
-    ]
-  },
-  {
-    id: 8,
-    spreadNum: 8,
-    title: 'Verified Amenities & Completed Projects',
-    subtitle: 'World-Class Facilities + Track Record Across Kota',
-    category: 'Amenities & Landmarks',
-    image: '/assets/brochure/page-8.jpg',
-    thumb: '/assets/brochure/page-8-thumb.jpg',
-    leftPageImage: '/assets/brochure/pages/page-8-left.jpg',
-    rightPageImage: '/assets/brochure/pages/page-8-right.jpg',
-    highlights: [
-      'Temple / Mandir, Kids Play Area, Fully Equipped Gym',
-      'Splash Pool, Super Market / Daily Needs Store',
-      'Mukundra Heights (R.K. Puram, Kota)',
-      'Ashiyana Homes (Thekra), Mahalaxmi Apt (Chawani), Royal Heritage'
-    ]
-  }
-];
+  exit: (direction: number) => ({
+    rotateY: direction > 0 ? -75 : 75,
+    opacity: 0,
+    scale: 0.94,
+    transformOrigin: direction > 0 ? 'left center' : 'right center',
+    filter: 'brightness(0.65) drop-shadow(0 25px 50px rgba(0,0,0,0.75))',
+    transition: {
+      duration: 0.45,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  }),
+};
 
 export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, initialPage = 0 }) => {
   const [currentPage, setCurrentPage] = useState(initialPage);
+  const [direction, setDirection] = useState(1);
+  const [soundEnabled, setSoundEnabled] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
       setCurrentPage(initialPage);
+      setDirection(1);
     }
   }, [isOpen, initialPage]);
 
   const pdfUrl = '/assets/projects/mukundra-prime/mukundra-prime-brochure.pdf';
 
   const handleNext = useCallback(() => {
+    setDirection(1);
+    if (soundEnabled) playPageTurnSound();
     setCurrentPage((prev) => (prev < brochureSpreads.length - 1 ? prev + 1 : 0));
-  }, []);
+  }, [soundEnabled]);
 
   const handlePrev = useCallback(() => {
+    setDirection(-1);
+    if (soundEnabled) playPageTurnSound();
     setCurrentPage((prev) => (prev > 0 ? prev - 1 : brochureSpreads.length - 1));
-  }, []);
+  }, [soundEnabled]);
+
+  const goToPage = useCallback((targetIdx: number) => {
+    if (targetIdx === currentPage) return;
+    setDirection(targetIdx > currentPage ? 1 : -1);
+    if (soundEnabled) playPageTurnSound();
+    setCurrentPage(targetIdx);
+  }, [currentPage, soundEnabled]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -200,7 +97,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto">
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity"
+        className="fixed inset-0 bg-slate-950/85 backdrop-blur-md transition-opacity"
         onClick={onClose}
       />
 
@@ -208,19 +105,19 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
       <div className={`relative w-full ${isFullscreen ? 'max-w-[98vw] h-[96vh]' : 'max-w-6xl max-h-[92vh]'} bg-slate-900 border border-slate-700/80 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden z-10 flex flex-col text-slate-100`}>
         
         {/* Top Header Bar */}
-        <div className="bg-slate-950/90 px-4 sm:px-6 py-3.5 border-b border-slate-800 flex items-center justify-between gap-3 shrink-0">
+        <div className="bg-slate-950/90 px-4 sm:px-6 py-3 border-b border-slate-800 flex items-center justify-between gap-3 shrink-0">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0">
-              <FileText className="w-5 h-5 text-emerald-400" />
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/40 flex items-center justify-center shrink-0">
+              <FileText className="w-5 h-5 text-amber-400" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] uppercase font-black tracking-widest text-emerald-400">
-                  OFFICIAL PUBLICATION
+                <span className="text-[10px] uppercase font-black tracking-widest text-amber-400">
+                  3D FLIPBOOK VIEWER
                 </span>
                 <span className="hidden sm:inline-block text-[10px] text-slate-400">•</span>
-                <span className="hidden sm:inline-block text-[10px] text-slate-400 font-medium">
-                  Mukundra Prime (Kota)
+                <span className="hidden sm:inline-block text-[10px] text-slate-300 font-medium">
+                  Mukundra Prime Official Brochure (8 Spreads)
                 </span>
               </div>
               <h3 className="text-sm sm:text-base md:text-lg font-black text-white truncate">
@@ -231,11 +128,25 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
 
           {/* Header Controls */}
           <div className="flex items-center gap-2 shrink-0">
+            {/* Page flip sound toggle */}
+            <button
+              onClick={() => setSoundEnabled(!soundEnabled)}
+              className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer flex items-center justify-center"
+              title={soundEnabled ? 'Mute Page Flip Sound' : 'Enable Page Flip Sound'}
+              aria-label="Toggle page turn audio"
+            >
+              {soundEnabled ? (
+                <Volume2 className="w-4 h-4 text-amber-400" />
+              ) : (
+                <VolumeX className="w-4 h-4 text-slate-500" />
+              )}
+            </button>
+
             {/* Download PDF button */}
             <a
               href={pdfUrl}
               download="Mukundra-Prime-Official-Brochure.pdf"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md"
               title="Download Full 8-Page Official Brochure (8.5 MB PDF)"
             >
               <Download className="w-3.5 h-3.5 text-slate-950" />
@@ -262,75 +173,102 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
           </div>
         </div>
 
-        {/* Main Content Area: Viewer Canvas */}
-        <div className="relative flex-1 bg-slate-950 flex flex-col items-center justify-center p-2 sm:p-4 overflow-hidden min-h-[300px]">
+        {/* Main Content Area: 3D FlipBook Stage */}
+        <div className="relative flex-1 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 flex flex-col items-center justify-center p-3 sm:p-5 overflow-hidden min-h-[320px]">
           
-          {/* Active Spread Image Display with Navigation Arrows */}
-          <div className="relative w-full h-full flex items-center justify-center max-w-full">
-            <AnimatePresence mode="wait">
+          {/* 3D Perspective Stage Container */}
+          <div 
+            className="relative w-full h-full flex items-center justify-center max-w-full"
+            style={{ perspective: '2200px' }}
+          >
+            <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={currentPage}
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.25 }}
-                className="relative max-w-full max-h-[58vh] md:max-h-[64vh] flex items-center justify-center"
+                custom={direction}
+                variants={bookPageFlipVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                className="relative max-w-full max-h-[58vh] md:max-h-[64vh] flex items-center justify-center rounded-xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] border border-slate-700/60"
+                style={{ transformStyle: 'preserve-3d' }}
               >
+                {/* Book Spread Image */}
                 <img
                   src={currentSpread.image}
                   alt={`${currentSpread.title} - Official Mukundra Prime Brochure Spread ${currentPage + 1}`}
-                  className="max-w-full max-h-[58vh] md:max-h-[64vh] object-contain rounded-xl shadow-2xl border border-slate-800/80"
+                  className="max-w-full max-h-[58vh] md:max-h-[64vh] object-contain rounded-xl select-none"
+                  draggable={false}
                 />
+
+                {/* Middle Book Spine Crease / Binding Shadow (Realistic 3D Book Fold Effect) */}
+                <div 
+                  className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-6 sm:w-10 pointer-events-none z-10"
+                  style={{
+                    background: 'linear-gradient(90deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.08) 35%, rgba(255,255,255,0.06) 50%, rgba(0,0,0,0.08) 65%, rgba(0,0,0,0.35) 100%)',
+                    boxShadow: 'inset 0 0 12px rgba(0,0,0,0.5)'
+                  }}
+                />
+
+                {/* Top/Bottom Page Edge Sheen */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/25 pointer-events-none" />
               </motion.div>
             </AnimatePresence>
 
-            {/* Left Previous Arrow */}
+            {/* Left Previous Turn Arrow Button */}
             <button
               onClick={handlePrev}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-emerald-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-slate-900/90 hover:bg-amber-400 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/80 shadow-2xl flex items-center justify-center transition-all cursor-pointer z-30 group"
               aria-label="Previous Page Spread"
+              title="Previous Page (Arrow Left)"
             >
               <ChevronLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
             </button>
 
-            {/* Right Next Arrow */}
+            {/* Right Next Turn Arrow Button */}
             <button
               onClick={handleNext}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-slate-900/85 hover:bg-emerald-500 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/60 shadow-xl flex items-center justify-center transition-all cursor-pointer z-20 group"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-slate-900/90 hover:bg-amber-400 hover:text-slate-950 text-white backdrop-blur-md border border-slate-700/80 shadow-2xl flex items-center justify-center transition-all cursor-pointer z-30 group"
               aria-label="Next Page Spread"
+              title="Next Page (Arrow Right)"
             >
               <ChevronRight className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </div>
 
           {/* Spread Info Pill Overlay */}
-          <div className="mt-2.5 flex items-center justify-center gap-3">
-            <span className="px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700 text-[11px] font-bold text-slate-300">
-              Spread <strong className="text-emerald-400">{currentPage + 1}</strong> of {brochureSpreads.length}
+          <div className="mt-3 flex items-center justify-center gap-3 select-none">
+            <span className="px-3.5 py-1 rounded-full bg-slate-900/95 border border-slate-700 text-xs font-bold text-slate-300 shadow-md">
+              Spread <strong className="text-amber-400">{currentPage + 1}</strong> of {brochureSpreads.length}
             </span>
             <span className="text-xs text-slate-400 hidden sm:inline-block">
               {currentSpread.subtitle}
             </span>
+            {soundEnabled && (
+              <span className="text-[10px] text-amber-400/80 hidden md:inline-flex items-center gap-1">
+                <Volume2 className="w-3 h-3" />
+                <span>3D Page Turn Sound Active</span>
+              </span>
+            )}
           </div>
         </div>
 
         {/* Highlights Bar for Active Spread */}
         <div className="bg-slate-900/90 px-4 sm:px-6 py-2.5 border-t border-slate-800/80 hidden md:block">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-slate-300">
-            <span className="text-emerald-400 font-bold uppercase tracking-wider text-[10px] flex items-center gap-1">
+            <span className="text-amber-400 font-bold uppercase tracking-wider text-[10px] flex items-center gap-1">
               <Eye className="w-3.5 h-3.5" />
               <span>Spread Details:</span>
             </span>
             {currentSpread.highlights.map((h, i) => (
               <div key={i} className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
+                <CheckCircle2 className="w-3 h-3 text-amber-400 shrink-0" />
                 <span>{h}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Bottom Thumbnail Strip (Click to Jump) */}
+        {/* Bottom Thumbnail Strip (Click to Jump with 3D Flip) */}
         <div className="bg-slate-950 px-3 sm:px-6 py-3 border-t border-slate-800 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-1 scrollbar-thin">
             {brochureSpreads.map((spread, idx) => {
@@ -338,10 +276,10 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
               return (
                 <button
                   key={spread.id}
-                  onClick={() => setCurrentPage(idx)}
+                  onClick={() => goToPage(idx)}
                   className={`relative flex-shrink-0 w-20 sm:w-28 md:w-32 rounded-lg overflow-hidden border-2 transition-all cursor-pointer group text-left ${
                     isActive
-                      ? 'border-emerald-400 ring-2 ring-emerald-400/30 scale-105'
+                      ? 'border-amber-400 ring-2 ring-amber-400/30 scale-105'
                       : 'border-slate-800 hover:border-slate-600 opacity-70 hover:opacity-100'
                   }`}
                 >
@@ -351,7 +289,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
                     className="w-full h-10 sm:h-14 object-cover"
                   />
                   <div className="p-1 bg-slate-900/95 text-[9px] sm:text-[10px] font-bold text-slate-300 truncate">
-                    <span className="text-emerald-400 mr-1">{idx + 1}.</span>
+                    <span className="text-amber-400 mr-1">{idx + 1}.</span>
                     <span>{spread.category}</span>
                   </div>
                 </button>
@@ -367,7 +305,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             <span className="hidden sm:inline">Have questions about this floor plan or pricing?</span>
             <a
               href="tel:7357690111"
-              className="font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors"
+              className="font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
               <span>7357690111 / 8239999520</span>
@@ -389,7 +327,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, i
             <a
               href={pdfUrl}
               download="Mukundra-Prime-Official-Brochure.pdf"
-              className="px-5 py-2 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
+              className="px-5 py-2 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-lg cursor-pointer"
             >
               <Download className="w-4 h-4 text-slate-950" />
               <span>Download PDF (8.5 MB)</span>
