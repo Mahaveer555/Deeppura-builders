@@ -723,7 +723,7 @@ export const Home: React.FC = () => {
           <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-[#1F4E44]/70 border border-[#C5A46D]/50 backdrop-blur-md flex items-center justify-center gap-3 shadow-xl mb-7">
             <Sparkles className="w-5 h-5 text-[#C5A46D] shrink-0" />
             <div className="text-xs sm:text-sm font-semibold text-slate-100 text-left sm:text-center">
-              <strong className="text-[#C5A46D] font-black">धमाका ऑफर:</strong> फुली फर्निश्ड फ्लैट मॉड्यूलर किचन के साथ बिना किसी अतिरिक्त खर्च! (ऑफर केवल 30 अप्रैल तक)
+              <strong className="text-[#C5A46D] font-black">धमाका ऑफर:</strong> फुली फर्निश्ड फ्लैट मॉड्यूलर किचन के साथ बिना किसी अतिरिक्त खर्च!
             </div>
           </div>
 
