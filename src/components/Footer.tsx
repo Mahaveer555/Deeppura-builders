@@ -12,14 +12,16 @@ export const Footer: React.FC = () => {
     <footer className="bg-slate-50 text-slate-600 border-t border-slate-200 relative select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
         
-        {/* 4-Column Clean Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-slate-200">
+        {/* 4-Column Clean Enterprise Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-14 border-b border-slate-200">
           
-          {/* Column 1: Brand Info & Socials */}
-          <div className="space-y-5">
-            <Logo variant="light" size="lg" layout="horizontal" />
+          {/* Column 1: Brand Info & Socials (4 cols) */}
+          <div className="lg:col-span-4 space-y-5">
+            <div className="max-w-[240px]">
+              <Logo variant="light" size="md" layout="horizontal" />
+            </div>
             
-            <p className="text-sm leading-relaxed text-slate-600 pr-2">
+            <p className="text-sm leading-relaxed text-slate-600 pr-4">
               Trusted corporate real estate developer in Kota, Rajasthan. Crafting thoughtfully planned residential spaces, landmark developments, and modern lifestyle conveniences.
             </p>
 
@@ -77,8 +79,8 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
+          {/* Column 2: Quick Links (2 cols) */}
+          <div className="lg:col-span-2">
             <h3 className="font-heading text-lg font-black text-slate-900 mb-5 tracking-tight">
               Quick Links
             </h3>
@@ -105,8 +107,8 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Our Projects */}
-          <div>
+          {/* Column 3: Our Projects (3 cols) */}
+          <div className="lg:col-span-3">
             <h3 className="font-heading text-lg font-black text-slate-900 mb-5 tracking-tight">
               Our Projects
             </h3>
@@ -144,8 +146,8 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact Info */}
-          <div>
+          {/* Column 4: Contact Info (3 cols) */}
+          <div className="lg:col-span-3">
             <h3 className="font-heading text-lg font-black text-slate-900 mb-5 tracking-tight">
               Contact Info
             </h3>
@@ -244,7 +246,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © {new Date().getFullYear()} DEEPPURA GROUP. All Rights Reserved.
+            © {new Date().getFullYear()} DEEPPURA BUILDERS. All Rights Reserved.
           </div>
 
           <div className="flex items-center gap-6">

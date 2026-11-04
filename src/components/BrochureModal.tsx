@@ -67,6 +67,30 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose })
             Download the official project brochure containing architectural elevation plans, verified room measurements for 1 BHK, 2 BHK (701.5 sq. ft.), 3 BHK, and 3 BHK Deluxe (960 sq. ft.) apartments, 14 confirmed amenities, and site connectivity maps.
           </p>
 
+          {/* Preview of Official Brochure Pages */}
+          <div className="grid grid-cols-2 gap-3 pt-2">
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
+              <img
+                src="/assets/projects/mukundra-prime/official-pricing-offer-poster.jpg"
+                alt="Mukundra Prime Pricing &amp; Dhamaka Offer Sheet"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-2 text-[10px] font-bold text-slate-700 bg-white text-center border-t border-slate-100">
+                Page 1: Pricing &amp; Offers
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
+              <img
+                src="/assets/projects/mukundra-prime/official-brochure-flyer.jpg"
+                alt="Mukundra Prime Verified Unit Plans &amp; Amenities"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-2 text-[10px] font-bold text-slate-700 bg-white text-center border-t border-slate-100">
+                Page 2: 2D Plans &amp; Amenities
+              </div>
+            </div>
+          </div>
+
           <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-200 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <FileText className="w-6 h-6 text-emerald-600 shrink-0" />
