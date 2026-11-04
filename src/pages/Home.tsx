@@ -585,7 +585,7 @@ export const Home: React.FC = () => {
                     Founder &amp; Director
                   </div>
                   <div className="text-lg font-black text-slate-900">
-                    Animesh Jain
+                    Prakash Jain (Deeppura)
                   </div>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed italic">
                     "Our mission is simple: to build with integrity, design with purpose, and create homes that stand as testaments of trust for the families of Kota."
@@ -617,7 +617,7 @@ export const Home: React.FC = () => {
 
               <div className="space-y-3.5 text-sm text-slate-600 leading-relaxed">
                 <p>
-                  DEEPPURA GROUP stands as a cornerstone of reliability and architectural vision in the real estate landscape of Kota. Under the leadership of Founder &amp; Director Animesh Jain, the group focuses on creating residential spaces that harmonize modern lifestyle conveniences with lasting structural integrity.
+                  DEEPPURA GROUP stands as a cornerstone of reliability and architectural vision in the real estate landscape of Kota. Under the leadership of Founder &amp; Director Prakash Jain (Deeppura), the group focuses on creating residential spaces that harmonize modern lifestyle conveniences with lasting structural integrity.
                 </p>
                 <p>
                   Every residential project is conceptualized with spatial efficiency, generous natural ventilation, cross-breezes, and verified municipal approvals. The company maintains an unwavering dedication to transparent communication, timely progress, and genuine buyer support.
@@ -1274,7 +1274,7 @@ export const Home: React.FC = () => {
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
                     <span className="text-[10px] font-bold text-amber-800 bg-amber-100 border border-amber-200 px-3 py-1 rounded-full">
-                      Animesh Jain
+                      Prakash Jain (Deeppura)
                     </span>
                   </a>
 

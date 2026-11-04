@@ -23,7 +23,7 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy';
 const routeMeta: Record<string, { title: string; description: string }> = {
   '/': {
     title: 'DEEPPURA GROUP | Best Builders & Developers in Kota, Rajasthan | Mukundra Prime Luxury Flats',
-    description: "DEEPPURA GROUP is Kota's premier real estate developer led by Director Animesh Jain. Explore Mukundra Prime luxury 1, 2 & 3 BHK flats on 100 Ft. Road, Raipura, Kota. RERA (RAJ/P/2025/3532) & UIT approved with 14+ amenities."
+    description: "DEEPPURA GROUP is Kota's premier real estate developer led by Director Prakash Jain (Deeppura). Explore Mukundra Prime luxury 1, 2 & 3 BHK flats on 100 Ft. Road, Raipura, Kota. RERA (RAJ/P/2025/3532) & UIT approved with 14+ amenities."
   },
   '/projects/mukundra-prime': {
     title: 'Mukundra Prime Kota | Luxury 1, 2 & 3 BHK Flats on 100 Ft. Road, Raipura | RERA Approved',
@@ -50,8 +50,8 @@ const routeMeta: Record<string, { title: string; description: string }> = {
     description: 'Explore high-definition photo gallery of DEEPPURA GROUP projects in Kota: daylight towers, contemporary living rooms, swimming pool, landscape gardens, master bedrooms, and completed landmarks.'
   },
   '/about': {
-    title: 'About DEEPPURA GROUP | Director Animesh Jain | Trusted Real Estate Developers in Kota, Rajasthan',
-    description: 'Learn about DEEPPURA GROUP, founded by Director Animesh Jain. Dedicated to architectural integrity, clear title documentation, and delivering superior residential developments in Kota, Rajasthan.'
+    title: 'About DEEPPURA GROUP | Director Prakash Jain (Deeppura) | Trusted Real Estate Developers in Kota, Rajasthan',
+    description: 'Learn about DEEPPURA GROUP, founded by Director Prakash Jain (Deeppura). Dedicated to architectural integrity, clear title documentation, and delivering superior residential developments in Kota, Rajasthan.'
   },
   '/projects': {
     title: 'Residential Projects in Kota, Rajasthan | Ongoing & Completed Developments | DEEPPURA GROUP',

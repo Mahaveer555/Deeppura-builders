@@ -60,7 +60,7 @@ npm run preview
 ---
 
 ## 📞 Official Booking Desk
-* **Director Desk**: +91 88750 00404 (Animesh Jain)
+* **Director Desk**: +91 88750 00404 (Prakash Jain (Deeppura))
 * **Sales Desk**: +91 73576 90111 / +91 82399 99520
 * **Corporate Office**: G-319, A, IPIA Road No. 6, Talwandi, Kota, Rajasthan
 * **Site Office**: Deoli Arab Road, Near Decent School, Rajnagar, Raipura, Kota, Rajasthan

@@ -87,7 +87,7 @@ export const About: React.FC = () => {
                   <span>Founder &amp; Director</span>
                 </div>
                 <h3 className="text-2xl font-black text-slate-900">
-                  Animesh Jain
+                  Prakash Jain (Deeppura)
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed italic border-l-2 border-amber-500 pl-3">
                   "Our mission is simple: to build with integrity, design with purpose, and create homes that stand as testaments of trust for the families of Kota."
@@ -122,7 +122,7 @@ export const About: React.FC = () => {
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                 <p>
-                  DEEPPURA GROUP is an established real estate developer headquartered in Talwandi, Kota, Rajasthan. Under the leadership of Founder &amp; Director Animesh Jain, the group is committed to developing thoughtfully planned residential spaces that combine modern living comfort, high-grade structural engineering, and verified legal approvals.
+                  DEEPPURA GROUP is an established real estate developer headquartered in Talwandi, Kota, Rajasthan. Under the leadership of Founder &amp; Director Prakash Jain (Deeppura), the group is committed to developing thoughtfully planned residential spaces that combine modern living comfort, high-grade structural engineering, and verified legal approvals.
                 </p>
                 <p>
                   Our flagship ongoing development, <strong className="text-slate-900">Mukundra Prime</strong>, developed by Mukundra Infra Project Private Limited, represents the pinnacle of modern multi-storey living in the rapidly flourishing Raipura corridor. Situated directly on a 100-foot wide masterplan road near Decent School and Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, an on-premises temple, swimming pool, gymnasium, supermarket, and landscaped green parks.

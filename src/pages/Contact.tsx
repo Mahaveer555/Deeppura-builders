@@ -44,7 +44,7 @@ export const Contact: React.FC = () => {
               Connect with <span className="text-amber-400">DEEPPURA GROUP</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 leading-relaxed max-w-3xl font-normal">
-              Connect directly with our corporate headquarters in Talwandi, our project site sales office in Raipura, or speak directly with Director Animesh Jain.
+              Connect directly with our corporate headquarters in Talwandi, our project site sales office in Raipura, or speak directly with Director Prakash Jain (Deeppura).
             </p>
             <div className="pt-2">
               <nav className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-300">
@@ -103,7 +103,7 @@ export const Contact: React.FC = () => {
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
                     <span className="text-[10px] font-bold text-amber-800 bg-amber-100 border border-amber-200 px-3 py-1 rounded-full">
-                      Animesh Jain
+                      Prakash Jain (Deeppura)
                     </span>
                   </a>
 
