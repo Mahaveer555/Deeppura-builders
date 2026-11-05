@@ -236,7 +236,7 @@ export const Home: React.FC = () => {
     },
     {
       id: 3,
-      image: '/assets/hero/mukundra-prime-twilight-hero.jpg',
+      image: '/assets/hero/luxury-gated-villas.jpg',
       tag: 'Gated Township • 14 Verified Resort Amenities',
       title: 'Comfort & Security.',
       titleHighlight: 'Every Single Day.',
