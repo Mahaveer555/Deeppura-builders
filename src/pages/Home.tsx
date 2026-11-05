@@ -220,7 +220,7 @@ export const Home: React.FC = () => {
   const heroSlides = [
     {
       id: 1,
-      image: '/assets/hero/mukundra-prime-luxury-hero.jpg',
+      image: '/assets/hero/mukundra-prime-main-hero.jpg',
       tag: 'Mukundra Prime • Royal Architectural Gold Living',
       title: 'Building Landmarks.',
       titleHighlight: 'Crafting Golden Futures.',
