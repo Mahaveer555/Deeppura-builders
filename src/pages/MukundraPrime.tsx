@@ -52,8 +52,11 @@ export const MukundraPrime: React.FC = () => {
             initial={{ scale: 1.15 }}
             animate={{ scale: 1.0 }}
             transition={{ duration: 7, ease: [0.16, 1, 0.3, 1] }}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
+          {/* Cinematic Vignette Overlays for High-Contrast Luxury Readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/50 to-slate-950/20 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-slate-950/25 pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
