@@ -40,7 +40,7 @@ export const FloatingContact: React.FC = () => {
   const phoneNumbers = [
     { label: 'Booking Desk 1', number: '7357690111', clean: '917357690111' },
     { label: 'Booking Desk 2', number: '8239999520', clean: '918239999520' },
-    { label: 'Director Desk (Prakash Jain - Deeppura)', number: '+91 88750 00404', clean: '918875000404' },
+    { label: 'Director Desk (Animesh Jain)', number: '+91 88750 00404', clean: '918875000404' },
   ];
 
   // Close menus when clicking outside

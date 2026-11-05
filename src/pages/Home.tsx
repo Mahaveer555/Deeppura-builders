@@ -584,15 +584,27 @@ export const Home: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
 
-                {/* Director Leadership Badge */}
+                {/* Leadership Badge */}
                 <div className="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-xl border border-slate-200 text-slate-900 shadow-2xl">
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-amber-800">
-                    Founder &amp; Director
+                  <div className="grid grid-cols-2 gap-3 pb-2.5 border-b border-slate-100">
+                    <div>
+                      <div className="text-[10px] uppercase font-bold tracking-wider text-amber-800">
+                        Founder
+                      </div>
+                      <div className="text-base font-black text-slate-900 leading-snug">
+                        Prakash Jain (Deeppura)
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-[10px] uppercase font-bold tracking-wider text-amber-800">
+                        Director
+                      </div>
+                      <div className="text-base font-black text-slate-900 leading-snug">
+                        Animesh Jain
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-lg font-black text-slate-900">
-                    Prakash Jain (Deeppura)
-                  </div>
-                  <p className="text-xs text-slate-600 mt-1 leading-relaxed italic">
+                  <p className="text-xs text-slate-600 mt-2 leading-relaxed italic">
                     "Our mission is simple: to build with integrity, design with purpose, and create homes that stand as testaments of trust for the families of Kota."
                   </p>
                 </div>
@@ -622,7 +634,7 @@ export const Home: React.FC = () => {
 
               <div className="space-y-3.5 text-sm text-slate-600 leading-relaxed">
                 <p>
-                  DEEPPURA GROUP stands as a cornerstone of reliability and architectural vision in the real estate landscape of Kota. Under the leadership of Founder &amp; Director Prakash Jain (Deeppura), the group focuses on creating residential spaces that harmonize modern lifestyle conveniences with lasting structural integrity.
+                  DEEPPURA GROUP stands as a cornerstone of reliability and architectural vision in the real estate landscape of Kota. Under the visionary leadership of Founder Prakash Jain (Deeppura) and Director Animesh Jain, the group focuses on creating residential spaces that harmonize modern lifestyle conveniences with lasting structural integrity.
                 </p>
                 <p>
                   Every residential project is conceptualized with spatial efficiency, generous natural ventilation, cross-breezes, and verified municipal approvals. The company maintains an unwavering dedication to transparent communication, timely progress, and genuine buyer support.
@@ -1256,7 +1268,7 @@ export const Home: React.FC = () => {
                       <div className="font-bold text-sm text-slate-900">+91 88750 00404</div>
                     </div>
                     <span className="text-[10px] font-bold text-amber-900 bg-[#F5EEDB] border border-amber-200 px-3 py-1 rounded-full">
-                      Prakash Jain (Deeppura)
+                      Animesh Jain
                     </span>
                   </a>
 

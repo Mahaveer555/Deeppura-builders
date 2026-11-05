@@ -97,7 +97,7 @@ export const Header: React.FC<HeaderProps> = () => {
             <span className="text-slate-300">•</span>
 
             <div className="flex items-center gap-1.5">
-              <span className="text-slate-500">Director (Prakash Jain):</span>
+              <span className="text-slate-500">Director Desk (Animesh Jain):</span>
               <a 
                 href="tel:8875000404" 
                 className="font-semibold text-slate-800 hover:text-amber-800 transition-colors"

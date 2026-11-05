@@ -81,24 +81,37 @@ export const About: React.FC = () => {
               </div>
 
               {/* Leadership Spotlight Card */}
-              <div className="p-6 rounded-2xl bg-slate-50 border border-[#E8D8B3] shadow-md space-y-3">
+              <div className="p-6 rounded-2xl bg-slate-50 border border-[#E8D8B3] shadow-md space-y-4">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800">
                   <ShieldCheck className="w-4 h-4 text-[#8A6632]" />
-                  <span>Founder &amp; Director</span>
+                  <span>Key Leadership</span>
                 </div>
-                <h3 className="text-2xl font-black text-[#8A6632]">
-                  Prakash Jain (Deeppura)
-                </h3>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-2 border-b border-[#E8D8B3]">
+                  <div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-amber-800">Founder</div>
+                    <h3 className="text-xl font-black text-[#8A6632]">
+                      Prakash Jain (Deeppura)
+                    </h3>
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-amber-800">Director</div>
+                    <h3 className="text-xl font-black text-[#8A6632]">
+                      Animesh Jain
+                    </h3>
+                  </div>
+                </div>
+
                 <p className="text-xs text-slate-600 leading-relaxed italic border-l-2 border-amber-500 pl-3">
                   "Our mission is simple: to build with integrity, design with purpose, and create homes that stand as testaments of trust for the families of Kota."
                 </p>
-                <div className="pt-2">
+                <div className="pt-1">
                   <a
                     href="tel:8875000404"
                     className="inline-flex items-center gap-2 text-xs font-bold text-amber-800 hover:text-amber-900 transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-[#8A6632]" />
-                    <span>Director Helpline: +91 88750 00404</span>
+                    <span>Director Desk (Animesh Jain): +91 88750 00404</span>
                   </a>
                 </div>
               </div>
@@ -122,7 +135,7 @@ export const About: React.FC = () => {
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                 <p>
-                  DEEPPURA GROUP is an established real estate developer headquartered in Talwandi, Kota, Rajasthan. Under the leadership of Founder &amp; Director Prakash Jain (Deeppura), the group is committed to developing thoughtfully planned residential spaces that combine modern living comfort, high-grade structural engineering, and verified legal approvals.
+                  DEEPPURA GROUP is an established real estate developer headquartered in Talwandi, Kota, Rajasthan. Under the visionary leadership of Founder Prakash Jain (Deeppura) and Director Animesh Jain, the group is committed to developing thoughtfully planned residential spaces that combine modern living comfort, high-grade structural engineering, and verified legal approvals.
                 </p>
                 <p>
                   Our flagship ongoing development, <strong className="text-[#8A6632]">Mukundra Prime</strong>, developed by Mukundra Infra Project Private Limited, represents the pinnacle of modern multi-storey living in the rapidly flourishing Raipura corridor. Situated directly on a 100-foot wide masterplan road near Decent School and Allen Career Institute, it features complete loanability up to 90%, boundary-wall gated security, an on-premises temple, swimming pool, gymnasium, supermarket, and landscaped green parks.

@@ -23,7 +23,7 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy';
 const routeMeta: Record<string, { title: string; description: string }> = {
   '/': {
     title: 'DEEPPURA GROUP | Best Builders & Developers in Kota, Rajasthan | Mukundra Prime Luxury Flats',
-    description: "DEEPPURA GROUP is Kota's premier real estate developer led by Director Prakash Jain (Deeppura). Explore Mukundra Prime luxury 1, 2 & 3 BHK flats on 100 Ft. Road, Raipura, Kota. RERA (RAJ/P/2025/3532) & UIT approved with 14+ amenities."
+    description: "DEEPPURA GROUP is Kota's premier real estate developer founded by Prakash Jain (Deeppura) and directed by Animesh Jain. Explore Mukundra Prime luxury 1, 2 & 3 BHK flats on 100 Ft. Road, Raipura, Kota. RERA (RAJ/P/2025/3532) & UIT approved with 14+ amenities."
   },
   '/projects/mukundra-prime': {
     title: 'Mukundra Prime Kota | Luxury 1, 2 & 3 BHK Flats on 100 Ft. Road, Raipura | RERA Approved',
@@ -50,8 +50,8 @@ const routeMeta: Record<string, { title: string; description: string }> = {
     description: 'Explore high-definition photo gallery of DEEPPURA GROUP projects in Kota: daylight towers, contemporary living rooms, swimming pool, landscape gardens, master bedrooms, and completed landmarks.'
   },
   '/about': {
-    title: 'About DEEPPURA GROUP | Director Prakash Jain (Deeppura) | Trusted Real Estate Developers in Kota, Rajasthan',
-    description: 'Learn about DEEPPURA GROUP, founded by Director Prakash Jain (Deeppura). Dedicated to architectural integrity, clear title documentation, and delivering superior residential developments in Kota, Rajasthan.'
+    title: 'About DEEPPURA GROUP | Founder Prakash Jain (Deeppura) & Director Animesh Jain | Trusted Real Estate Developers in Kota, Rajasthan',
+    description: 'Learn about DEEPPURA GROUP, founded by Prakash Jain (Deeppura) and directed by Animesh Jain. Dedicated to architectural integrity, clear title documentation, and delivering superior residential developments in Kota, Rajasthan.'
   },
   '/projects': {
     title: 'Residential Projects in Kota, Rajasthan | Ongoing & Completed Developments | DEEPPURA GROUP',
@@ -59,7 +59,7 @@ const routeMeta: Record<string, { title: string; description: string }> = {
   },
   '/contact': {
     title: 'Contact DEEPPURA GROUP Kota | Site Visits & Flat Bookings | Talwandi Corporate & Raipura Site Desk',
-    description: 'Connect with DEEPPURA GROUP sales team for Mukundra Prime site visits and bookings in Kota. Call +91 73576 90111 / +91 82399 99520 or Director Desk +91 88750 00404. Corporate Office: Talwandi, Kota.'
+    description: 'Connect with DEEPPURA GROUP sales team for Mukundra Prime site visits and bookings in Kota. Call +91 73576 90111 / +91 82399 99520 or Director Desk (Animesh Jain) +91 88750 00404. Corporate Office: Talwandi, Kota.'
   },
   '/privacy-policy': {
     title: 'Privacy Policy | DEEPPURA GROUP Kota, Rajasthan',
