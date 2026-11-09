@@ -43,10 +43,10 @@ export const Header: React.FC<HeaderProps> = () => {
         { to: '/projects', label: 'All Projects Overview' },
       ]
     },
-    { to: '/completed-projects', label: 'Completed Projects' },
     { to: '/amenities', label: 'Amenities' },
     { to: '/unit-plan', label: 'Unit Plan' },
     { to: '/gallery', label: 'Gallery' },
+    { to: '/blog', label: 'Blog' },
     { to: '/contact', label: 'Contact' },
   ];
 

@@ -114,9 +114,9 @@ export const MukundraPrime: React.FC = () => {
                 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight drop-shadow-md"
               >
-                Mukundra Prime{' '}
+                Mukundra Prime Kota{' '}
                 <span className="text-[#C5A46D] block sm:inline drop-shadow-[0_0_20px_rgba(197,164,109,0.4)]">
-                  Residences
+                  Luxury 1, 2 &amp; 3 BHK Flats
                 </span>
               </motion.h1>
 
@@ -382,13 +382,13 @@ export const MukundraPrime: React.FC = () => {
             className="text-center max-w-2xl mx-auto mb-16 space-y-2.5"
           >
             <span className="text-[10px] font-bold uppercase tracking-wider text-amber-950 bg-amber-100/90 border border-amber-300 px-3 py-1 rounded-full">
-              Detailed Unit Plans
+              Mukundra Prime 1 BHK, 2 BHK &amp; 3 BHK Unit Plans
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#8A6632]">
-              Architectural <span className="text-[#8A6632] font-black">Unit Plans</span>
+              Mukundra Prime <span className="text-[#8A6632] font-black">Flats in Kota</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
-              Click any layout to inspect high-resolution dimensions in full screen lightbox.
+              Verified architectural floor plans and 3D isometric layout designs for 1 BHK, 2 BHK (701.5 sq. ft.), and 3 BHK Deluxe (960 sq. ft.) luxury apartments in Raipura, Kota.
             </p>
           </motion.div>
 

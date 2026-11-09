@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.deeppurabuilders.com/sitemap.xml
 
+Sitemap: https://deppura.vercel.app/sitemap.xml

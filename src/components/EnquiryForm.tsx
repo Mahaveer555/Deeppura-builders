@@ -7,6 +7,7 @@ interface EnquiryFormProps {
   className?: string;
   title?: string;
   subtitle?: string;
+  onSuccess?: () => void;
 }
 
 export const EnquiryForm: React.FC<EnquiryFormProps> = ({
@@ -15,6 +16,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   className = '',
   title,
   subtitle,
+  onSuccess,
 }) => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -79,6 +81,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
       window.open(whatsappUrl, '_blank');
       setIsSubmitting(false);
       setSubmitted(true);
+      if (onSuccess) {
+        onSuccess();
+      }
     }, 400);
   };
 

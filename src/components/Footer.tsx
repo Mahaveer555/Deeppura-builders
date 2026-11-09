@@ -89,6 +89,7 @@ export const Footer: React.FC = () => {
                 { to: '/completed-projects', label: 'Completed Projects' },
                 { to: '/unit-plan', label: 'Unit Plan' },
                 { to: '/amenities', label: 'Amenities' },
+                { to: '/blog', label: 'Blog & Property Guides' },
                 { to: '/contact', label: 'Contact' },
                 { to: '/privacy-policy', label: 'Privacy Policy' },
               ].map((link) => (
@@ -248,7 +249,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-1.5 text-xs text-slate-400">
-            <span>Design &amp; Develop by</span>
+            <span>Designed &amp; Developed by</span>
             <a 
               href="https://digiteeworld.com/" 
               target="_blank" 

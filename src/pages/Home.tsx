@@ -28,6 +28,7 @@ import { EnquiryForm } from '../components/EnquiryForm';
 import { BrochureModal } from '../components/BrochureModal';
 import { GalleryModal, GalleryImage } from '../components/GalleryModal';
 import { MarqueeBanner } from '../components/MarqueeBanner';
+import { blogPosts } from '../data/blogPosts';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { OurProjectsShowcase } from '../components/OurProjectsShowcase';
 import { BankPartnersMarquee } from '../components/BankPartnersMarquee';
@@ -323,20 +324,30 @@ export const Home: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20">
           <div className="max-w-xl space-y-4">
             
-            {/* Top Project Tag Badge */}
+            {/* SEO Homepage H1 Tag */}
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
+              className="space-y-2.5"
             >
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-black text-xs font-bold uppercase tracking-wider shadow-md">
-                <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                <span>{heroSlides[currentSlide].tag}</span>
-              </span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-[#C5A46D]/60 text-white shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-[#C5A46D] animate-pulse"></span>
+                <h1 className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#FAF7F0] drop-shadow-md">
+                  Builders &amp; Real Estate Developers in Kota, Rajasthan
+                </h1>
+              </div>
+
+              <div>
+                <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-black text-xs font-bold uppercase tracking-wider shadow-md">
+                  <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                  <span>{heroSlides[currentSlide].tag}</span>
+                </span>
+              </div>
             </motion.div>
 
-            {/* Main Headline */}
-            <motion.h1 
+            {/* Main Headline (H2) */}
+            <motion.h2 
               key={`title-${currentSlide}`}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -347,7 +358,7 @@ export const Home: React.FC = () => {
               <span className="text-[#C5A46D] block mt-1 drop-shadow-[0_0_20px_rgba(197,164,109,0.5)]">
                 {heroSlides[currentSlide].titleHighlight}
               </span>
-            </motion.h1>
+            </motion.h2>
 
             {/* Short Supporting Text */}
             <motion.p 
@@ -1223,6 +1234,87 @@ export const Home: React.FC = () => {
 
         {/* Running Continuous Marquee with Authentic Bank Logos */}
         <BankPartnersMarquee />
+      </section>
+
+      {/* SECTION H2: KOTA REAL ESTATE GUIDES & INSIGHTS (SEO & KNOWLEDGE HUB) */}
+      <section className="py-16 sm:py-20 bg-white border-b border-[#E8D8B3]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100/90 border border-amber-300 text-amber-950 text-xs font-bold uppercase tracking-wider mb-2">
+                <BookOpen className="w-3.5 h-3.5 text-[#8A6632]" />
+                <span>Kota Real Estate Advisory</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+                Kota Property Guides &amp; <span className="text-[#8A6632]">Buyer Insights</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 mt-2 max-w-2xl">
+                Explore expert advice on choosing the best localities in Kota, verifying RERA &amp; UIT approvals, comparing 1, 2 &amp; 3 BHK flat layouts, and selecting trusted builders in Kota, Rajasthan.
+              </p>
+            </div>
+
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FAF7F0] border border-[#E8D8B3] hover:border-[#8A6632] text-xs font-bold text-[#8A6632] hover:text-[#6e5025] transition-all shadow-xs shrink-0"
+            >
+              <span>View All 5 Property Guides</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {blogPosts.slice(0, 3).map((post) => (
+              <article
+                key={post.id}
+                className="group rounded-2xl overflow-hidden bg-[#FAF7F0] border border-[#E8D8B3] hover:border-[#C5A46D] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <Link to={`/blog/${post.slug}`} className="block relative h-48 overflow-hidden bg-slate-900">
+                    <img
+                      src={post.featuredImage}
+                      alt={post.imageAlt}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 left-3">
+                      <span className="px-2.5 py-1 rounded-full bg-[#18140E]/80 backdrop-blur-md border border-[#C5A46D]/40 text-[#C5A46D] text-[10px] font-bold uppercase tracking-wider">
+                        {post.category}
+                      </span>
+                    </div>
+                  </Link>
+
+                  <div className="p-5">
+                    <div className="text-[11px] text-slate-500 font-medium mb-1.5 flex items-center gap-2">
+                      <span>{post.publishDate}</span>
+                      <span>•</span>
+                      <span>{post.readTime}</span>
+                    </div>
+
+                    <h3 className="text-base font-black text-slate-900 group-hover:text-[#8A6632] transition-colors leading-snug line-clamp-2 mb-2">
+                      <Link to={`/blog/${post.slug}`}>
+                        {post.title}
+                      </Link>
+                    </h3>
+
+                    <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-5 pt-0">
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8A6632] group-hover:text-[#6e5025] transition-colors"
+                  >
+                    <span>Read Guide</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* SECTION I: ENQUIRY CTA SECTION */}

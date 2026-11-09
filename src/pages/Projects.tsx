@@ -9,7 +9,8 @@ import {
   BadgeCheck, 
   MessageSquare
 } from 'lucide-react';
-import { mukundraPrimeProject } from '../data/projects';
+import { mukundraPrimeProject, completedProjects } from '../data/projects';
+import { ProjectCard } from '../components/ProjectCard';
 
 export const Projects: React.FC = () => {
   return (
@@ -192,6 +193,38 @@ export const Projects: React.FC = () => {
             </div>
           </motion.div>
 
+        </div>
+      </section>
+
+      {/* Delivered Residential & Farmhouse Landmarks in Kota */}
+      <section className="py-16 sm:py-24 bg-[#FAF7F0] border-t border-[#E8D8B3]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-800 block mb-1">
+                PROVEN LOCAL TRACK RECORD
+              </span>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#8A6632]">
+                Delivered Landmarks Across Kota, Rajasthan
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
+                Explore successfully completed multi-storey apartments, gated row-villa enclaves, and farmhouse retreats by DEEPPURA GROUP in R.K. Puram, Thekra, Chawani, and Alaniya.
+              </p>
+            </div>
+            <Link
+              to="/completed-projects"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8A6632] hover:underline"
+            >
+              <span>Explore All Delivered Projects</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {completedProjects.map((proj) => (
+              <ProjectCard key={proj.id} project={proj} />
+            ))}
+          </div>
         </div>
       </section>
 

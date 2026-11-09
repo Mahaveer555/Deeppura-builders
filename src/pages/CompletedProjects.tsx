@@ -123,7 +123,14 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
           </ul>
         </div>
 
-        <div className="pt-3">
+        <div className="pt-3 flex flex-wrap items-center gap-3">
+          <Link
+            to={`/projects/${project.slug}`}
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#C5A46D] to-[#8A6632] hover:brightness-110 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-sm"
+          >
+            <span>Project Details &amp; Gallery</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
           <a
             href={`https://maps.google.com/?q=${encodeURIComponent(project.googleMapQuery)}`}
             target="_blank"
@@ -131,8 +138,7 @@ const CompletedProjectDetailCard: React.FC<CompletedProjectDetailCardProps> = ({
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 bg-white hover:bg-amber-50 text-slate-800 hover:text-amber-900 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
           >
             <MapPin className="w-3.5 h-3.5 text-[#8A6632]" />
-            <span>View Location on Google Maps</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <span>Google Maps</span>
           </a>
         </div>
       </div>

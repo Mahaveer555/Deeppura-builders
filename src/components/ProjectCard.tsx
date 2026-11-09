@@ -8,7 +8,7 @@ interface ProjectCardProps {
   onEnquire?: (projectName: string) => void;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire: _onEnquire }) => {
   const isOngoing = project.status === 'ongoing';
 
   return (
@@ -91,17 +91,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onEnquire }) 
             <ArrowRight className="w-4 h-4 text-slate-950" />
           </Link>
         ) : (
-          <div className="w-full flex items-center justify-between text-sm font-medium text-slate-500">
-            <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Delivered in Kota</span>
-            {onEnquire && (
-              <button
-                onClick={() => onEnquire(project.nameEn)}
-                className="text-amber-800 hover:text-amber-950 text-xs font-bold uppercase tracking-wider cursor-pointer transition-colors"
-              >
-                Details &rarr;
-              </button>
-            )}
-          </div>
+          <Link
+            to={`/projects/${project.slug}`}
+            className="w-full py-2.5 rounded-full border border-[#8A6632] hover:bg-[#8A6632] text-[#8A6632] hover:text-white font-bold text-xs text-center uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-xs"
+          >
+            <span>View Landmark Details</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
         )}
       </div>
     </div>
