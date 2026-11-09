@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, X, ChevronRight } from 'lucide-react';
 
-export const OFFICIAL_INSTAGRAM_URL = "https://www.instagram.com/deeppura_group/";
+export const OFFICIAL_INSTAGRAM_URL = "https://www.instagram.com/mukundra_prime_kota?obrf=Zmlna295a3M3M2Vh&utm_source=qr";
 
 // 1. Official Authentic WhatsApp Vector Logo
 const RealWhatsAppLogo: React.FC<{ className?: string }> = ({ className = "w-7 h-7" }) => (

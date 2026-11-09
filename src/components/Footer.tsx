@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ArrowUpRight, ArrowUp } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUpRight } from 'lucide-react';
 import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-[#18140E] text-slate-300 border-t border-[#C5A46D]/30 relative select-none">
@@ -40,7 +37,7 @@ export const Footer: React.FC = () => {
               </a>
 
               <a
-                href="https://instagram.com/deeppura_group/"
+                href="https://www.instagram.com/mukundra_prime_kota?obrf=Zmlna295a3M3M2Vh&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -93,6 +90,7 @@ export const Footer: React.FC = () => {
                 { to: '/unit-plan', label: 'Unit Plan' },
                 { to: '/amenities', label: 'Amenities' },
                 { to: '/contact', label: 'Contact' },
+                { to: '/privacy-policy', label: 'Privacy Policy' },
               ].map((link) => (
                 <li key={link.to}>
                   <Link 
@@ -249,18 +247,16 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} DEEPPURA BUILDERS. All Rights Reserved.
           </div>
 
-          <div className="flex items-center gap-6">
-            <Link to="/privacy-policy" className="hover:text-[#C5A46D] transition-colors">
-              Privacy Policy
-            </Link>
-            <button 
-              onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 hover:text-[#C5A46D] transition-colors cursor-pointer text-slate-300"
-              aria-label="Scroll to top of page"
+          <div className="flex items-center gap-1.5 text-xs text-slate-400">
+            <span>Design &amp; Develop by</span>
+            <a 
+              href="https://digiteeworld.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#C5A46D] hover:text-[#FAF7F0] font-semibold transition-colors underline underline-offset-4 decoration-[#C5A46D]/50 hover:decoration-[#C5A46D]"
             >
-              <span>Back to top</span>
-              <ArrowUp className="w-3.5 h-3.5 text-[#C5A46D]" />
-            </button>
+              Digitee World
+            </a>
           </div>
         </div>
 
